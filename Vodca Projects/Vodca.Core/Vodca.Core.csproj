@@ -1,0 +1,827 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E1643509-19EC-4912-B1CC-550FDCED3D26}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Vodca</RootNamespace>
+    <AssemblyName>Vodca.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>Vodca.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;CONTRACTS_FULL;REGISTER_REQUIRED</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Vodca.Core.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>..\Vodca.Sitecore.Core\CodeAnalysis.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\release\</OutputPath>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <DefineConstants>EnableTryCatch;RELEASE;CONTRACTS_RELEASE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <DocumentationFile>
+    </DocumentationFile>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Documentation|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Documentation\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Vodca.Core.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>..\Vodca.Sitecore.Core\CodeAnalysis.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <DocumentationFile>bin\Documentation\Vodca.Core.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="Vodca.Sdk.Newtonsoft.Json">
+      <HintPath>App_References\Vodca.Sdk.Newtonsoft.Json.dll</HintPath>
+      <Aliases>global</Aliases>
+    </Reference>
+    <Reference Include="Vodca.Sdk.NLog">
+      <HintPath>App_References\Vodca.Sdk.NLog.dll</HintPath>
+      <Aliases>global</Aliases>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Vodca.Collections\VComparableHashSet.cs" />
+    <Compile Include="Vodca.Collections\VEqualityComparer.cs" />
+    <Compile Include="Vodca.Collections\VListDictionary.cs" />
+    <Compile Include="Vodca.Collections\VEnumerable.cs" />
+    <Compile Include="Vodca.Annotations\AspMvcActionAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Annotations\AspMvcAreaAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Annotations\AspMvcControllerAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Annotations\AspMvcMasterAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Annotations\AspMvcModelTypeAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Annotations\AspMvcTemplateAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Annotations\AspMvcViewAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Annotations\AssertionConditionAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Annotations\AssertionConditionType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Annotations\AssertionMethodAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Annotations\BaseTypeRequiredAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Annotations\CanBeNullAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Annotations\CannotApplyEqualityOperatorAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Annotations\ImplicitUseKindFlags.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Annotations\ImplicitUseTargetFlags.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Annotations\InstantHandleAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Annotations\InvokerParameterNameAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Annotations\LocalizationRequiredAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Annotations\MeansImplicitUseAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Annotations\NotNullAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Annotations\PathReferenceAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Annotations\PublicApiAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Annotations\PureAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Annotations\StringFormatMethodAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Annotations\TerminatesProgramAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Annotations\UsedImplicitlyAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Collections\VDataEntityList.cs" />
+    <Compile Include="Vodca.Collections\VDictionary.cs" />
+    <Compile Include="Vodca.Collections\VHashSet.cs" />
+    <Compile Include="Vodca.Collections\VHashSetOfStrings.cs" />
+    <Compile Include="Vodca.Collections\VKeyValue.cs" />
+    <Compile Include="Vodca.Collections\VList.cs" />
+    <Compile Include="Vodca.Collections\VNameValueCollection.cs" />
+    <Compile Include="Vodca.Collections\VStringDictionary.cs" />
+    <Compile Include="Vodca.Configuration\IISAdministration.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Configuration\IVWebSettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Configuration\VWebConfig.AppSettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Configuration\VWebConfig.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Configuration\VWebConfig.SqlCacheDependency.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Configuration\VWebSettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.EMail\VEmail.cs" />
+    <Compile Include="Vodca.EMail\VEmail.Response.cs" />
+    <Compile Include="Vodca.Encryption\Encryption.Decoder.cs" />
+    <Compile Include="Vodca.Encryption\Encryption.Encoder.cs" />
+    <Compile Include="Vodca.Ensure\Ensure.Boolean.cs" />
+    <Compile Include="Vodca.Ensure\Ensure.cs" />
+    <Compile Include="Vodca.Ensure\Ensure.Email.cs" />
+    <Compile Include="Vodca.Ensure\Ensure.File.cs" />
+    <Compile Include="Vodca.Ensure\Ensure.Folder.cs" />
+    <Compile Include="Vodca.Ensure\Ensure.IPAddress.cs" />
+    <Compile Include="Vodca.Ensure\Ensure.Numbers.cs" />
+    <Compile Include="Vodca.Ensure\Ensure.Object.cs" />
+    <Compile Include="Vodca.Ensure\Ensure.Strings.cs" />
+    <Compile Include="Vodca.Ensure\Ensure.Zip.cs" />
+    <Compile Include="Vodca.Ensure\HttpExceptions\VHttpArgumentException.cs" />
+    <Compile Include="Vodca.Ensure\HttpExceptions\VHttpArgumentNullException.cs" />
+    <Compile Include="Vodca.Ensure\HttpExceptions\VHttpFileNotFoundException.cs" />
+    <Compile Include="Vodca.Ensure\HttpExceptions\VHttpNotSupportedException.cs" />
+    <Compile Include="Vodca.Ensure\HttpExceptions\VHttpStatusCodeExtension.cs" />
+    <Compile Include="Vodca.Extensions\Extensions.Serialize.Json.cs" />
+    <Compile Include="Vodca.Extensions\Extensions.CreateInstance.cs" />
+    <Compile Include="Vodca.Extensions\Extensions.Headers.cs" />
+    <Compile Include="Vodca.Extensions\Extensions.AjaxWebservice.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.AntiXss.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.AppSettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.AsciiAndUnicode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.AsciiAndUnicode.XmlSymbols.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.Assembly.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.Bitmap.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.Compression.Deflate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.Compression.GZip.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.Crc32.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.DataTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.DateTime.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.Encode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.Enum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.FilePath.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.Guid.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.HashCode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.HtmlAgilityPack.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.HtmlAgilityPack.HtmlNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.HttpCache.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.HttpContext.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.HttpCookies.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.HttpHeader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.HttpModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.HttpRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.HttpUtility.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.ICollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.IDictionary.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.IList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.Imaging.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.IO.Directory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.IO.File.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.JsonNet.Serialization.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.Linq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.Linq.Xml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.Misc.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.Money.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.NameValueCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.OutputCache.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.Page.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.Param.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.QueryString.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.RegexUtilities.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.Serialize.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.Session.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.Stream.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.String.Base64AndBytes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.String.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.String.Remove.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.String.Replace.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.StringConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.Strings.Misc.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.ThirdParty.Bitmap.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.ThirdParty.Collection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.ThirdParty.Comparable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.ThirdParty.DateTime.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.ThirdParty.IList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.ThirdParty.IO.File.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.ToJContainer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.ToXElement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.Type.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.Uri.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.Validation.Colors.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.Validation.CreditCard.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.Validation.Currency.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.Validation.DateTime.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.Validation.Html.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.Validation.HttpPostedFile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.Validation.HttpRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.Validation.Numeric.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.Validation.Phone.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.Validation.SocialSecurity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.Validation.States.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.Validation.String.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.Validation.Text.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.Validation.Types.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.Validation.Web.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.Validation.Zip.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.VirtualPathUtility.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.VNameValueCollection.Converter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.XElement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.XElement.SetAttributes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.Xml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.XmlAndXslt.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.XmlElement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.XmlNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\Extensions.Xslt.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.Extensions\System.Web.Validations\CreditCardType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\**\*.cs" />
+    <Compile Include="Vodca.Formatters\UsPhoneNumberFormatter.cs" />
+    <Compile Include="Vodca.GoogleMapsApi\Entities\GeoAddressOrLocation.cs" />
+    <Compile Include="Vodca.GoogleMapsApi\Extensions\Extensions.cs" />
+    <Compile Include="Vodca.GoogleMapsApi\Interfaces\IAddressOrLocation.cs" />
+    <Compile Include="Vodca.GoogleMapsApi\Request\GoogleMapsWebService.cs" />
+    <Compile Include="Vodca.GoogleMapsApi\Response\GeoLocation.cs" />
+    <Compile Include="Vodca.GoogleMapsApi\Response\GeoStatus.cs" />
+    <Compile Include="Vodca.GoogleMapsApi\Response\IGeoLocation.cs" />
+    <Compile Include="Vodca.HtmlAgilityPack\AttributeValueQuote.cs" />
+    <Compile Include="Vodca.HtmlAgilityPack\Exceptions\EncodingFoundException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.HtmlAgilityPack\HtmlAttribute.cs" />
+    <Compile Include="Vodca.HtmlAgilityPack\HtmlAttributeCollection.cs" />
+    <Compile Include="Vodca.HtmlAgilityPack\HtmlCommentNode.cs" />
+    <Compile Include="Vodca.HtmlAgilityPack\HtmlDocument.cs" />
+    <Compile Include="Vodca.HtmlAgilityPack\HtmlDocument.Xpath.cs" />
+    <Compile Include="Vodca.HtmlAgilityPack\Enums\HtmlElementFlag.cs" />
+    <Compile Include="Vodca.HtmlAgilityPack\HtmlEntity.cs" />
+    <Compile Include="Vodca.HtmlAgilityPack\Internals\HtmlNameTable.cs" />
+    <Compile Include="Vodca.HtmlAgilityPack\HtmlNode.cs" />
+    <Compile Include="Vodca.HtmlAgilityPack\HtmlNode.Internal.cs">
+      <DependentUpon>HtmlNode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vodca.HtmlAgilityPack\HtmlNode.Xpath.cs" />
+    <Compile Include="Vodca.HtmlAgilityPack\HtmlNodeCollection.cs" />
+    <Compile Include="Vodca.HtmlAgilityPack\HtmlNodeNavigator.cs" />
+    <Compile Include="Vodca.HtmlAgilityPack\Enums\HtmlNodeType.cs" />
+    <Compile Include="Vodca.HtmlAgilityPack\HtmlParseError.cs" />
+    <Compile Include="Vodca.HtmlAgilityPack\Enums\HtmlParseErrorCode.cs" />
+    <Compile Include="Vodca.HtmlAgilityPack\HtmlTextNode.cs" />
+    <Compile Include="Vodca.HtmlAgilityPack\MixedCodeDocument.cs" />
+    <Compile Include="Vodca.HtmlAgilityPack\MixedCodeDocumentCodeFragment.cs" />
+    <Compile Include="Vodca.HtmlAgilityPack\MixedCodeDocumentFragment.cs" />
+    <Compile Include="Vodca.HtmlAgilityPack\MixedCodeDocumentFragmentList.cs" />
+    <Compile Include="Vodca.HtmlAgilityPack\Enums\MixedCodeDocumentFragmentType.cs" />
+    <Compile Include="Vodca.HtmlAgilityPack\MixedCodeDocumentTextFragment.cs" />
+    <Compile Include="Vodca.HtmlAgilityPack\Internals\NameValuePairList.cs" />
+    <Compile Include="Vodca.Interfaces\IToJContainer.cs" />
+    <Compile Include="Vodca.Interfaces\IToXElement.cs" />
+    <Compile Include="Vodca.Interfaces\IValidate.cs" />
+    <Compile Include="Vodca.Interfaces\IVComparable.cs" />
+    <Compile Include="Vodca.Interfaces\IVCookieName.cs" />
+    <Compile Include="Vodca.Logging\VLog.GetDefaultErrorCodes.cs" />
+    <Compile Include="Vodca.Pipelines\Attributes\VRegisterTaskPipelineAttribute.cs" />
+    <Compile Include="Vodca.Pipelines\Engine\VInternalPipelineManager.cs" />
+    <Compile Include="Vodca.Pipelines\Engine\VInternalPiplineMethodCollectionManager.cs" />
+    <Compile Include="Vodca.Pipelines\Engine\VPipelineArgs.cs" />
+    <Compile Include="Vodca.Pipelines\Engine\VPipelineManager.cs" />
+    <Compile Include="Vodca.Pipelines\Engine\VPipelineManager.OnInit.Pipelines.cs" />
+    <Compile Include="Vodca.Pipelines\Extensions\Extensions.cs" />
+    <Compile Include="Vodca.Pipelines\Interfaces\ILoggable.cs" />
+    <Compile Include="Vodca.Pipelines\Interfaces\IPipelineArgs.cs" />
+    <Compile Include="Vodca.Pipelines\Interfaces\IVTaskPipelineConfiguration.cs" />
+    <Compile Include="Vodca.Pipelines\XmlConfiguration\VSingleTaskConfiguration.cs" />
+    <Compile Include="Vodca.Pipelines\XmlConfiguration\VTaskPipelineConfiguration.cs" />
+    <Compile Include="Vodca.RegistrationManager\Actions\VRegisterApiAttributesAction.cs" />
+    <Compile Include="Vodca.RegistrationManager\Attributes\VRegisterApiControllerAttribute.cs" />
+    <Compile Include="Vodca.SqlQuery\DynamicSqlDataReader.cs" />
+    <Compile Include="Vodca.SqlQuery\DynamicSqlDataReaderProperties.cs" />
+    <Compile Include="Vodca.SqlQuery\SqlQuery.Caching.cs" />
+    <Compile Include="Vodca.SqlQuery\SqlQuery.Connection.cs" />
+    <Compile Include="Vodca.SqlQuery\SqlQuery.DataTable.Caching.cs" />
+    <Compile Include="Vodca.SqlQuery\SqlQuery.DataTable.cs" />
+    <Compile Include="Vodca.SqlQuery\SqlQuery.DataView.Cache.cs" />
+    <Compile Include="Vodca.SqlQuery\SqlQuery.DataView.cs" />
+    <Compile Include="Vodca.SqlQuery\SqlQuery.ExecuteNonQuery.cs" />
+    <Compile Include="Vodca.SqlQuery\SqlQuery.ExecuteNonQuery.Generic.cs" />
+    <Compile Include="Vodca.SqlQuery\SqlQuery.ExecuteScalar.cs" />
+    <Compile Include="Vodca.SqlQuery\SqlQuery.ExecuteXmlReader.cs" />
+    <Compile Include="Vodca.SqlQuery\SqlQuery.ICollection.Cache.cs" />
+    <Compile Include="Vodca.SqlQuery\SqlQuery.ICollection.cs" />
+    <Compile Include="Vodca.SqlQuery\SqlQuery.IEnumerable.ByColumnName.cs" />
+    <Compile Include="Vodca.SqlQuery\SqlQuery.IEnumerable.ByFirstColumn.cs" />
+    <Compile Include="Vodca.SqlQuery\SqlQuery.IEnumerable.cs" />
+    <Compile Include="Vodca.SqlQuery\SqlQuery.IList.ByColumnName.cs" />
+    <Compile Include="Vodca.SqlQuery\SqlQuery.IList.ByFirstColumn.cs" />
+    <Compile Include="Vodca.SqlQuery\SqlQuery.IList.Caching.cs" />
+    <Compile Include="Vodca.SqlQuery\SqlQuery.IList.cs" />
+    <Compile Include="Vodca.SqlQuery\SqlQuery.TObject.Cache.cs" />
+    <Compile Include="Vodca.SqlQuery\SqlQuery.TObject.cs" />
+    <Compile Include="Vodca.SqlQuery\SqlQuery.TryExecuteNonQuery.cs" />
+    <Compile Include="Vodca.SqlQuery\SqlQuery.TryExecuteNonQuery.Generic.cs" />
+    <Compile Include="Vodca.SqlQuery\SqlQuery.TryExecuteScalar.cs" />
+    <Compile Include="Vodca.SqlQuery\SqlQuery.TryExecuteXmlReader.cs" />
+    <Compile Include="Vodca.SqlQuery\SqlQuery.TryGet.ICollection.Cache.cs" />
+    <Compile Include="Vodca.SqlQuery\SqlQuery.TryGet.ICollection.cs" />
+    <Compile Include="Vodca.SqlQuery\SqlQuery.TryGet.IEnumerable.cs" />
+    <Compile Include="Vodca.SqlQuery\SqlQuery.TryGet.IList.cs" />
+    <Compile Include="Vodca.SqlQuery\SqlQuery.TryGet.TObject.Cache.cs" />
+    <Compile Include="Vodca.SqlQuery\SqlQuery.TryGet.TObject.cs" />
+    <Compile Include="Vodca.SqlQuery\SqlQuery.VDataEntityList.cs" />
+    <Compile Include="Vodca.SqlQuery\TypeOf.cs" />
+    <Compile Include="Vodca.Validation\Attributes\Value\ValidateMinValueAttribute.cs" />
+    <Compile Include="Vodca.WebApi\Arguments\VApiArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.WebApi\Arguments\VApiArgs.FileContentTypes.cs">
+      <DependentUpon>VApiArgs.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.WebApi\Arguments\VApiArgs.FileExtensions.cs">
+      <DependentUpon>VApiArgs.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.WebApi\Attributes\VApiRequiredQueryStringParamAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.WebApi\Attributes\VApiValidationAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.WebApi\Enums\VApiContentType.cs" />
+    <Compile Include="Vodca.WebApi\Enums\VApiAccessPermission.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.WebApi\Enums\VApiHttpMethod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.WebApi\Extensions\Extensions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.WebApi\Interfaces\IVApiActionController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.WebApi\Interfaces\IApiActionControllers.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.WebApi\Interfaces\IApiDeleteActionController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.WebApi\Interfaces\IApiGetActionController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.WebApi\Interfaces\IApiPostActionController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.WebApi\Interfaces\IApiPutActionController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.WebApi\Interfaces\IVApiValidationAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.WebApi\VApiController.cs" />
+    <Compile Include="Vodca.WebApi\VApiActionController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.WebApi\VApiManagerModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vodca.WebApi\VApiResponse.cs" />
+    <Compile Include="Vodca.YuiCompressor\Compressor\CompressArgs.cs" />
+    <Compile Include="Vodca.YuiCompressor\Compressor\CompressorAction.cs" />
+    <Compile Include="Vodca.YuiCompressor\Compressor\CompressorOutputStreamAction.cs" />
+    <Compile Include="Vodca.YuiCompressor\Compressor\ProcessFile.cs" />
+    <Compile Include="Vodca.YuiCompressor\WebControls\YuiControl.cs" />
+    <Compile Include="Vodca.YuiCompressor\XmlSettings\XmlFileGroup.cs" />
+    <Compile Include="Vodca.YuiCompressor\XmlSettings\XmlSettings.cs" />
+    <Compile Include="Vodca.YuiCompressor\XmlSettings\XmlSettingsAttribute.cs" />
+    <Content Include="App_References\Vodca.Sdk.Newtonsoft.Json.dll" />
+    <Content Include="App_References\Vodca.Sdk.NLog.dll" />
+    <Content Include="Vodca.Validation\TextFile1.txt" />
+    <Compile Include="Vodca.LocalStorage\VJsonCookie.cs" />
+    <Compile Include="Vodca.Reflection\VReflection.cs" />
+    <Compile Include="Vodca.RegistrationManager\Actions\VRegisterValidationMessageAttributesAction.cs" />
+    <Compile Include="Vodca.RegistrationManager\Actions\VRegisterEmbeddedFilesAction.cs" />
+    <Compile Include="Vodca.RegistrationManager\Actions\VRegisterHttpModulesAction.cs" />
+    <Compile Include="Vodca.RegistrationManager\Actions\VRegisterRequiredAppSettingsAction.cs" />
+    <Compile Include="Vodca.RegistrationManager\Actions\VRegisterRequiredConnectionStringAction.cs" />
+    <Compile Include="Vodca.RegistrationManager\Actions\VRegisterRequiredFoldersAction.cs" />
+    <Compile Include="Vodca.RegistrationManager\Attributes\VRegisterValidationMessageAttribute.cs" />
+    <Compile Include="Vodca.RegistrationManager\Attributes\VRegisterVLogErrorCodesAttribute.cs" />
+    <Compile Include="Vodca.RegistrationManager\Attributes\VRegisterAttribute.cs" />
+    <Compile Include="Vodca.RegistrationManager\Attributes\VRegisterEmbeddedFileAttribute.cs" />
+    <Compile Include="Vodca.RegistrationManager\Attributes\VRegisterHttpModuleAttribute.cs" />
+    <Compile Include="Vodca.RegistrationManager\Attributes\VRegisterRequiredAppSettingByNameAttribute.cs" />
+    <Compile Include="Vodca.RegistrationManager\Attributes\VRegisterRequiredConnectionStringByNameAttribute.cs" />
+    <Compile Include="Vodca.RegistrationManager\Attributes\VRegisterRequiredWebFolderAttribute.cs" />
+    <Compile Include="Vodca.RegistrationManager\Attributes\VRegistrationManagerActionAttribute.cs" />
+    <Compile Include="Vodca.RegistrationManager\Extensions\Extensions.cs" />
+    <Compile Include="Vodca.RegistrationManager\Interfaces\IVExecute.cs" />
+    <Compile Include="Vodca.RegistrationManager\Interfaces\IVSortable.cs" />
+    <Compile Include="Vodca.RegistrationManager\Interfaces\IVAction.cs" />
+    <Compile Include="Vodca.RegistrationManager\Interfaces\IVRegister.cs" />
+    <Compile Include="Vodca.RegistrationManager\Interfaces\IVRegisterAction.cs" />
+    <Compile Include="Vodca.RegistrationManager\Interfaces\IVRegisterAttribute.cs" />
+    <Compile Include="Vodca.RegistrationManager\VRegistrationManager.cs" />
+    <Compile Include="Vodca.RegistrationManager\VRegistrationStart.cs" />
+    <Compile Include="Vodca.Ajax\**\*.cs" />
+    <Compile Include="Vodca.Logging\Extensions.cs" />
+    <Compile Include="Vodca.Logging\VLog.cs" />
+    <Compile Include="Vodca.Logging\VLog.DelegateAndEvents.cs" />
+    <Compile Include="Vodca.Logging\VLog.LogException.cs" />
+    <Compile Include="Vodca.Logging\VLog.OnErrorrFilter.cs" />
+    <Compile Include="Vodca.Logging\WebErrorCodes\VLogErrorCode.cs" />
+    <Compile Include="Vodca.Logging\WebErrorTypesAndPriorities\VLogErrorTypePriority.cs" />
+    <Compile Include="Vodca.Logging\WebErrorTypesAndPriorities\VLogErrorTypes.cs" />
+    <Compile Include="Vodca.Logging\WebError\VLogError.cs" />
+    <Compile Include="Vodca.Logging\WebError\VLogError.Methods.cs" />
+    <Compile Include="Vodca.Logging\WebError\VLogError.Stack.cs" />
+    <Compile Include="Vodca.Logging\WebError\WebClientSideError\IJsException.cs" />
+    <Compile Include="Vodca.Logging\WebError\WebClientSideError\JsException.cs" />
+    <Compile Include="Vodca.Logging\WebError\WebClientSideError\JsException.LoggingWebservice.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Vodca.Logging\WebError\WebClientSideError\JsExceptionProxy.cs" />
+    <Compile Include="Vodca.Logging\WebError\WebClientSideError\VLogClientSideError.cs" />
+    <Compile Include="Vodca.Logging\WebError\WebClientSideError\VLogClientSideError.Methods.cs" />
+    <Compile Include="Vodca.Logging\WebError\WebServerSideError\VLogServerSideError.AddVariables.cs" />
+    <Compile Include="Vodca.Logging\WebError\WebServerSideError\VLogServerSideError.cs" />
+    <Compile Include="Vodca.Logging\WebError\WebServerSideError\VLogServerSideError.Operator.Methods.cs" />
+    <Compile Include="Vodca.Logging\WebError\WebServerSideError\VLogServerSideError.Properties.cs" />
+    <Compile Include="Vodca.Logging\WebError\WebServerSideSqlError\VLogServerSideSqlError.cs" />
+    <Compile Include="Vodca.Logging\WebError\WebServerSideSqlError\VLogServerSideSqlError.Methods.cs" />
+    <Compile Include="Vodca.Logging\WebError\WebServerSideSqlError\VLogSqlError.cs" />
+    <Compile Include="Vodca.Tag\VTag.Attributes.AccessKey.cs" />
+    <Compile Include="Vodca.Tag\VTag.Attributes.Alt.cs" />
+    <Compile Include="Vodca.Tag\VTag.Attributes.Class.cs" />
+    <Compile Include="Vodca.Tag\VTag.Attributes.ContentEditable.cs" />
+    <Compile Include="Vodca.Tag\VTag.Attributes.cs" />
+    <Compile Include="Vodca.Tag\VTag.Attributes.Draggable.cs" />
+    <Compile Include="Vodca.Tag\VTag.Attributes.DropZone.cs" />
+    <Compile Include="Vodca.Tag\VTag.Attributes.Height.cs" />
+    <Compile Include="Vodca.Tag\VTag.Attributes.Hidden.cs" />
+    <Compile Include="Vodca.Tag\VTag.Attributes.Href.cs" />
+    <Compile Include="Vodca.Tag\VTag.Attributes.Id.cs" />
+    <Compile Include="Vodca.Tag\VTag.Attributes.Name.cs" />
+    <Compile Include="Vodca.Tag\VTag.Attributes.SpellCheck.cs" />
+    <Compile Include="Vodca.Tag\VTag.Attributes.Src.cs" />
+    <Compile Include="Vodca.Tag\VTag.Attributes.Style.cs" />
+    <Compile Include="Vodca.Tag\VTag.Attributes.TabIndex.cs" />
+    <Compile Include="Vodca.Tag\VTag.Attributes.Title.cs" />
+    <Compile Include="Vodca.Tag\VTag.Attributes.Type.cs" />
+    <Compile Include="Vodca.Tag\VTag.Attributes.Value.cs" />
+    <Compile Include="Vodca.Tag\VTag.Attributes.Width.cs" />
+    <Compile Include="Vodca.Tag\VTag.cs" />
+    <Compile Include="Vodca.Tag\VTag.HtmlTags.AtoC.cs" />
+    <Compile Include="Vodca.Tag\VTag.HtmlTags.cs" />
+    <Compile Include="Vodca.Tag\VTag.HtmlTags.DtoH.cs" />
+    <Compile Include="Vodca.Tag\VTag.HtmlTags.ItoR.cs" />
+    <Compile Include="Vodca.Tag\VTag.HtmlTags.StoZ.cs" />
+    <Compile Include="Vodca.Tag\VTag.HtmlTags.VoidTags.cs" />
+    <Compile Include="Vodca.Tag\VTag.Operators.cs" />
+    <Compile Include="Vodca.Tag\WellKnownXNames.Attributes.cs" />
+    <Compile Include="Vodca.Tag\WellKnownXNames.Attributes.Data.cs" />
+    <Compile Include="Vodca.Tag\WellKnownXNames.Attributes.Event.cs" />
+    <Compile Include="Vodca.Tag\WellKnownXNames.Attributes.Global.cs" />
+    <Compile Include="Vodca.Tag\WellKnownXNames.Attributes.Specialized.cs" />
+    <Compile Include="Vodca.Tag\WellKnownXNames.HtmlTags.cs" />
+    <Compile Include="Vodca.Tag\WellKnownXNames.HtmlTags.Tags.cs" />
+    <Compile Include="Vodca.Tag\WellKnownXNames.HtmlTags.VoidTags.cs" />
+    <Compile Include="Vodca.UI.WebControls\GoogleAnalytics\GoogleAnalyticsControl.cs" />
+    <Compile Include="Vodca.Validation\Attributes\Compare\ValidateCompareEmailsAttribute.cs" />
+    <Compile Include="Vodca.Validation\Attributes\Compare\ValidateComparePasswordsAttribute.cs" />
+    <Compile Include="Vodca.Validation\Attributes\Images\ValidateImageFileAttribute.cs" />
+    <Compile Include="Vodca.Validation\Attributes\Images\ValidateImageFileIsNotUploadedAttribute.cs" />
+    <Compile Include="Vodca.Validation\Attributes\IsValid\ValidateEmailIsValidAttribute.cs" />
+    <Compile Include="Vodca.Validation\Attributes\IsValid\ValidatePhoneIsValidAttribute.cs" />
+    <Compile Include="Vodca.Validation\Attributes\IsValid\ValidateStateAbbreviationIsValidAttribute.cs" />
+    <Compile Include="Vodca.Validation\Attributes\IsValid\ValidateZipCodeIsValidAttribute.cs" />
+    <Compile Include="Vodca.Validation\Attributes\Length\ValidateMaxLengthAttribute.cs" />
+    <Compile Include="Vodca.Validation\Attributes\Length\ValidateMinLengthAttribute.cs" />
+    <Compile Include="Vodca.Validation\Attributes\Membership.ChangePassword\ValidateConfirmNewPasswordIsRequiredAttribute.cs" />
+    <Compile Include="Vodca.Validation\Attributes\Membership.ChangePassword\ValidateNewPasswordIsRequiredAttribute.cs" />
+    <Compile Include="Vodca.Validation\Attributes\Membership.ChangePassword\ValidateOldPasswordIsRequiredAttribute.cs" />
+    <Compile Include="Vodca.Validation\Attributes\Membership.CreateStatus\ValidateUserNameNotTakenNameAttribute.cs" />
+    <Compile Include="Vodca.Validation\Attributes\Membership.LoginForm\ValidateUserAccountHasBeenLockedAttribute.cs" />
+    <Compile Include="Vodca.Validation\Attributes\Membership.LoginForm\ValidateUserAccountIsApprovedAttribute.cs" />
+    <Compile Include="Vodca.Validation\Attributes\Membership.LoginForm\ValidateUserNameIsRequiredAttribute.cs" />
+    <Compile Include="Vodca.Validation\Attributes\Membership.LoginForm\ValidateUserNotFoundAttribute.cs" />
+    <Compile Include="Vodca.Validation\Attributes\Membership.LoginForm\ValidateUserPasswordDonotMatchAttribute.cs" />
+    <Compile Include="Vodca.Validation\Attributes\Membership.ResetPasswordForm\ValidateUserPasswordAnswerDonotMatchAttribute.cs" />
+    <Compile Include="Vodca.Validation\Attributes\Membershp.CreateForm\ValidateDuplicateEmailAttribute.cs" />
+    <Compile Include="Vodca.Validation\Attributes\Membershp.CreateForm\ValidateDuplicateUserNameAttribute.cs" />
+    <Compile Include="Vodca.Validation\Attributes\Membershp.CreateForm\ValidateFirstNameIsRequiredAttribute.cs" />
+    <Compile Include="Vodca.Validation\Attributes\Membershp.CreateForm\ValidateIsUserExistsAttribute.cs" />
+    <Compile Include="Vodca.Validation\Attributes\Membershp.CreateForm\ValidateLastNameIsRequiredAttribute.cs" />
+    <Compile Include="Vodca.Validation\Attributes\Membershp.CreateForm\ValidatePasswordMinLengthAttribute.cs" />
+    <Compile Include="Vodca.Validation\Attributes\Membershp.CreateForm\ValidatePasswordMinRequiredNonAlphanumericCharactersAttribute.cs" />
+    <Compile Include="Vodca.Validation\Attributes\Membershp.CreateForm\ValidateSuffixIsRequiredAttribute.cs" />
+    <Compile Include="Vodca.Validation\Attributes\Misc\ValidateDateIsValidAttribute.cs" />
+    <Compile Include="Vodca.Validation\Attributes\Required\ValidateAgreeToTheTermsAndConditionsIsRequiredAttribute.cs" />
+    <Compile Include="Vodca.Validation\Attributes\Required\ValidateCityIsRequiredAttribute.cs" />
+    <Compile Include="Vodca.Validation\Attributes\Required\ValidateConfirmPasswordIsRequiredAttribute.cs" />
+    <Compile Include="Vodca.Validation\Attributes\Required\ValidateEmailConfirmIsRequiredAttribute.cs" />
+    <Compile Include="Vodca.Validation\Attributes\Required\ValidateEmailIsRequiredAttribute.cs" />
+    <Compile Include="Vodca.Validation\Attributes\Required\ValidateFieldGuidIsRequiredAttribute.cs" />
+    <Compile Include="Vodca.Validation\Attributes\Required\ValidateFieldIsRequiredAttribute.cs" />
+    <Compile Include="Vodca.Validation\Attributes\Required\ValidatePasswordAnswerIsRequiredAttribute.cs" />
+    <Compile Include="Vodca.Validation\Attributes\Required\ValidatePasswordIsRequiredAttribute.cs" />
+    <Compile Include="Vodca.Validation\Attributes\Required\ValidatePasswordQuestionIsRequiredAttribute.cs" />
+    <Compile Include="Vodca.Validation\Attributes\Required\ValidatePhoneIsRequiredAttribute.cs" />
+    <Compile Include="Vodca.Validation\Attributes\Required\ValidateStateIsRequiredAttribute.cs" />
+    <Compile Include="Vodca.Validation\Attributes\Required\ValidateZipCodeIsRequiredAttribute.cs" />
+    <Compile Include="Vodca.Validation\Core\Extensions.Membership.IsUserEmailExist.cs" />
+    <Compile Include="Vodca.Validation\Core\Extensions.Membership.IsUserExist.cs" />
+    <Compile Include="Vodca.Validation\Core\PropertyValidator.cs" />
+    <Compile Include="Vodca.Validation\Core\ValidateAttribute.cs" />
+    <Compile Include="Vodca.Validation\Core\ValidateAttribute.Methods.cs" />
+    <Compile Include="Vodca.Validation\Core\ValidationArgs.cs" />
+    <Compile Include="Vodca.Validation\Core\ValidationError.cs" />
+    <Compile Include="Vodca.Validation\Core\VForm.cs" />
+    <Compile Include="Vodca.Validation\Core\VForm.DelegatesAndEvents.cs" />
+    <Compile Include="Vodca.Validation\Core\VForm.Validation.cs" />
+    <Compile Include="Vodca.Validation\Core\VFormMessageCacheManager.cs" />
+    <Compile Include="Vodca.Validation\Core\VFormTypeCacheManager.cs" />
+    <Compile Include="Vodca.Validation\Core\VWebServices.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Vodca.Validation\Interfaces\IChangePasswordForm.cs" />
+    <Compile Include="Vodca.Validation\Interfaces\IFormAction.cs" />
+    <Compile Include="Vodca.Validation\Interfaces\ILoginForm.cs" />
+    <Compile Include="Vodca.Validation\Interfaces\IMembershipProviderName.cs" />
+    <Compile Include="Vodca.Validation\Interfaces\IResetPasswordForm.cs" />
+    <Compile Include="Vodca.Validation\Interfaces\IValidateDisplayMessage.cs" />
+    <Compile Include="Vodca.Validation\Interfaces\IValidationError.cs" />
+    <Compile Include="Vodca.VisualStudio\**\*.cs" />
+    <Compile Include="Vodca.Web\**\*.cs" />
+    <Compile Include="Vodca.XmlSerialization\VXmlCData.cs" />
+    <Compile Include="Vodca.Events\VEventHandlerList.cs" />
+    <Content Include="App_References\**\*.cs" />
+    <Content Include="App_Styles\**\*.*" />
+    <Content Include="System.Web.UI.WebControls.XTemplate.bmp" />
+    <Content Include="Vodca.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Vodca.HttpModules\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

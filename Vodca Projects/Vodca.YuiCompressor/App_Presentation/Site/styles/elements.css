@@ -1,0 +1,394 @@
+/** elements.css - Styles pertaining to the look of the site, such as fonts and colors **/
+/* OPEN SANS GOOGLE FONT */
+@font-face {
+    font-family: 'OpenSans';
+    src: url('/App_Presentation/UniversitySite/styles/fonts/open-sans-400-webfont.eot');
+    src: url('/App_Presentation/UniversitySite/styles/fonts/open-sans-400-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/App_Presentation/UniversitySite/styles/fonts/open-sans-400-webfont.woff') format('woff'),
+         url('/App_Presentation/UniversitySite/styles/fonts/open-sans-400-webfont.ttf') format('truetype'),
+         url('/App_Presentation/UniversitySite/styles/fonts/open-sans-400-webfont.svg#OpenSansRegular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'OpenSans Bold';
+    src: url('/App_Presentation/UniversitySite/styles/fonts/open-sans-700-webfont.eot');
+    src: url('/App_Presentation/UniversitySite/styles/fonts/open-sans-700-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/App_Presentation/UniversitySite/styles/fonts/open-sans-700-webfont.woff') format('woff'),
+         url('/App_Presentation/UniversitySite/styles/fonts/open-sans-700-webfont.ttf') format('truetype'),
+         url('/App_Presentation/UniversitySite/styles/fonts/open-sans-700-webfont.svg#OpenSansBold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'OpenSansSemibold';
+    src: url('/App_Presentation/UniversitySite/styles/fonts/open-sans-600-webfont.eot');
+    src: url('/App_Presentation/UniversitySite/styles/fonts/open-sans-600-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/App_Presentation/UniversitySite/styles/fonts/open-sans-600-webfont.woff') format('woff'),
+         url('/App_Presentation/UniversitySite/styles/fonts/open-sans-600-webfont.ttf') format('truetype'),
+         url('/App_Presentation/UniversitySite/styles/fonts/open-sans-600-webfont.svg#OpenSansSemibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'OpenSansExtrabold';
+    src: url('/App_Presentation/UniversitySite/styles/fonts/open-sans-800-webfont.eot');
+    src: url('/App_Presentation/UniversitySite/styles/fonts/open-sans-800-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/App_Presentation/UniversitySite/styles/fonts/open-sans-800-webfont.woff') format('woff'),
+         url('/App_Presentation/UniversitySite/styles/fonts/open-sans-800-webfont.ttf') format('truetype'),
+         url('/App_Presentation/UniversitySite/styles/fonts/open-sans-800-webfont.svg#OpenSansExtrabold') format('svg');
+    font-weight: 800;
+    font-style: normal;
+
+}
+/* Generic Typography */
+h1, h2, h3, h4 { font-family: OpenSans; font-weight: 300;}
+
+.content-container h1 { 
+    font-size: 150%; 
+    padding-bottom: 20px;
+}
+.content-container h2 {
+    margin: 5px 0;
+    font-family: 'OpenSans', sans-serif;
+    font-weight: 200;
+    color: #555555;
+    font-size: 150%;
+    margin: 0 0 10px 0; 
+}
+
+.content-container h3{
+    font-family: 'OpenSans', sans-serif;
+    font-weight: 600;
+    color: #555555;
+    font-size: 75%; 
+}
+
+.content-container a { 
+    color: #678400;
+    font-family: 'OpenSans',sans-serif;
+    font-weight: 400;
+}
+
+.content-container p{
+    font-family: 'OpenSans', sans-serif;
+    font-weight: 400;
+    color: #555555;
+    font-size: 70%;
+    margin: 15px 0;
+    line-height: 1.7; 
+}
+.container h3 { 
+    padding-bottom: 10px; 
+}
+.container p { 
+    margin: 0;
+    font-size: 70%;
+    line-height: 1.5em;
+}
+a { 
+    color: #678400;
+    font-family: 'OpenSans',sans-serif;
+    font-weight: 400;
+    font-size: 80%;
+}
+
+input {
+font-family: 'OpenSans', sans-serif;
+font-weight: 400;
+color: #555555;
+font-size: 80%;
+}
+/* WYSIWYG Intro Container */
+.content-container .container h1 { 
+    padding-bottom: 20px;
+    font-family: OpenSans, sans-serif;
+    font-size: 160%;
+    font-weight: 100;
+    color: #323131;
+}
+/* Welcome */
+.intro-container h1.banner-lg { 
+    background: url("/app_presentation/universitysite/images/structure/buttons.png") no-repeat 0 -533px;
+    color: #FFFFFF;
+    font-family: 'OpenSans Bold',sans-serif;
+    font-size: 140%;
+    height: 32px;
+    margin-bottom: 10px;
+    position: absolute;
+    left: 83px;
+    top: 20px;
+    padding: 6px 0 0 18px;
+    width: 350px;
+}
+.intro-container .inner .inner-mid .welcome-container h1 { 
+    font-size: 150%;
+    padding-bottom: 15px;
+}
+.intro-container .inner .inner-mid .welcome-container h2 { 
+    color: #555555;
+    font-size: 100%;
+    padding-bottom: 6px
+}
+.intro-container .inner .inner-mid .welcome-container .right p { 
+    margin: 15px 0; 
+}
+/* 
+.intro-container .inner .inner-mid .welcome-container label { 
+    font-size: 70%;
+    font-family: OpenSans Bold, Sans-serif;
+}
+*/
+/* Password Reset */
+.inner .inner-mid .password-reset  h1 { 
+    font-size: 150%;
+    padding-bottom: 15px;
+}
+.inner .inner-mid .password-reset .password-recover.left h1 { 
+    padding-bottom: 5px;
+}
+.inner .inner-mid .password-reset h2 { 
+    color: #555555;
+    font-size: 100%;
+    padding-bottom: 15px
+}
+.inner .inner-mid .password-reset .right p { 
+    margin: 15px 0; 
+}
+.inner .inner-mid .password-reset label { 
+    font-size: 70%;
+    font-family: OpenSans Bold, Sans-serif;
+}
+.inner .inner-mid .password-reset .forgot-username { 
+    font-size: 70%;
+    margin: 0 0 10px 5px;
+    display: block;
+}
+.inner .inner-mid .password-reset .password-recover.left p.blurb { 
+    margin-bottom: 15px;
+}
+/* Create Campus */
+.create-campus p { 
+    font-size: 75%;
+    margin-bottom: 15px;
+    line-height: 1.5em;
+    }
+.create-campus input.submit-btn { 
+    margin-bottom: 15px; 
+    float: left;
+}
+.create-campus #default-campus { 
+    vertical-align: bottom;
+    float: left;
+    width: auto;
+    height: auto;
+}
+.create-campus label { 
+    font-size: 70%; 
+}
+.create-campus .inner .inner-mid p { 
+    margin-bottom: 20px; 
+}
+.create-campus .inner .inner-mid h1 { 
+    padding-bottom: 10px; 
+    font-size: 150%; 
+    font-family: 'OpenSans', sans-serif; 
+}
+.create-campus .inner .inner-mid h2 { 
+    padding-bottom: 15px; 
+    font-size: 90%;
+    color: black;
+}
+/* Content Header */
+.content .content-header h1 { 
+    font-size: 180%;
+    color: #323131;
+    padding: 20px 0;
+    font-family: 'OpenSans', sans-serif;
+}
+.content .content-header p { 
+    color: #4D4D4D;
+    font-family: 'OpenSans',sans-serif;
+    font-size: 85%;
+    font-weight: normal;
+    line-height: 1.5em;
+    padding-bottom: 25px;
+}
+/* Generic Section Items / Lecture Items */
+.content-container .section .right h1.date-header { 
+    background: url("/app_presentation/universitysite/images/structure/buttons.png") no-repeat scroll 0 -189px transparent;
+    color: #6B8319;
+    display: block;
+    font-size: 80%;
+    height: 11px;
+    margin-bottom: 10px;
+    padding: 10px 0 8px 25px;
+    width: 380px;
+}
+.content-container .section .right h1 { 
+    padding-bottom: 10px; 
+}
+.content-container .section .right h2 {
+    color: #678400;
+    font-size: 100%;
+    padding-bottom: 0;
+    font-family: OpenSansSemiBold, sans-serif;
+}
+.content-container .section .right h3 { 
+    color: #323131;
+    font-size: 85%;
+}
+/* Training Section */
+.content h1 img.header-image { 
+    padding-left: 10px;
+    vertical-align: -2px;
+}
+.content .training-zone .training-item h2 { 
+    color: #678400;
+    font-size: 90%;
+    font-family: 'OpenSansSemiBold', sans-serif;
+}
+/* My Account */
+.account-container .account-form-section h2 {
+font-family: 'Open Sans', sans-serif;
+font-weight: 400;
+font-size: 110%;
+margin: 0 0 10px 0;
+}
+
+.account-container  label {
+font-family: 'Open Sans', sans-serif;
+font-weight: 600;
+font-size: 75%;
+float: left;
+margin: 0 0 3px 0;
+}
+
+label.error {
+font-family: arial, sans-serif;
+font-style: italic;
+font-size: 65%;
+float: left;
+color: #ee6f43;
+}
+
+.account-container .account-banner h1 {
+font-family: 'Open Sans', sans-serif;
+text-transform: capitalize;
+font-weight: 800;
+color: #fff;
+font-size: 130%; 
+}
+
+.account-container  h1 {
+font-family: 'Open Sans', sans-serif;
+text-transform: capitalize;
+font-weight: 800;
+color: #fff;
+font-size: 130%; 
+}
+.account-container .my-account-content h2{
+font-family: 'Open Sans', sans-serif;
+font-weight: 200;
+color: #555555;
+font-size: 150%;
+margin: 0 0 10px 0; 
+}
+.account-container .my-account-content h3{
+font-family: 'Open Sans', sans-serif;
+font-weight: 600;
+color: #555555;
+font-size: 75%; 
+}
+.account-container .my-account-content .user-info-container ul a{
+font-family: 'Open Sans', sans-serif;
+font-weight: 400;
+color: #678400;
+}
+.account-container .my-account-content .user-info-container p, .account-container .my-account-content .account-section-narrow p  {
+font-family: 'Open Sans', sans-serif;
+font-weight: 400;
+color: #555555;
+font-size: 70%;
+margin: 20px 0;
+line-height: 1.7; 
+}
+/* Logged In Container */
+.logged-in-container .logged-in-content h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #0088d4;
+    font-size: 95%; 
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #fff;
+    margin: 0 0 5px 0;
+}
+
+.logged-in-container .logged-in-content p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #9b9b9b;
+    font-size: 65%; 
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #fff;
+}
+/* Directory */
+.content .directory-mid h1 { 
+    font-size: 110%;
+    color: #323131;
+    padding-bottom: 25px;
+}
+/*Shire Apps*/
+.shire-apps { 
+    font-family: OpenSans, sans-serif;
+}
+.shire-apps .app .left a { font-weight: bold; }
+.shire-apps .app .app-header { font-size: 80%; }
+.shire-apps .app .app-header h1 { 
+    color: #678400;
+    font-size: 100%;
+    font-family: OpenSans Bold, Sans-serif;
+    padding-bottom: 5px;
+}
+/* Shire Brand Guidelines */
+.pdf-item h1.pdf-title { 
+    background: url("/app_presentation/universitysite/images/structure/buttons.png") no-repeat 0 -155px;
+    display: block;
+    font-size: 80%;
+    height: 16px;
+    padding: 8px 0 8px 55px;
+    width: 250px;
+    color: #6b8319;
+    margin-bottom: 10px;
+}
+.pdf-item h2 { 
+    color: #6b8319;
+    font-family: OpenSans Bold, Sans-serif;
+    font-size: 85%;
+}
+/* Lecture Program */
+.lecture-program p.speaker { 
+    margin-bottom: 15px;
+    color: #323131;
+    font-size: 100%;
+    font-weight: bold;
+}
+/* Shire Patient Programs */
+.patient-programs .program h1.program-title { 
+    background: url("/app_presentation/universitysite/images/structure/buttons.png") no-repeat 0 -189px;
+    color: #6B8319;
+    display: block;
+    font-size: 80%;
+    height: 13px;
+    margin-bottom: 10px;
+    padding: 8px 0 8px 25px;
+    width: 380px;
+}
+.patient-programs .program h2 { 
+    color: #6b8319;
+    font-family: OpenSans Bold, Sans-serif;
+    font-size: 85%;
+}

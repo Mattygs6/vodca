@@ -1,0 +1,1433 @@
+/* home scenes */
+.home-scene-container {
+width: 1008px;
+height: 568px;
+position: relative;
+top: 141px;
+left: -24px;
+z-index:2;
+}
+
+.home-scene-container.desert {
+background: url('/app_presentation/universitysite/images/structure/home-scenes/edit-scenes/desert.jpg') no-repeat;
+top:141px;
+}
+
+.home-scene-container.mountain {
+background: url('/app_presentation/universitysite/images/structure/home-scenes/edit-scenes/mountains.jpg') no-repeat;
+}
+
+.home-scene-container.beach {
+background: url('/app_presentation/universitysite/images/structure/home-scenes/edit-scenes/beach.jpg') no-repeat;
+top:183px;
+}
+
+/* HOME SCENE */
+/* edit page building styles */
+/* DESERT */
+.home-scene-container.desert .faculty-building {
+background: url('/app_presentation/universitysite/images/structure/buildings/desert/faculty.png') no-repeat 0 0;
+width:270px;
+height: 170px;
+position: absolute;
+display: block!important;
+top: 174px;
+left: 27px;
+}
+
+.home-scene-container.desert .faculty-building.active {
+display:block;
+}
+
+.home-scene-container.desert .bookstore-building {
+background: url('/app_presentation/universitysite/images/structure/buildings/desert/bookstore.png') no-repeat 0 0;
+width:190px;
+height: 111px;
+position: absolute;
+display: block!important;
+top: 157px;
+left: 312px;
+}
+
+.home-scene-container.desert .bookstore-building.active {
+display: block;
+}
+
+.home-scene-container.desert .classroom-building {
+background: url('/app_presentation/universitysite/images/structure/buildings/desert/classroom.png') no-repeat 0 0;
+width:275px;
+height: 203px;
+position: absolute;
+display: block!important;
+top: 45px;
+left: 517px;
+}
+
+.home-scene-container.desert .classroom-building.active {
+display: block;
+}
+
+.home-scene-container.desert .directory-building {
+background: url('/app_presentation/universitysite/images/structure/buildings/desert/directory.png') no-repeat 0 0;
+width:303px;
+height: 161px;
+position: absolute;
+display: block!important;
+top: 180px;
+left: 665px;
+}
+
+.home-scene-container.desert .directory-building.active {
+display: block;
+}
+
+/* MOUNTAIN */
+
+.home-scene-container.mountain .faculty-building {
+background: url('/app_presentation/universitysite/images/structure/buildings/mountain/faculty.png') no-repeat 0 0;
+display: block;
+width:270px;
+height: 170px;
+position: absolute;
+top: 211px;
+left: 35px;
+}
+
+.home-scene-container.mountain .faculty-building.active {
+display:block;
+}
+
+.home-scene-container.mountain .bookstore-building {
+background: url('/app_presentation/universitysite/images/structure/buildings/mountain/bookstore.png') no-repeat 0 0;
+display: block;
+width:190px;
+height: 170px;
+position: absolute;
+top: 137px;
+left: 314px;
+}
+
+.home-scene-container.mountain .bookstore-building.active {
+display: block;
+}
+
+.home-scene-container.mountain .classroom-building {
+background: url('/app_presentation/universitysite/images/structure/buildings/mountain/classroom.png') no-repeat 0 0;
+display: block;
+width:275px;
+height: 224px;
+position: absolute;
+top: 58px;
+width: 275px;
+}
+
+.home-scene-container.mountain .classroom-building.active {
+display: block;
+}
+
+.home-scene-container.mountain .directory-building {
+background: url('/app_presentation/universitysite/images/structure/buildings/mountain/directory.png') no-repeat 0 0;
+display: block;
+width:303px;
+height: 161px;
+position: absolute;
+top: 200px;
+left: 667px;
+}
+.home-scene-container.mountain .directory-building.active {
+display: block;
+}
+/*RAIN FOREST BUILDINGS*/
+.home-scene-container.rainforest .faculty-building {
+background: url('/app_presentation/universitysite/images/structure/buildings/rainforest/faculty.png') no-repeat 0 0;
+display: none;
+width:270px;
+height: 170px;
+position: absolute;
+top: 211px;
+left: 35px;
+}
+
+.home-scene-container.rainforest .bookstore-building {
+background: url('/app_presentation/universitysite/images/structure/buildings/rainforest/bookstore.png') no-repeat 0 0;
+display: none;
+width:190px;
+height: 111px;
+position: absolute;
+top: 195px;
+left: 319px;
+}
+
+.home-scene-container.rainforest .classroom-building {
+background: url('/app_presentation/universitysite/images/structure/buildings/rainforest/classroom.png') no-repeat 0 0;
+display: none;
+width:275px;
+height: 203px;
+position: absolute;
+top: 80px;
+left: 520px;
+}
+
+.home-scene-container.rainforest .directory-building {
+background: url('/app_presentation/universitysite/images/structure/buildings/rainforest/directory.png') no-repeat 0 0;
+display: none;
+width:303px;
+height: 161px;
+position: absolute;
+top: 212px;
+left: 661px;
+}
+/*DESERT TWO BUILDING */
+.home-scene-container.desert.building-2 { 
+    background: url('/app_presentation/universitysite/images/structure/home-scenes/edit-scenes/desert/two/desert-building-2.jpg') no-repeat 0 0;
+    width: 1080px;
+    height: 553px;
+}
+/*DESERT TWO BUILDING CLASSROOM AND DIRECTORY */
+.home-scene-container.desert.building-2.cd .classroom-building { 
+    display: block;
+    left: 181px;
+    position: absolute;
+    top: 73px;
+}
+.home-scene-container.desert.building-2.cd .directory-building { 
+    display: block;
+    left: 519px;
+    position: absolute;
+    top: 107px;
+}
+/* TWO BUILDING DESERT BOOKSTORE AND CLASSROOM*/
+.home-scene-container.desert.building-2.bc .bookstore-building { 
+    display: block;
+    left: 225px;
+    position: absolute;
+    top: 164px;
+}
+.home-scene-container.desert.building-2.bc .classroom-building { 
+    display: block;
+    left: 551px;
+    position: absolute;
+    top: 40px;
+}
+/*DESERT TWO BUILDING BOOKSTORE AND DIRECTORY*/
+.home-scene-container.desert.building-2.bd .bookstore-building { 
+    display: block;
+    left: 225px;
+    position: absolute;
+    top: 164px;
+}
+.home-scene-container.desert.building-2.bd .directory-building { 
+    display: block;
+    left: 519px;
+    position: absolute;
+    top: 107px;
+}
+/*DESERT TWO BUILDING FACULTY AND BOOKSTORE*/
+.home-scene-container.desert.building-2.fb .faculty-building { 
+    display: block;
+    left: 260px;
+    position: absolute;
+    top: 115px;
+}
+.home-scene-container.desert.building-2.fb .bookstore-building { 
+    display: block;
+    left: 598px;
+    position: absolute;
+    top: 133px;
+}
+/*DESERT TWO BUILDING FACULTY AND CLASSROOM*/
+.home-scene-container.desert.building-2.fc .faculty-building { 
+    display: block;
+    left: 260px;
+    position: absolute;
+    top: 115px;
+}
+.home-scene-container.desert.building-2.fc .classroom-building { 
+    display: block;
+    left: 551px;
+    position: absolute;
+    top: 40px;
+}
+/*DESERT TWO BUILDING FACULTY AND DIRECTORY*/
+.home-scene-container.desert.building-2.fd .faculty-building { 
+    display: block;
+    left: 247px;
+    position: absolute;
+    top: 169px;
+}
+.home-scene-container.desert.building-2.fd .directory-building { 
+    display: block;
+    left: 519px;
+    position: absolute;
+    top: 107px;
+}
+/*DESERT THREE BUILDING */
+.home-scene-container.desert.building-3 { 
+    background: url('/app_presentation/universitysite/images/structure/home-scenes/edit-scenes/desert/three/desert-building-3.jpg') no-repeat 0 0;
+    width: 1080px;
+    height: 553px;
+}
+/*DESERT three BOOKSTORE CLASSROOM AND DIRECTORY */
+.home-scene-container.desert.building-3.bcd .bookstore-building { 
+    display: block;
+    left: 123px;
+    position: absolute;
+    top: 187px;
+}
+.home-scene-container.desert.building-3.bcd .classroom-building { 
+    display: block;
+    left: 377px;
+    position: absolute;
+    top: 54px;
+}
+.home-scene-container.desert.building-3.bcd .directory-building { 
+    display: block;
+    left: 608px;
+    position: absolute;
+    top: 155px;
+}
+/*DESERT THREE BUILDING, FACULTY BOOKSTORE AND CLASSROOM */
+.home-scene-container.desert.building-3.fbc .faculty-building { 
+    display: block;
+    left: 133px;
+    position: absolute;
+    top: 143px;
+}
+.home-scene-container.desert.building-3.fbc .bookstore-building { 
+    display: block;
+    left: 423px;
+    position: absolute;
+    top: 146px;
+}
+.home-scene-container.desert.building-3.fbc .classroom-building { 
+    display: block;
+    left: 637px;
+    position: absolute;
+    top: 90px;
+}
+/*DESERT THREE BUILDING, FACULTY BOOKSTORE AND DIRECTORY */
+.home-scene-container.desert.building-3.fbd .faculty-building { 
+    display: block;
+    left: 133px;
+    position: absolute;
+    top: 143px;
+}
+.home-scene-container.desert.building-3.fbd .bookstore-building { 
+    display: block;
+    left: 423px;
+    position: absolute;
+    top: 146px;
+}
+.home-scene-container.desert.building-3.fbd .directory-building { 
+    display: block;
+    left: 608px;
+    position: absolute;
+    top: 155px;
+}
+/*DESERT THREE BUILDING, FACULTY CLASSROOM AND DIRECTORY */
+.home-scene-container.desert.building-3.fcd .faculty-building { 
+    display: block;
+    left: 133px;
+    position: absolute;
+    top: 143px;
+}
+.home-scene-container.desert.building-3.fcd .classroom-building { 
+    display: block;
+    left: 377px;
+    position: absolute;
+    top: 54px;
+}
+.home-scene-container.desert.building-3.fcd .directory-building { 
+    display: block;
+    left: 608px;
+    position: absolute;
+    top: 155px;
+}
+/*DESERT FOUR BUILDING SCENE, Faculty Bookstore, Classroom, Directory*/
+.home-scene-container.building-4 { 
+    background: url("/app_presentation/universitysite/images/structure/home-scenes/edit-scenes/desert.jpg") no-repeat scroll 0 0 transparent;
+    top: 141px;    
+}
+/*DESERT FOUR BUILDINGS, faculty */
+.home-scene-container.building-4.fbcd .faculty-building {
+    background: url("/app_presentation/universitysite/images/structure/buildings/desert/faculty.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 170px;
+    left: 27px;
+    position: absolute;
+    top: 174px;
+    width: 270px;    
+}
+/*DESERT FOUR BUILDINGS, bookstore*/
+.home-scene-container.building-4.fbcd .bookstore-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/desert/bookstore.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 111px;
+    left: 312px;
+    position: absolute;
+    top: 157px;
+    width: 190px;    
+}
+/*DESERT FOUR BUILDINGS, classroom*/
+.home-scene-container.building-4.fbcd .classroom-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/desert/classroom.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 203px;
+    left: 517px;
+    position: absolute;
+    top: 45px;
+    width: 275px;    
+}
+/*DESERT FOUR BUILDINGS, directory*/
+.home-scene-container.building-4.fbcd .directory-building {
+    background: url("/app_presentation/universitysite/images/structure/buildings/desert/directory.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 161px;
+    left: 665px;
+    position: absolute;
+    top: 180px;
+    width: 303px;
+}
+/*MOUNTAINS ONE BUILDING */
+.home-scene-container.mountain.building-1 { 
+    background: url('/app_presentation/universitysite/images/structure/home-scenes/edit-scenes/mountain/one/mountain-building-1.jpg') no-repeat 0 0;
+    width: 1080px;
+    height: 568px;
+}
+/*MOUNTAIN ONE BUILDING, bookstore*/
+.home-scene-container.mountain.building-1.b .bookstore-building { 
+    display: block;
+    left: 413px;
+    position: absolute;
+    top: 115px;
+}
+/* classroom */
+.home-scene-container.mountain.building-1.c .classroom-building { 
+    display: block;
+    left: 371px;
+    position: absolute;
+    top: 55px;
+}
+/*directory*/
+.home-scene-container.mountain.building-1.d .directory-building {
+    display: block;
+    left: 339px;
+    position: absolute;
+    top: 132px;
+}
+/*faculty*/
+.home-scene-container.mountain.building-1.f .faculty-building { 
+    display: block;
+    left: 442px;
+    position: absolute;
+    top: 127px;
+}
+/*MOUNTAINS TWO BUILDINGS*/
+.home-scene-container.mountain.building-2 { 
+    background: url('/app_presentation/universitysite/images/structure/home-scenes/edit-scenes/mountain/two/mountain-building-2.jpg') no-repeat 0 0;
+    width: 1080px;
+    height: 568px;
+}
+/*MOUNTAINS TWO BUILDING, BOOKSTORE AND CLASSROOM */
+.home-scene-container.mountain.building-2.bc .bookstore-building { 
+    display: block;
+    left: 222px;
+    position: absolute;
+    top: 148px;
+}
+.home-scene-container.mountain.building-2.bc .classroom-building { 
+    display: block;
+    left: 550px;
+    position: absolute;
+    top: 61px;
+}
+/*MOUNTAINS TWO BUILDING, BOOKSTORE AND DIRECTORY */
+.home-scene-container.mountain.building-2.bd .bookstore-building { 
+    display: block;
+    left: 222px;
+    position: absolute;
+    top: 148px;
+}
+.home-scene-container.mountain.building-2.bd .directory-building { 
+    display: block;
+    left: 522px;
+    position: absolute;
+    top: 137px;
+}
+/*MOUNTAINS TWO BUILDING, CLASSROOM AND DIRECTORY */
+.home-scene-container.mountain.building-2.cd .classroom-building { 
+    display: block;
+    left: 175px;
+    position: absolute;
+    top: 91px;
+}
+.home-scene-container.mountain.building-2.cd .directory-building { 
+    display: block;
+    left: 522px;
+    position: absolute;
+    top: 137px;
+}
+/*MOUNTAINS TWO BUILDING, FACULTY AND BOOKSTORE */
+.home-scene-container.mountain.building-2.fb .faculty-building { 
+    display: block;
+    left: 247px;
+    position: absolute;
+    top: 169px;
+}
+.home-scene-container.mountain.building-2.fb .bookstore-building { 
+    display: block;
+    left: 595px;
+    position: absolute;
+    top: 117px;
+}
+/*MOUNTAINS TWO BUILDING, FACULTY AND CLASSROOM */
+.home-scene-container.mountain.building-2.fc .faculty-building { 
+    display: block;
+    left: 175px;
+    position: absolute;
+    top: 334px;
+}
+.home-scene-container.mountain.building-2.fc .classroom-building { 
+    display: block;
+    height: 224px;
+    background: red;
+    position: absolute;
+    top: 58px;
+    width: 275px;
+}
+/*MOUNTAINS TWO BUILDING, FACULTY AND DIRECTORY */
+.home-scene-container.mountain.building-2.fd .faculty-building { 
+    display: block;
+    left: 251px;
+    position: absolute;
+    top: 166px;
+}
+.home-scene-container.mountain.building-2.fd .directory-building { 
+    display: block;
+    left: 522px;
+    position: absolute;
+    top: 137px;
+}
+/*MOUNTAIN THREE BUILDING */
+.home-scene-container.mountain.building-3 { 
+    background: url('/app_presentation/universitysite/images/structure/home-scenes/edit-scenes/mountain/three/mountain-building-3.jpg') no-repeat 0 0;
+    width: 1080px;
+    height: 750px;
+}
+/*MOUNTAIN THREE BUILDING, FACULTY, CLASSROOM, DIRECTORY*/
+.home-scene-container.mountain.building-3.fcd .faculty-building { 
+    left: 149px;
+    position: absolute;
+    top: 188px;
+}
+.home-scene-container.mountain.building-3.fcd .classroom-building { 
+    left: 376px;
+    position: absolute;
+    top: 71px;
+}
+.home-scene-container.mountain.building-3.fcd .directory-building { 
+    left: 607px;
+    position: absolute;
+    top: 186px;
+}
+/*MOUNTAIN THREE BUILDING, BOOKSTORE, CLASSROOM, DIRECTORY*/
+.home-scene-container.mountain.building-3.bcd .bookstore-building { 
+    left: 134px;
+    position: absolute;
+    top: 170px;
+}
+.home-scene-container.mountain.building-3.bcd .classroom-building { 
+    left: 376px;
+    position: absolute;
+    top: 71px;
+}
+.home-scene-container.mountain.building-3.bcd .directory-building { 
+    left: 607px;
+    position: absolute;
+    top: 186px;
+}
+/*MOUNTAIN THREE BUILDING, BOOKSTORE, CLASSROOM, DIRECTORY*/
+.home-scene-container.mountain.building-3.fbd .faculty-building { 
+    left: 149px;
+    position: absolute;
+    top: 188px;
+}
+.home-scene-container.mountain.building-3.fbd .bookstore-building { 
+    left: 420px;
+    position: absolute;
+    top: 131px;
+}
+.home-scene-container.mountain.building-3.fbd .directory-building { 
+    left: 607px;
+    position: absolute;
+    top: 186px;
+}
+/*MOUNTAIN THREE BUILDING, FACULTY, BOOKSTORE, CLASSROOM*/
+.home-scene-container.mountain.building-3.fbc .faculty-building { 
+    left: 149px;
+    position: absolute;
+    top: 188px;
+}
+.home-scene-container.mountain.building-3.fbc .bookstore-building { 
+    left: 420px;
+    position: absolute;
+    top: 131px;
+}
+.home-scene-container.mountain.building-3.fbc .classroom-building { 
+    left: 637px;
+    position: absolute;
+    top: 109px;
+}
+/*MOUNTAIN FOUR BUILDING, FACULTY BOOKSTORE, CLASSROOM, DIRECTORY*/
+.home-scene-container.mountain.building-4 { 
+    background: url("/app_presentation/universitysite/images/structure/home-scenes/edit-scenes/mountains.jpg") no-repeat scroll 0 0 transparent;    
+}
+.home-scene-container.mountain.building-4.fbcd .faculty-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/mountain/faculty.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 170px;
+    left: 35px;
+    position: absolute;
+    top: 211px;
+    width: 270px;    
+}
+.home-scene-container.mountain.building-4.fbcd .bookstore-building {
+    background: url("/app_presentation/universitysite/images/structure/buildings/mountain/bookstore.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 170px;
+    left: 314px;
+    position: absolute;
+    top: 137px;
+    width: 190px;    
+}
+.home-scene-container.mountain.building-4.fbcd .classroom-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/mountain/classroom.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 224px;
+    position: absolute;
+    top: 58px;
+    width: 275px;    
+}
+.home-scene-container.mountain.building-4.fbcd .directory-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/mountain/directory.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 161px;
+    left: 667px;
+    position: absolute;
+    top: 200px;
+    width: 303px;    
+}
+/*RAIN FOREST ONE BUILDING */
+.home-scene-container.rainforest.building-1 { 
+    background: url('/app_presentation/universitysite/images/structure/home-scenes/edit-scenes/rainforest/one/rainforest-building-1.jpg') no-repeat 0 0;
+    width: 1080px;
+    height: 570px;
+}
+/*RAIN FOREST ONE BUILDING, bookstore*/
+.home-scene-container.rainforest.building-1.b .bookstore-building {
+    background: url("/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-bookstore-building.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 171px;
+    left: 190px;
+    position: absolute;
+    top: 190px;
+    width: 255px;
+}
+/*RAIN FOREST ONE BUILDING, classroom */
+.home-scene-container.rainforest.building-1.c .classroom-building {
+    background: url("/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-classroom-building.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 175px;
+    left: 90px;
+    position: absolute;
+    top: 153px;
+    width: 400px;
+}
+/*RAIN FOREST ONE BUILDING, directory */
+.home-scene-container.rainforest.building-1.d .directory-building {
+    background: url("/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-directory-building.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 210px;
+    left: 130px;
+    position: absolute;
+    top: 168px;
+    width: 397px;
+}
+/*RAIN FOREST ONE BUILDING, faculty */
+.home-scene-container.rainforest.building-1.f .faculty-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-faculty-building.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 201px;
+    left: 125px;
+    top: 165px;
+    width: 383px;
+}
+/*RAIN FOREST TWO BUILDINGS*/
+.home-scene-container.rainforest.building-2 { 
+    background: url('/app_presentation/universitysite/images/structure/home-scenes/edit-scenes/rainforest/two/rainforest-building-2.jpg') no-repeat 0 0;
+    width: 1080px;
+    height: 750px;
+}
+/*RAIN FOREST TWO BUILDING, BOOKSTORE AND CLASSROOM*/
+.home-scene-container.rainforest.building-2.bc .bookstore-building { 
+    background: url('/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-bookstore-building.png') no-repeat 0 0;
+    width: 255px;
+    height: 171px;
+    display: block;
+    left: 222px;
+    top: 366px;
+    position: absolute;
+}
+.home-scene-container.rainforest.building-2.bc .classroom-building { 
+    background: url('/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-classroom-building.png') no-repeat 0 0;
+    width: 400px;
+    height: 175px;
+    position: absolute;
+    display: block;
+    left: 554px;
+    top: 236px;
+}
+/*RAIN FOREST TWO BUILDING, BOOKSTORE AND DIRECTORY*/
+.home-scene-container.rainforest.building-2.bd .bookstore-building { 
+    background: url('/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-bookstore-building.png') no-repeat 0 0;
+    width: 255px;
+    height: 171px;
+    display: block;
+    position: absolute;
+    left: 222px;
+    top: 366px;
+}
+.home-scene-container.rainforest.building-2.bd .directory-building { 
+    background: url('/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-directory-building.png') no-repeat 0 0; 
+    width: 397px;
+    height: 210px;
+    position: absolute;
+    display: block;
+    left: 519px;
+    top: 298px;
+}
+/*RAIN FOREST TWO BUILDING, CLASSROOM AND DIRECTORY*/
+.home-scene-container.rainforest.building-2.cd .classroom-building { 
+    background: url('/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-classroom-building.png') no-repeat 0 0;
+    width: 400px;
+    height: 175px;
+    position: absolute;
+    display: block;
+    left: 178px;
+    top: 272px;
+}
+.home-scene-container.rainforest.building-2.cd .directory-building { 
+    background: url('/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-directory-building.png') no-repeat 0 0; 
+    width: 397px;
+    height: 210px;
+    position: absolute;
+    display: block;
+    left: 519px;
+    top: 298px;
+}
+/*RAIN FOREST TWO BUILDING, FACULTY AND BOOKSTORE*/
+.home-scene-container.rainforest.building-2.fb .faculty-building { 
+    background: url('/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-faculty-building.png') no-repeat 0 0;
+    width: 383px;
+    height: 201px;
+    display: block;
+    left: 242px;
+    top: 316px;
+}
+.home-scene-container.rainforest.building-2.fb .bookstore-building { 
+    background: url('/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-bookstore-building.png') no-repeat 0 0;
+    width: 255px;
+    height: 171px;
+    display: block;
+    position: absolute;
+    left: 592px;
+    top: 329px;
+}
+/*RAIN FOREST TWO BUILDING, FACULTY AND CLASSROOM*/
+.home-scene-container.rainforest.building-2.fc .faculty-building { 
+    background: url('/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-faculty-building.png') no-repeat 0 0;
+    width: 383px;
+    height: 201px;
+    display: block;
+    position: absolute;
+    left: 242px;
+    top: 316px;
+}
+.home-scene-container.rainforest.building-2.fc .classroom-building { 
+    background: url('/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-classroom-building.png') no-repeat 0 0;
+    width: 400px;
+    height: 175px;
+    position: absolute;
+    display: block;
+    left: 552px;
+    top: 235px;
+}
+/*RAIN FOREST TWO BUILDING, FACULTY AND CLASSROOM*/
+.home-scene-container.rainforest.building-2.fd .faculty-building { 
+    background: url('/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-faculty-building.png') no-repeat 0 0;
+    width: 383px;
+    height: 201px;
+    display: block;
+    position: absolute;
+    left: 242px;
+    top: 316px;
+}
+.home-scene-container.rainforest.building-2.fd .directory-building { 
+    background: url('/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-directory-building.png') no-repeat 0 0; 
+    width: 397px;
+    height: 210px;
+    position: absolute;
+    display: block;
+    left: 519px;
+    top: 298px;
+}
+/*RAINFOREST THREE BUILDINGS*/
+.home-scene-container.rainforest.building-3 { 
+    background: url('/app_presentation/universitysite/images/structure/home-scenes/edit-scenes/rainforest/three/rainforest-building-3.jpg') no-repeat 0 0;
+    width: 1080px;
+    height: 570px;
+}
+/*RAINFOREST THREE BUILDING, BOOKSTORE, CLASSROOM, DIRECTORY*/
+.home-scene-container.rainforest.building-3.bcd .bookstore-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-bookstore-building.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 171px;
+    left: 94px;
+    position: absolute;
+    top: 220px;
+    width: 255px;
+}
+.home-scene-container.rainforest.building-3.bcd .classroom-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-classroom-building.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 175px;
+    left: 469px;
+    position: absolute;
+    top: 130px;
+    width: 400px;
+}
+.home-scene-container.rainforest.building-3.bcd .directory-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-directory-building.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 210px;
+    left: 669px;
+    position: absolute;
+    top: 204px;
+    width: 397px;
+}
+/*RAINFOREST THREE FACULTY, BOOKSTORE, CLASSROOM */
+.home-scene-container.rainforest.building-3.fbc .faculty-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-faculty-building.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 201px;
+    left: 33px;
+    position: absolute;
+    top: 200px;
+    width: 383px;
+}
+.home-scene-container.rainforest.building-3.fbc .bookstore-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-bookstore-building.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 171px;
+    left: 567px;
+    position: absolute;
+    top: 154px;
+    width: 255px;
+}
+.home-scene-container.rainforest.building-3.fbc .classroom-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-classroom-building.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 175px;
+    left: 629px;
+    position: absolute;
+    top: 188px;
+    width: 400px;
+}
+/*RAINFOREST THREE FACULTY, BOOKSTORE, DIRECTORY*/
+.home-scene-container.rainforest.building-3.fbd .faculty-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-faculty-building.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 201px;
+    left: 33px;
+    position: absolute;
+    top: 200px;
+    width: 383px;
+}
+.home-scene-container.rainforest.building-3.fbd .bookstore-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-bookstore-building.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 171px;
+    left: 567px;
+    position: absolute;
+    top: 154px;
+    width: 255px;
+}
+.home-scene-container.rainforest.building-3.fbd .directory-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-directory-building.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 210px;
+    left: 669px;
+    position: absolute;
+    top: 204px;
+    width: 397px;
+}
+/*RAINFOREST THREE FACULTY, CLASSROOM, DIRECTORY*/
+.home-scene-container.rainforest.building-3.fcd .faculty-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-faculty-building.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 201px;
+    left: 33px;
+    position: absolute;
+    top: 200px;
+    width: 383px;
+}
+.home-scene-container.rainforest.building-3.fcd .classroom-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-classroom-building.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 175px;
+    left: 469px;
+    position: absolute;
+    top: 130px;
+    width: 400px;
+}
+.home-scene-container.rainforest.building-3.fcd .directory-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-directory-building.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 210px;
+    left: 669px;
+    position: absolute;
+    top: 204px;
+    width: 397px;
+}
+/*RAIN FOREST TWO BUILDINGS*/
+.home-scene-container.rainforest.building-2 { 
+    background: url('/app_presentation/universitysite/images/structure/home-scenes/edit-scenes/rainforest/two/rainforest-building-2.jpg') no-repeat 0 0;
+    width: 1080px;
+    height: 568px;
+}
+/*RAIN FOREST TWO BUILDING, BOOKSTORE AND CLASSROOM*/
+.home-scene-container.rainforest.building-2.bc .bookstore-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-bookstore-building.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 171px;
+    left: 92px;
+    position: absolute;
+    top: 218px;
+    width: 255px;
+}
+.home-scene-container.rainforest.building-2.bc .classroom-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-classroom-building.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 175px;
+    left: 468px;
+    position: absolute;
+    top: 131px;
+    width: 400px;
+    width: 400px;
+}
+/*RAIN FOREST TWO BUILDING, BOOKSTORE AND CLASSROOM*/
+.home-scene-container.rainforest.building-2.bd .bookstore-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-bookstore-building.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 171px;
+    left: 201px;
+    position: absolute;
+    top: 207px;
+    width: 255px;
+}
+.home-scene-container.rainforest.building-2.bd .directory-building { 
+    background: url('/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-directory-building.png') no-repeat 0 0; 
+    width: 397px;
+    height: 210px;
+    position: absolute;
+    display: block;
+    left: 520px;
+    top: 135px;
+}
+/*RAIN FOREST TWO BUILDING, CLASSROOM AND DIRECTORY*/
+.home-scene-container.rainforest.building-2.cd .classroom-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-classroom-building.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 175px;
+    left: 94px;
+    position: absolute;
+    top: 167px;
+    width: 400px;
+}
+.home-scene-container.rainforest.building-2.cd .directory-building { 
+    background: url('/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-directory-building.png') no-repeat 0 0; 
+    width: 397px;
+    height: 210px;
+    position: absolute;
+    display: block;
+    left: 520px;
+    top: 135px;
+}
+/*RAIN FOREST TWO BUILDING, FACULTY AND BOOKSTORE*/
+.home-scene-container.rainforest.building-2.fb .faculty-building { 
+    background: url('/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-faculty-building.png') no-repeat 0 0;
+    width: 383px;
+    height: 201px;
+    display: block;
+    position: absolute;
+    left: 242px;
+    top: 157px;
+}
+.home-scene-container.rainforest.building-2.fb .bookstore-building { 
+    background: url('/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-bookstore-building.png') no-repeat 0 0;
+    width: 255px;
+    height: 171px;
+    position: absolute;
+    display: block;
+    left: 595px;
+    top: 170px;
+}
+/*RAIN FOREST TWO BUILDING, FACULTY AND CLASSROOM*/
+.home-scene-container.rainforest.building-2.fc .faculty-building { 
+    background: url('/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-faculty-building.png') no-repeat 0 0;
+    width: 383px;
+    height: 201px;
+    display: block;
+    position: absolute;
+    left: 242px;
+    top: 157px;
+}
+.home-scene-container.rainforest.building-2.fc .classroom-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-classroom-building.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 175px;
+    left: 469px;
+    position: absolute;
+    top: 129px;
+    width: 400px;
+}
+/*RAIN FOREST TWO BUILDING, FACULTY AND CLASSROOM*/
+.home-scene-container.rainforest.building-2.fd .faculty-building { 
+    background: url('/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-faculty-building.png') no-repeat 0 0;
+    width: 383px;
+    height: 201px;
+    display: block;
+    position: absolute;
+    left: 242px;
+    top: 157px;
+}
+.home-scene-container.rainforest.building-2.fd .directory-building { 
+    background: url('/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-directory-building.png') no-repeat 0 0; 
+    width: 397px;
+    height: 210px;
+    position: absolute;
+    display: block;
+    left: 520px;
+    top: 135px;
+}
+/*RAINFOREST SCENE, FOUR BUILDING*/
+.home-scene-container.rainforest.building-4 { 
+    background: url('/App_Presentation/UniversitySite/images/structure/home-scenes/edit-scenes/rainforest.jpg') no-repeat;
+    top: 146px;    
+}
+/*RAINFOREST SCENE, faculty bookstore classroom directory */
+.home-scene-container.rainforest.building-4.fbcd .faculty-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-faculty-building.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 201px;
+    left: 6px;
+    position: absolute;
+    top: 216px;
+    width: 383px;   
+}
+.home-scene-container.rainforest.building-4.fbcd .bookstore-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-bookstore-building.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 171px;
+    left: 297px;
+    position: absolute;
+    top: 187px;
+    width: 255px;
+}
+.home-scene-container.rainforest.building-4.fbcd .classroom-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-classroom-building.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 175px;
+    left: 437px;
+    position: absolute;
+    top: 127px;
+    width: 400px;    
+}
+.home-scene-container.rainforest.building-4.fbcd .directory-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-directory-building.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 210px;
+    left: 634px;
+    position: absolute;
+    top: 211px;
+    width: 368px; 
+}
+/*BEACH SCENE, ONE BUILDING*/
+.home-scene-container.beach.building-1 { 
+    background: url('/app_presentation/universitysite/images/structure/home-scenes/edit-scenes/beach/one/beach-building-1.jpg') no-repeat 0 0;
+    width: 1080px;
+    height: 750px;
+}
+/*BEACH SCENE, ONE BUILDING, Bookstore  */
+.home-scene-container.beach.building-1.b .bookstore-building {
+    background: url('/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/beach-bookstore-building.png') no-repeat 0 0;
+    width: 237px;
+    height: 179px;
+    display: block;
+    left: 291px;
+    position: absolute;
+    top: 149px;
+    
+}
+/*BEACH SCENE, ONE BUILDING, classroom */
+.home-scene-container.beach.building-1.c .classroom-building {
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/beach-classroom-building-position-2.png") no-repeat scroll 0 0 transparent;
+    height: 222px;
+    left: 214px;
+    position: absolute;
+    top: 95px;
+    width: 329px;
+}
+/*BEACH SCENE, ONE BUILDING, directory */
+.home-scene-container.beach.building-1.d .directory-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/beach-directory-building.png") no-repeat scroll 0 0 transparent;
+    height: 248px;
+    left: 623px;
+    position: absolute;
+    top: 77px;
+    width: 311px;
+}
+/*BEACH SCENE, ONE BUILDING, faculty */
+.home-scene-container.beach.building-1.f .faculty-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/beach-faculty-building.png") no-repeat scroll 0 0 transparent;
+    height: 253px;
+    left: 244px;
+    position: absolute;
+    top: 89px;
+    width: 335px;
+}
+/*BEACH SCENE, TWO BUILDINGS */
+.home-scene-container.beach.building-2 { 
+    background: url('/app_presentation/universitysite/images/structure/home-scenes/edit-scenes/beach/two/beach-building-2.jpg') no-repeat 0 0;
+    width: 1080px;
+    height: 750px;
+}
+/*BEACH SCENE TWO BUILDINGS, BOOKSTORE, CLASSROOM*/
+.home-scene-container.beach.building-2.bc .bookstore-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/beach-bookstore-building.png") no-repeat scroll 0 0 transparent;
+    height: 179px;
+    left: 231px;
+    position: absolute;
+    top: 149px;
+    width: 237px;
+}
+.home-scene-container.beach.building-2.bc .classroom-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/beach-classroom-building.png") no-repeat scroll 0 0 transparent;
+    height: 223px;
+    left: 537px;
+    position: absolute;
+    top: 89px;
+    width: 329px;
+}
+/*BEACH SCENE TWO BUILDINGS, FACULTY, CLASSROOM*/
+.home-scene-container.beach.building-2.fc .faculty-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/beach-faculty-building.png") no-repeat scroll 0 0 transparent;
+    height: 335px;
+    left: 187px;
+    position: absolute;
+    top: 292px;
+    width: 360px;
+}
+.home-scene-container.beach.building-2.fc .classroom-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/beach-classroom-building.png") no-repeat scroll 0 0 transparent;
+    height: 223px;
+    left: 537px;
+    position: absolute;
+    top: 89px;
+    width: 329px;
+}
+/*BEACH SCENE TWO BUILDINGS, FACULTY, CLASSROOM*/
+.home-scene-container.beach.building-2.fc .faculty-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/beach-faculty-building.png") no-repeat scroll 0 0 transparent;
+    height: 335px;
+    left: 187px;
+    position: absolute;
+    top: 95px;
+    width: 360px;
+}
+.home-scene-container.beach.building-2.fc .classroom-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/beach-classroom-building.png") no-repeat scroll 0 0 transparent;
+    height: 223px;
+    left: 537px;
+    position: absolute;
+    top: 89px;
+    width: 329px;
+}
+/*BEACH SCENE TWO BUILDINGS, CLASSROOM, DIRECTORY*/
+.home-scene-container.beach.building-2.cd .classroom-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/beach-classroom-building-position-2.png") no-repeat scroll 0 0 transparent;
+    height: 335px;
+    left: 170px;
+    position: absolute;
+    top: 93px;
+    width: 360px;
+}
+.home-scene-container.beach.building-2.cd .directory-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/beach-directory-building.png") no-repeat scroll 0 0 transparent;
+    height: 248px;
+    left: 553px;
+    position: absolute;
+    top: 84px;
+    width: 329px;
+}
+/*BEACH SCENE TWO BUILDINGS, BOOKSTORE, DIRECTORY*/
+.home-scene-container.beach.building-2.bd .bookstore-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/beach-bookstore-building.png") no-repeat scroll 0 0 transparent;
+    height: 179px;
+    left: 231px;
+    position: absolute;
+    top: 149px;
+    width: 237px;
+}
+.home-scene-container.beach.building-2.bd .directory-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/beach-directory-building.png") no-repeat scroll 0 0 transparent;
+    height: 248px;
+    left: 553px;
+    position: absolute;
+    top: 83px;
+    width: 329px;
+}
+/*BEACH SCENE TWO BUILDINGS, FACULTY, BOOKSTORE*/
+.home-scene-container.beach.building-2.fb .faculty-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/beach-faculty-building.png") no-repeat scroll 0 0 transparent;
+    height: 253px;
+    left: 187px;
+    position: absolute;
+    top: 96px;
+    width: 335px;
+}
+.home-scene-container.beach.building-2.fb .bookstore-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/beach-bookstore-building-position-2.png") no-repeat scroll 0 0 transparent;
+    height: 248px;
+    left: 595px;
+    position: absolute;
+    top: 130px;
+    width: 329px;
+}
+/*BEACH SCENE TWO BUILDINGS, FACULTY, DIRECTORY*/
+.home-scene-container.beach.building-2.fd .faculty-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/beach-faculty-building.png") no-repeat scroll 0 0 transparent;
+    height: 253px;
+    left: 187px;
+    position: absolute;
+    top: 96px;
+    width: 335px;
+}
+.home-scene-container.beach.building-2.fd .directory-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/beach-directory-building.png") no-repeat scroll 0 0 transparent;
+    height: 248px;
+    left: 553px;
+    position: absolute;
+    top: 83px;
+    width: 329px;
+}
+/*BEACH SCENE, THREE BUILDINGS */
+.home-scene-container.beach.building-3 { 
+    background: url('/app_presentation/universitysite/images/structure/home-scenes/edit-scenes/beach/three/beach-building-3.jpg') no-repeat 0 0;
+    width: 1080px;
+    height: 750px;
+}
+/*BEACH SCENE THREE BUILDINGS, BOOKSTORE, CLASSROOM, DIRECTORY*/
+.home-scene-container.beach.building-3.bcd .bookstore-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/three-buildings/bookstore-building.png") no-repeat scroll 0 0 transparent;
+    height: 179px;
+    left: 175px;
+    position: absolute;
+    top: 200px;
+    width: 265px;  
+}
+.home-scene-container.beach.building-3.bcd .classroom-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/three-buildings/classroom-building.png") no-repeat scroll 0 0 transparent;
+    height: 223px;
+    left: 377px;
+    position: absolute;
+    top: 89px;
+    width: 329px;
+}
+.home-scene-container.beach.building-3.bcd .directory-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/three-buildings/directory-building.png") no-repeat scroll 0 0 transparent;
+    height: 252px;
+    position: absolute;
+    right: 62px;
+    top: 163px;
+    width: 339px;
+}
+/*BEACH SCENE THREE BUILDINGS, FACULTY, BOOKSTORE, DIRECTORY*/
+.home-scene-container.beach.building-3.fbd .faculty-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/three-buildings/faculty-building-position-2.png") no-repeat scroll 0 0 transparent;
+    height: 253px;
+    left: 49px;
+    position: absolute;
+    top: 177px;
+    width: 392px;
+}
+.home-scene-container.beach.building-3.fbd .bookstore-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/three-buildings/bookstore-building-position-2.png") no-repeat scroll 0 0 transparent;
+    height: 179px;
+    left: 414px;
+    position: absolute;
+    top: 126px;
+    width: 265px;
+}
+.home-scene-container.beach.building-3.fbd .directory-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/three-buildings/directory-building.png") no-repeat scroll 0 0 transparent;
+    height: 252px;
+    position: absolute;
+    right: 65px;
+    top: 158px;
+    width: 339px;
+}
+/*BEACH SCENE THREE BUILDINGS, FACULTY, BOOKSTORE, CLASSROOM*/
+.home-scene-container.beach.building-3.fbc .faculty-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/three-buildings/faculty-building-position-2.png") no-repeat scroll 0 0 transparent;
+    height: 253px;
+    left: 49px;
+    position: absolute;
+    top: 177px;
+    width: 392px;
+}
+.home-scene-container.beach.building-3.fbc .bookstore-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/three-buildings/bookstore-building-position-2.png") no-repeat scroll 0 0 transparent;
+    height: 179px;
+    left: 414px;
+    position: absolute;
+    top: 126px;
+    width: 265px;
+}
+.home-scene-container.beach.building-3.fbc .classroom-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/three-buildings/classroom-building-position-2.png") no-repeat scroll 0 0 transparent;
+    height: 252px;
+    position: absolute;
+    right: 120px;
+    top: 107px;
+    width: 347px;
+}
+/*BEACH SCENE THREE BUILDINGS, FACULTY, CLASSROOM, DIRECTORy*/
+.home-scene-container.beach.building-3.fcd .faculty-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/three-buildings/faculty-building-position-2.png") no-repeat scroll 0 0 transparent;
+    height: 253px;
+    left: 49px;
+    position: absolute;
+    top: 177px;
+    width: 392px;
+}
+.home-scene-container.beach.building-3.fcd .classroom-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/three-buildings/classroom-building.png") no-repeat scroll 0 0 transparent;
+    height: 223px;
+    left: 377px;
+    position: absolute;
+    top: 89px;
+    width: 329px;
+}
+.home-scene-container.beach.building-3.fcd .directory-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/three-buildings/directory-building.png") no-repeat scroll 0 0 transparent;
+    height: 252px;
+    position: absolute;
+    right: 65px;
+    top: 158px;
+    width: 339px;
+}
+/*BEACH SCENE FOUR BUILDINGS*/
+.home-scene-container.beach.building-4 { 
+    background: url('/App_Presentation/UniversitySite/images/structure/home-scenes/edit-scenes/beach.jpg') no-repeat;
+    top: 141px;
+}
+/*BEACH SCENE ONE BUILDING, faculty bookstore classroom directory*/
+.home-scene-container.beach.building-4.fbcd .faculty-building { 
+    background: url("/App_Presentation/UniversitySite/images/structure/buildings/beach/faculty.png") no-repeat scroll 0 0 transparent;
+    height: 170px;
+    left: 35px;
+    position: absolute;
+    top: 190px;
+    width: 270px;    
+}
+.home-scene-container.beach.building-4.fbcd .bookstore-building { 
+    background: url("/App_Presentation/UniversitySite/images/structure/buildings/beach/bookstore.png") no-repeat scroll 0 0 transparent;
+    height: 122px;
+    left: 312px;
+    position: absolute;
+    top: 138px;
+    width: 190px;
+}
+.home-scene-container.beach.building-4.fbcd .classroom-building { 
+    background: url("/App_Presentation/UniversitySite/images/structure/buildings/beach/classroom.png") no-repeat scroll 0 0 transparent;
+    height: 203px;
+    left: 510px;
+    position: absolute;
+    top: 96px;
+    width: 275px;    
+}
+.home-scene-container.beach.building-4.fbcd .directory-building { 
+    background: url("/App_Presentation/UniversitySite/images/structure/buildings/beach/directory.png") no-repeat scroll 0 0 transparent;
+    height: 161px;
+    left: 672px;
+    position: absolute;
+    top: 185px;
+    width: 303px;    
+}
+/*DESERT SCENE ONE BUILDING*/
+.home-scene-container.desert.building-1 { 
+    background: url('/app_presentation/universitysite/images/structure/home-scenes/edit-scenes/desert/one/desert-building-1.jpg') no-repeat 0 0;  
+    width: 1080px;
+    height: 553px;
+    }
+
+
+/*DESERT SCENE ONE BUILDING, Bookstore */
+.home-scene-container.desert.building-1.b .bookstore-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/desert/bookstore.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 111px;
+    left: 420px;
+    position: absolute;
+    top: 156px;
+    width: 190px;
+}
+/*DESERT SCENE ONE BUILDING, Directory*/
+.home-scene-container.desert.building-1.d .directory-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/desert/directory.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 161px;
+    left: 346px;
+    position: absolute;
+    top: 128px;
+    width: 303px;
+}
+/*DESERT SCENE ONE BUILDING, classroom */
+.home-scene-container.desert.building-1.c .classroom-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/desert/classroom.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 203px;
+    left: 375px;
+    position: absolute;
+    top: 260px;
+    width: 275px;
+}
+/*DESERT SCENE ONE BUILDING, faculty building */
+.home-scene-container.desert.building-1.c .classroom-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/desert/classroom.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 203px;
+    left: 375px;
+    position: absolute;
+    top: 63px;
+    width: 275px;
+}
+.home-scene-container.desert.building-1.f .faculty-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/desert/faculty.png") no-repeat scroll 0 0 transparent;
+    height: 170px;
+    left: 441px;
+    position: absolute;
+    top: 114px;
+    width: 270px;
+}

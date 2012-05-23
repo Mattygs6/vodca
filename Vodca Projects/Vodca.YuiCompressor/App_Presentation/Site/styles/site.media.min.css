@@ -1,0 +1,3278 @@
+/** UTC Date: 5/23/2012 4:21:05 PM
+ *  Summary:
+ *      home.css => [Action: Compressed ],[Modified: 5/23/2012 4:06:41 PM ],
+ *      homepage.css => [Action: Compressed ],[Modified: 5/23/2012 4:06:41 PM ],
+ */
+
+/* home.css */
+/* edit homepage styles */
+
+
+/* scenes */
+.edit-scene-container
+{
+    width: 1008px;
+    height: 582px;
+    position: relative;
+    top: 141px;
+    left: -24px;
+}
+
+.edit-scene-container.desert
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/home-scenes/edit-scenes/desert.jpg') no-repeat;
+    top: 141px;
+    height: 539px;
+}
+
+.edit-scene-container.mountain
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/home-scenes/edit-scenes/mountains.jpg') no-repeat;
+    height: 560px;
+}
+
+.edit-scene-container.beach
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/home-scenes/edit-scenes/beach.jpg') no-repeat;
+    top: 141px;
+    height: 544px;
+}
+
+.edit-scene-container.rainforest
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/home-scenes/edit-scenes/rainforest.jpg') no-repeat;
+    top: 141px;
+    height: 575px;
+}
+
+/* edit nav */
+.edit-menu-container
+{
+    position: absolute;
+    left: 0;
+    top: 180px;
+    z-index: 999;
+    width: 175px;
+    display: none;
+}
+
+.edit-menu-container h3
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/edit-accordion-sprite.png') no-repeat -5px -96px;
+    height: 31px;
+    width: 163px;
+    padding: 20px 0 0 10px;
+    cursor: pointer;
+    float: left;
+}
+
+.edit-menu-container h3.rounded-top
+{
+    background-position: -5px -43px;
+}
+
+.edit-menu-container h3.rounded-bottom
+{
+    background-position: -5px -149px;
+}
+
+.edit-menu-container h3.rounded-bottom.ui-state-active
+{
+    background-position: -5px -96px;
+}
+
+.edit-menu-container h3 a
+{
+    font-family: 'Open Sans' , helvetica, sans-serif;
+    text-transform: capitalize;
+    font-weight: 800;
+    color: #008ad7;
+    font-size: 85%;
+    text-shadow: 1px 1px 0 #fff;
+    text-decoration: none;
+}
+
+.edit-menu-container .accordion-content
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/edit-accordion-sprite.png') no-repeat -182px -14px;
+    float: left;
+    width: 174px;
+    height: 183px;
+}
+
+.edit-menu-container .accordion-content.buildings
+{
+    height: 158px;
+}
+
+.edit-menu-container .accordion-content.last
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/edit-accordion-sprite.png') no-repeat -364px -16px;
+    height: 335px;
+}
+
+.edit-menu-container .accordion-content .features-container
+{
+    overflow: scroll;
+    height: 183px;
+}
+
+.edit-menu-container .icon-row
+{
+    float: left;
+    width: 153px;
+    margin: 0;
+    height: 73px;
+    padding: 0 0 5px 5px;
+}
+
+.accordion-content .x-divider
+{
+    height: 1px;
+    width: 172px;
+    background: #adadad;
+    border-bottom: 1px solid #dedede;
+    float: left;
+    margin: 0;
+}
+
+.accordion-content.last .x-divider
+{
+    width: 156px;
+}
+
+.accordion-content .scene-list .x-divider
+{
+    width: 172px;
+    margin: 10px 0;
+}
+
+.accordion-content .y-divider
+{
+    height: 78px;
+    width: 1px;
+    background: #adadad;
+    border-left: 1px solid #dedede;
+    float: left;
+}
+
+.accordion-content.last .y-divider
+{
+    height: 78px;
+    width: 1px;
+    background: #adadad;
+    border-left: 1px solid #fff;
+    float: left;
+    margin: 0;
+}
+
+.edit-menu-container .feature-icon-container
+{
+    width: 75px;
+    float: left;
+    text-align: center;
+}
+
+.edit-menu-container .feature-icon-container img
+{
+    cursor: pointer;
+}
+
+.edit-menu-container .save-btn
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/close-save-btn.png') no-repeat;
+    width: 21px;
+    height: 173px;
+    position: absolute;
+    right: -19px;
+    top: 10px;
+    z-index: -1;
+}
+
+.edit-menu-container .building-icon-container
+{
+    width: 75px;
+    float: left;
+    text-align: center;
+}
+
+.edit-menu-container .building-icon-container img
+{
+    cursor: pointer;
+}
+
+.building-helper
+{
+    z-index: 999999;
+}
+
+.edit-menu-container h4
+{
+    font-family: 'Open Sans' , helvetica, sans-serif;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #474747;
+    font-size: 70%;
+    text-shadow: 0 1px 0 #fff;
+    text-align: center;
+    margin: -5px 0 0 0;
+}
+
+
+.edit-menu-container h3 .ui-icon
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/edit-accordion-sprite.png') no-repeat -11px -13px;
+    height: 21px;
+    width: 21px;
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+.edit-menu-container h3 .ui-icon.ui-icon-triangle-1-e
+{
+    background-position: -11px -13px;
+}
+
+.edit-menu-container h3 .ui-icon.ui-icon-triangle-1-s
+{
+    background-position: -44px -13px;
+}
+
+.scene-list
+{
+    margin: 10px 0 0 0;
+}
+
+.scene-list li
+{
+    margin: 10px 0;
+}
+
+.scene-list .jqTransformRadioWrapper
+{
+    margin: 5px 2px 0 10px;
+}
+
+.scene-list label
+{
+    color: #474747;
+    float: left;
+    font-family: 'Open Sans' ,sans-serif;
+    font-size: 85%;
+    font-weight: 600;
+    margin: 7px 0 0 5px;
+    text-shadow: 0 1px 0 #FFFFFF;
+    text-transform: capitalize;
+}
+
+.edit-menu-container .accordion-shadow
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/edit-accordion-sprite.png') no-repeat -362px 0;
+    width: 173px;
+    height: 12px;
+    position: absolute;
+    z-index: 5;
+}
+
+/* scrollbar CSS */
+
+.scroll-pane
+{
+    height: 180px;
+    position: relative;
+    width: 175px;
+}
+
+.scroll-content
+{
+    width: 175px;
+    height: 180px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.scroll-bar-container
+{
+    height: 125px;
+    position: absolute;
+    right: 11px;
+    bottom: 20px;
+}
+.scroll-bar-container .ui-slider
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/scroll-bg.png') no-repeat 0 0;
+    border: 0;
+    height: 125px;
+    width: 10px;
+}
+.scroll-bar-container .ui-handle-helper-parent
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: yellow; /*margin: 0 auto; */
+}
+.scroll-bar-container .ui-slider-handle
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/scroll-icon.png') no-repeat 0 0;
+    left: -1px;
+    height: 41px;
+    width: 12px;
+    position: absolute;
+    margin-bottom: -1em;
+}
+.scroll-bar-container .ui-slider-handle .ui-icon
+{
+    /* margin: -8px auto 0; */
+    position: relative;
+    left: 50%;
+}
+
+/* dragging + dropping styles */
+
+.edit-scene-container.ui-state-hover
+{
+    opacity: .5;
+}
+
+.carousel.ui-state-hover
+{
+    background-position: 0 -83px;
+}
+
+/* custom select box styles */
+
+.gi-custom-select
+{
+    width: 104px;
+    height: 19px;
+    background: url('/App_Presentation/UniversitySite/images/structure/drop-solid.png') no-repeat;
+    font-family: arial;
+    cursor: pointer;
+    position: relative;
+    float: left;
+    margin: 1px 0 0 5px;
+}
+
+.gi-custom-select.small
+{
+    width: 33px;
+    background: url('/App_Presentation/UniversitySite/images/structure/feature-drop-small.png') no-repeat;
+    margin: -1px 0 0;
+}
+.gi-custom-select p
+{
+    margin: 0;
+    padding: 2px 0 0 5px;
+    color: #575757;
+    font-family: 'Open Sans' ,helvetica,sans-serif;
+    font-size: 65%;
+    font-weight: 600;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+ul.gi-custom-select-options
+{
+    width: 102px;
+    top: 18px;
+    left: 0;
+    list-style: none;
+    font-family: arial;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    border-top: solid #dbdbdb 1px;
+    border-right: solid #b6b6b6 1px;
+    border-bottom: solid #a4a4a4 1px;
+    border-left: solid #c4c4c4 1px;
+    background: #ececec;
+    position: absolute;
+    border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    z-index: 3000;
+    display: none;
+}
+ul.gi-custom-select-options li
+{
+    color: #575757;
+    font-family: 'Open Sans' ,helvetica,sans-serif;
+    font-size: 65%;
+    font-weight: 600;
+    text-shadow: 0 1px 0 #FFFFFF;
+    padding: 3px 0 3px 4px;
+}
+ul.gi-custom-select-options li:hover
+{
+    background: #dbdbdb;
+}
+
+/*edit page feature styles */
+.feature-container
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/feature-bg.png') no-repeat;
+    width: 116px;
+    height: 61px;
+    float: left;
+    position: relative;
+}
+
+.edit .feature-container
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/feature-bg-edit.png') no-repeat;
+}
+
+.feature-container .featureClose
+{
+    display: none;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -2px;
+    right: -2px;
+}
+
+.edit .feature-container .featureClose
+{
+    display: block;
+}
+
+.clock-content-container
+{
+    width: 109px;
+    float: left;
+    margin: 6px 0 0 5px;
+}
+
+.weather-content-container
+{
+    width: 120px;
+    float: left;
+    margin: 8px 0 0 5px;
+}
+
+/* clock styles */
+.feature-container .date
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/icons/calendar-feature-icon.png') no-repeat;
+    width: 33px;
+    height: 32px;
+    float: left;
+}
+
+.feature-container .clock-container
+{
+    width: 70px;
+    float: left;
+}
+
+.feature-container .clock-container h2
+{
+    font-family: 'Open Sans' , helvetica, sans-serif;
+    text-transform: capitalize;
+    font-weight: 800;
+    color: #575757;
+    font-size: 115%;
+    text-shadow: 1px 1px 0 #fff;
+    text-decoration: none;
+    margin: 8px 0 0 3px;
+}
+
+.feature-container .day-of-week
+{
+    float: left;
+    font-family: 'Open Sans' , helvetica, sans-serif;
+    text-transform: capitalize;
+    font-weight: 800;
+    color: #fff;
+    font-size: 65%;
+    text-shadow: -1px -1px 0 #ce5050;
+    padding: 0;
+    margin: 2px 0 0 6px;
+}
+
+.feature-container .date-content
+{
+    float: left;
+    font-family: 'Open Sans' , helvetica, sans-serif;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #575757;
+    font-size: 65%;
+    text-shadow: 1px 1px 0 #fff;
+    padding: 0;
+    margin: 1px 0 0 2px;
+}
+
+.feature-container .clock-container h2 sup
+{
+    text-transform: uppercase;
+    font-size: 50%;
+    font-weight: 400;
+}
+
+.feature-container .featureDrop
+{
+    width: 120px;
+}
+
+/* weather feature styles */
+
+.feature-container .weather-icon
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/icons/weather-feature-icon.png') no-repeat;
+    width: 39px;
+    height: 30px;
+    float: left;
+}
+
+.feature-container .weather-icon img
+{
+    width: 39px;
+    height: 30px;
+}
+
+.feature-container .weather-container
+{
+    margin: 5px 0 0 5px;
+    width: 32px;
+    float: left;
+}
+
+.feature-container .weather-container h2
+{
+    font-family: 'Open Sans' , helvetica, sans-serif;
+    text-transform: capitalize;
+    font-weight: 800;
+    color: #575757;
+    font-size: 124%;
+    text-shadow: 1px 1px 0 #fff;
+    text-decoration: none;
+}
+
+.feature-container .high-low-container
+{
+    float: left;
+    font-family: 'Open Sans' , helvetica, sans-serif;
+    text-transform: capitalize;
+    font-weight: 400;
+    color: #575757;
+    font-size: 65%;
+    text-shadow: 1px 1px 0 #fff;
+    text-decoration: none;
+    margin: 5px 0 0 0;
+}
+
+.feature-container .weather-container h2 sup
+{
+    text-transform: uppercase;
+    font-size: 65%;
+    vertical-align: top;
+}
+
+/* concur feature styles */
+
+.feature-container .concur-icon
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/icons/concur-feature-icon.png') no-repeat;
+    width: 24px;
+    height: 22px;
+    float: left;
+    margin: 9px 5px 0 10px;
+}
+
+.feature-container .concur-container
+{
+    margin: 10px 0 0 5px;
+}
+
+.feature-container .concur-content-container
+{
+    width: 120px;
+    float: left;
+}
+
+.feature-container .concur-container h2
+{
+    float: left;
+    font-family: 'Open Sans' , helvetica, sans-serif;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #575757;
+    font-size: 120%;
+    text-shadow: 1px 1px 0 #fff;
+    text-decoration: none;
+}
+
+.feature-container .feature-button
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/feature-btn-bg.png') no-repeat 0 0;
+    float: left;
+    width: 101px;
+    height: 15px;
+    padding: 5px 0 0 6px;
+    font-family: 'Open Sans' , helvetica, sans-serif;
+    text-transform: capitalize;
+    font-size: 65%;
+    font-weight: 600;
+    color: #575757;
+    text-shadow: 1px 1px 0 #fff;
+    text-decoration: none;
+    margin: 5px 0 0 12px;
+}
+
+/* Orbit feature styles */
+
+.feature-container .orbit-icon
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/icons/orbit-feature-icon.png') no-repeat;
+    width: 24px;
+    height: 22px;
+    float: left;
+    margin: 9px 5px 0 3px;
+}
+
+.feature-container .orbit-container
+{
+    margin: 10px 0 0 5px;
+}
+
+.feature-container .orbit-content-container
+{
+    width: 120px;
+    float: left;
+}
+
+.feature-container .orbit-container h2
+{
+    float: left;
+    font-family: 'Open Sans' , helvetica, sans-serif;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #575757;
+    font-size: 85%;
+    text-shadow: 1px 1px 0 #fff;
+    text-decoration: none;
+    margin: 4px 0 0 0;
+}
+
+.feature-container .feature-button
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/feature-btn-bg.png') no-repeat 0 0;
+    float: left;
+    width: 101px;
+    height: 15px;
+    padding: 5px 0 0 6px;
+    font-family: 'Open Sans' , helvetica, sans-serif;
+    text-transform: capitalize;
+    font-size: 65%;
+    font-weight: 600;
+    color: #575757;
+    text-shadow: 1px 1px 0 #fff;
+    text-decoration: none;
+    margin: 5px 0 0 12px;
+}
+
+/* Salesforce feature styles */
+
+.feature-container .sales-icon
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/icons/sales-feature-icon.png') no-repeat;
+    width: 24px;
+    height: 22px;
+    float: left;
+    margin: 9px 5px 0 10px;
+}
+
+.feature-container .sales-container
+{
+    margin: 10px 0 0 5px;
+}
+
+.feature-container .sales-content-container
+{
+    width: 120px;
+    float: left;
+}
+
+.feature-container .sales-container h2
+{
+    float: left;
+    font-family: 'Open Sans' , helvetica, sans-serif;
+    font-weight: 600;
+    color: #575757;
+    font-size: 80%;
+    text-shadow: 1px 1px 0 #fff;
+    margin: 5px 0 0 0;
+    text-decoration: none;
+}
+
+.feature-container .feature-button
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/feature-btn-bg.png') no-repeat 0 0;
+    float: left;
+    width: 101px;
+    height: 15px;
+    padding: 5px 0 0 6px;
+    font-family: 'Open Sans' , helvetica, sans-serif;
+    text-transform: capitalize;
+    font-size: 65%;
+    font-weight: 600;
+    color: #575757;
+    text-shadow: 1px 1px 0 #fff;
+    text-decoration: none;
+    margin: 5px 0 0 12px;
+}
+
+.feature-container .feature-add-btn {
+    background: url("/App_Presentation/UniversitySite/images/structure/feature-add-btn.png") no-repeat scroll 0 0 transparent;
+    color: #575757;
+    float: left;
+    font-family: 'Open Sans',helvetica,sans-serif;
+    font-size: 75%;
+    font-weight: 800;
+    height: 17px;
+    margin: 2px 0 0 3px;
+    padding: 4px 0 0 7px;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #FFFFFF;
+    text-transform: capitalize;
+    width: 13px;
+}
+
+.feature-container .feature-view-btn {
+ background: url('/App_Presentation/UniversitySite/images/structure/feature-view-btn.png') no-repeat 0 0;
+    float: left;
+    width: 74px;
+    height: 15px;
+    padding: 5px 0 0 10px;
+    font-family: 'Open Sans' , helvetica, sans-serif;
+    text-transform: capitalize;
+    font-size: 65%;
+    font-weight: 600;
+    color: #575757;
+    text-shadow: 1px 1px 0 #fff;
+    text-decoration: none;
+    margin: 2px 0 0 2px;
+}
+/* Links bank feature styles */
+
+.links-list {
+float: left;
+}
+
+#addLinkModalContainer {
+display: none;
+}
+
+.feature-container .links-icon
+{
+    width: 12px;
+    height: 12px;
+    float: left;
+}
+
+.feature-container .links-container
+{
+    float: left;
+    margin: 2px 0;
+}
+
+.feature-container .links-content-container
+{
+    width: 115px;
+    float: left;
+    padding: 5px 0 0 5px;
+}
+
+.feature-container .links-container h2
+{
+    float: left;
+    font-family: 'Open Sans' , helvetica, sans-serif;
+    font-weight: 400;
+    color: #575757;
+    font-size: 65%;
+    text-shadow: 1px 1px 0 #fff;
+    text-decoration: none;
+    margin: 0 0 4px 5px;
+}
+
+.feature-container .links-container a, .gi-custom-select-options a
+{
+    width: 104px;
+    font-family: 'Open Sans' , helvetica, sans-serif;
+    font-weight: 400;
+    color: #575757;
+    font-size: 85%;
+    text-shadow: 1px 1px 0 #fff;
+    text-decoration: none;
+}
+
+.feature-container .feature-button
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/feature-btn-bg.png') no-repeat 0 0;
+    float: left;
+    width: 101px;
+    height: 15px;
+    padding: 5px 0 0 6px;
+    font-family: 'Open Sans' , helvetica, sans-serif;
+    text-transform: capitalize;
+    font-size: 65%;
+    font-weight: 600;
+    color: #575757;
+    text-shadow: 1px 1px 0 #fff;
+    text-decoration: none;
+    margin: 5px 0 0 12px;
+}
+
+
+/* Files upload feature styles */
+
+.feature-container .files-icon
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/icons/file-feature-icon.png') no-repeat;
+    width: 28px;
+    height: 29px;
+    float: left;
+    margin: 9px 3px 0 3px;
+}
+
+.feature-container .files-container
+{
+    margin: 10px 0 0 5px;
+}
+
+.feature-container .files-content-container
+{
+    width: 120px;
+    float: left;
+}
+
+.feature-container .files-container h2
+{
+    float: left;
+    margin: 5px 0 0 0;
+    font-family: 'Open Sans' , helvetica, sans-serif;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #575757;
+    font-size: 95%;
+    text-shadow: 1px 1px 0 #fff;
+    text-decoration: none;
+}
+
+.feature-container .feature-button
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/feature-btn-bg.png') no-repeat 0 0;
+    float: left;
+    width: 101px;
+    height: 15px;
+    padding: 5px 0 0 6px;
+    font-family: 'Open Sans' , helvetica, sans-serif;
+    text-transform: capitalize;
+    font-size: 65%;
+    font-weight: 600;
+    color: #575757;
+    text-shadow: 1px 1px 0 #fff;
+    text-decoration: none;
+    margin: 7px 0 0 4px;
+}
+
+.feature-container .upload-feature-button
+{
+    background: url("/App_Presentation/UniversitySite/images/structure/upload-btn-bg.png") no-repeat scroll 0 0 transparent;
+    color: #575757;
+    float: left;
+    font-family: 'Open Sans' ,helvetica,sans-serif;
+    font-size: 50%;
+    font-weight: 200;
+    height: 15px;
+    margin: 0 0 0 3px;
+    padding: 5px 0 0 17px;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #FFFFFF;
+    text-transform: capitalize;
+    width: 37px;
+}
+
+.feature-container .view-feature-button
+{
+    background: url("/App_Presentation/UniversitySite/images/structure/view-btn-bg.png") no-repeat scroll 0 0 transparent;
+    color: #575757;
+    float: left;
+    font-family: 'Open Sans' ,helvetica,sans-serif;
+    font-size: 65%;
+    font-weight: 200;
+    height: 15px;
+    margin: 0 0 0 0;
+    padding: 5px 0 0 7px;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #FFFFFF;
+    text-transform: capitalize;
+    width: 46px;
+}
+
+.feature-container .view-feature-button span
+{
+    color: #fff;
+    font-weight: 400;
+    text-shadow: none;
+    padding-right: 2px;
+}
+
+/* Fileshare Modal styles */
+
+.files-modal-container
+{
+    float: left;
+    position: relative;
+    height: 204px;
+    width: 278px;
+}
+
+.files-modal-top
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/files-modal-top.png') no-repeat 0 0;
+    float: left;
+    height: 30px;
+    width: 278px;
+}
+
+.files-modal-bottom
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/files-modal-bottom.png') no-repeat 0 0;
+    float: left;
+    height: 10px;
+    width: 278px;
+}
+
+.files-modal-mid
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/files-modal-mid.png') repeat-y 0 0;
+    width: 278px;
+    float: left;
+}
+
+.files-modal-container .banner
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/buttons.png') no-repeat 0 -698px;
+    position: absolute;
+    height: 29px;
+    width: 138px;
+    left: -5px;
+    top: 15px;
+    color: #FFFFFF;
+    font-family: 'OpenSans Bold' ,sans-serif;
+    font-size: 110%;
+    padding: 8px 0 0 10px;
+}
+
+.files-modal-container li
+{
+    width: 260px;
+    float: left;
+    margin: 5px 0 0;
+}
+
+.files-modal-container .link-bank-links a
+{
+    text-shadow: 1px 1px 0 #FFFFFF;
+} 
+
+.files-modal-container .files-content-container
+{
+    background: #FFFFFF;
+    border: 1px solid #BCBCBC;
+    float: left;
+    margin: 25px 0 0 3px;
+    padding: 2px;
+    width: 260px;
+    border-radius: 4px;
+}
+
+.files-modal-container .link-list {
+float: left;
+margin: 0 0 10px 10px;
+
+}
+
+.files-modal-container .files-blurb
+{
+    color: #575757;
+    font-family: 'Open Sans' , helvetica, sans-serif;
+    font-size: 68%;
+    font-weight: 600;
+    text-shadow: 1px 1px 0 #FFFFFF;
+    text-transform: capitalize;
+    margin: 10px 0 0 3px;
+}
+
+.files-modal-container .shared-file-button
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/files-copy-btn.png') no-repeat 0 0;
+    width: 178px;
+    height: 18px;
+    padding: 7px 0 0 6px;
+    float: left;
+    color: #575757;
+    font-family: 'Open Sans' , helvetica, sans-serif;
+    font-size: 60%;
+    font-weight: 600;
+    text-shadow: 1px 1px 0 #FFFFFF;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.files-modal-container .remove-file-button
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/files-remove-btn.png') no-repeat 0 0;
+    width: 64px;
+    height: 20px;
+    float: left;
+    color: #575757;
+    font-family: 'Open Sans' , helvetica, sans-serif;
+    font-size: 75%;
+    font-weight: 600;
+    text-shadow: 1px 1px 0 #FFFFFF;
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 7px 0 0 10px;
+}
+
+.files-modal-container .files-upload-btn
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/files-upload-btn.png') no-repeat 0 0;
+    width: 156px;
+    height: 29px;
+    float: left;
+    color: #fff;
+    font-family: 'Open Sans' , helvetica, sans-serif;
+    font-size: 90%;
+    font-weight: 800;
+    text-shadow: -1px -1px 0 #407cad;
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 7px 0 0 5px;
+    margin: 10px 0 0 0;
+}
+
+.files-modal-container .links-add-btn
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/buttons.png') no-repeat 0 -50px;
+    width: 62px;
+    height: 18px;
+    float: left;
+    color: #fff;
+    font-family: 'Open Sans' , helvetica, sans-serif;
+    font-size: 71%;
+    font-weight: 800;
+    text-shadow: -1px -1px 0 #407cad;
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 6px 0 0 7px;
+    margin: 10px 6px 0 0;
+}
+
+.files-modal-container .links-cancel-btn
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/buttons.png') no-repeat 0 -50px;
+    width: 60px;
+    height: 18px;
+    float: left;
+    color: #fff;
+    font-family: 'Open Sans' , helvetica, sans-serif;
+    font-size: 71%;
+    font-weight: 800;
+    text-shadow: -1px -1px 0 #407cad;
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 6px 0 0 12px;
+    margin: 10px 0 0 0;
+}
+
+.files-modal-container input
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/feature-input-bg.png') no-repeat 0 0;
+    width: 242px;
+    height: 20px;
+    padding: 0 2px 0 5px;
+    margin: 2px 0 0 5px;
+    color: #575757;
+    font-family: 'Open Sans' , helvetica, sans-serif;
+    font-size: 75%;
+    font-weight: 600;
+    text-transform: lowercase;
+    text-decoration: none;
+}
+
+.simplemodal-close
+{
+    width: 30px;
+    height: 30px;
+    background: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 999;
+    cursor: pointer;
+}
+
+/* Currency feature styles */
+
+.feature-container .currency-icon
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/icons/currency-icon.png') no-repeat 0 0;
+    width: 34px;
+    height: 33px;
+    float: left;
+    margin: 10px 0 0 0;
+}
+
+.feature-container .currency-container
+{
+    float: left;
+    margin: 0;
+}
+
+.feature-container .currency-input
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/currency-input-bg.png') no-repeat 0 0;
+    float: left;
+    width: 28px;
+    height: 18px;
+    padding: 0 0 0 10px;
+    color: #575757;
+    font-family: 'Open Sans' ,helvetica,sans-serif;
+    font-size: 65%;
+    font-weight: 400;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #FFFFFF;
+}
+
+.feature-container .currency-input-container
+{
+    float: left;
+    margin: 7px 0;
+    width: 75px;
+}
+
+.feature-container .currency-content-container
+{
+    width: 115px;
+    float: left;
+    padding: 5px 0 0 5px;
+}
+
+.feature-container .currency-symbol-from
+{
+    position: absolute;
+    color: #575757;
+    font-family: 'Open Sans' ,helvetica,sans-serif;
+    font-size: 65%;
+    font-weight: 400;
+    text-shadow: 1px 1px 0 #FFFFFF;
+    top: 16px;
+    left: 42px;
+}
+
+.feature-container .currency-symbol-to
+{
+    position: absolute;
+    color: #575757;
+    font-family: 'Open Sans' ,helvetica,sans-serif;
+    font-size: 65%;
+    font-weight: 400;
+    text-shadow: 1px 1px 0 #FFFFFF;
+    top: 44px;
+    left: 42px;
+}
+
+.feature-container .currency-container h2
+{
+    float: left;
+    font-family: 'Open Sans' , helvetica, sans-serif;
+    font-weight: 400;
+    color: #575757;
+    font-size: 65%;
+    text-shadow: 1px 1px 0 #fff;
+    text-decoration: none;
+    margin: 0 0 0 5px;
+}
+
+/* edit page building styles */
+/* DESERT */
+.edit-scene-container .active .building-close-btn
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/buildings/building-close-btn.png') no-repeat 0 0;
+    width: 22px;
+    height: 21px;
+    position: absolute;
+}
+
+.edit-scene-container.desert .faculty-building .building-close-btn
+{
+    right: 30px;
+    top: 12px;
+}
+
+.edit-scene-container.desert .bookstore-building .building-close-btn
+{
+    right: -27px;
+    top: 6px;
+}
+
+.edit-scene-container.desert .classroom-building .building-close-btn
+{
+    top: 7px;
+    right: 0px;
+}
+
+.edit-scene-container.desert .directory-building .building-close-btn
+{
+    right: 0;
+    top: 8px;
+}
+
+.edit-scene-container.desert .faculty-building
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/buildings/desert/faculty.png') no-repeat 0 0;
+    display: none;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 174px;
+    left: 27px;
+}
+
+.edit-scene-container.desert .faculty-building.active
+{
+    display: block;
+}
+
+.edit-scene-container.desert .bookstore-building
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/buildings/desert/bookstore.png') no-repeat 0 0;
+    display: none;
+    width: 190px;
+    height: 111px;
+    position: absolute;
+    top: 157px;
+    left: 312px;
+}
+
+.edit-scene-container.desert .bookstore-building.active
+{
+    display: block;
+}
+
+.edit-scene-container.desert .classroom-building
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/buildings/desert/classroom.png') no-repeat 0 0;
+    display: none;
+    width: 275px;
+    height: 203px;
+    position: absolute;
+    top: 45px;
+    left: 517px;
+}
+
+.edit-scene-container.desert .classroom-building.active
+{
+    display: block;
+}
+
+.edit-scene-container.desert .directory-building
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/buildings/desert/directory.png') no-repeat 0 0;
+    display: none;
+    width: 303px;
+    height: 161px;
+    position: absolute;
+    top: 180px;
+    left: 665px;
+}
+
+.edit-scene-container.desert .directory-building.active
+{
+    display: block;
+}
+
+/* MOUNTAIN */
+
+.edit-scene-container.mountain .faculty-building .building-close-btn
+{
+    right: 20px;
+    top: 6px;
+}
+
+.edit-scene-container.mountain .bookstore-building .building-close-btn
+{
+    right: -32px;
+    top: 13px;
+}
+
+.edit-scene-container.mountain .classroom-building .building-close-btn
+{
+    right: 5px;
+    top: 7px;
+}
+
+.edit-scene-container.mountain .directory-building .building-close-btn
+{
+    right: 0;
+    top: 7px;
+}
+
+.edit-scene-container.mountain .faculty-building
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/buildings/mountain/faculty.png') no-repeat 0 0;
+    display: none;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 211px;
+    left: 35px;
+    z-index: 3;
+}
+
+.edit-scene-container.mountain .faculty-building.active
+{
+    display: block;
+}
+
+.edit-scene-container.mountain .bookstore-building
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/buildings/mountain/bookstore.png') no-repeat 0 0;
+    display: none;
+    width: 190px;
+    height: 170px;
+    position: absolute;
+    top: 137px;
+    left: 314px;
+    z-index: 4;
+}
+
+.edit-scene-container.mountain .bookstore-building.active
+{
+    display: block;
+}
+
+.edit-scene-container.mountain .classroom-building
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/buildings/mountain/classroom.png') no-repeat 0 0;
+    display: none;
+    width: 275px;
+    height: 224px;
+    position: absolute;
+    top: 58px;
+    left: 520px;
+    z-index: 1;
+}
+
+.edit-scene-container.mountain .classroom-building.active
+{
+    display: block;
+}
+
+.edit-scene-container.mountain .directory-building
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/buildings/mountain/directory.png') no-repeat 0 0;
+    display: none;
+    width: 303px;
+    height: 161px;
+    position: absolute;
+    top: 200px;
+    left: 667px;
+    z-index:2;
+}
+
+.edit-scene-container.mountain .directory-building.active
+{
+    display: block;
+}
+
+/* RAINFOREST */
+
+.edit-scene-container.rainforest .faculty-building .building-close-btn
+{
+    right: 20px;
+    top: 8px;
+}
+
+.edit-scene-container.rainforest .bookstore-building .building-close-btn
+{
+    right: 20px;
+    top: 8px;
+}
+
+.edit-scene-container.rainforest .classroom-building .building-close-btn
+{
+    right: 8px;
+    top: 3px;
+}
+
+.edit-scene-container.rainforest .directory-building .building-close-btn
+{
+    right: 42px;
+    top: 6px;
+}
+
+.edit-scene-container.rainforest .faculty-building
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/buildings/rainforest/faculty.png') no-repeat 0 0;
+    display: none;
+    height: 180px;
+    left: 25px;
+    position: absolute;
+    top: 210px;
+    width: 285px;
+}
+
+.edit-scene-container.rainforest .faculty-building.active
+{
+    display: block;
+}
+
+.edit-scene-container.rainforest .bookstore-building
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/buildings/rainforest/bookstore.png') no-repeat 0 0;
+    display: none;
+    height: 126px;
+    left: 343px;
+    position: absolute;
+    top: 181px;
+    width: 156px;
+}
+
+.edit-scene-container.rainforest .bookstore-building.active
+{
+    display: block;
+}
+
+.edit-scene-container.rainforest .classroom-building
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/buildings/rainforest/classroom.png') no-repeat 0 0;
+    display: none;
+    height: 167px;
+    left: 508px;
+    position: absolute;
+    top: 129px;
+    width: 291px;
+}
+
+.edit-scene-container.rainforest .classroom-building.active
+{
+    display: block;
+}
+
+.edit-scene-container.rainforest .directory-building
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/buildings/rainforest/directory.png') no-repeat 0 0;
+    display: none;
+    height: 171px;
+    left: 692px;
+    position: absolute;
+    top: 206px;
+    width: 289px;
+}
+
+.edit-scene-container.rainforest .directory-building.active
+{
+    display: block;
+}
+
+/* BEACH */
+
+.edit-scene-container.beach .faculty-building .building-close-btn
+{
+    top: 3px;
+    left: 175px;
+}
+
+.edit-scene-container.beach .bookstore-building .building-close-btn
+{
+    top: 6px;
+    right: 6px;
+}
+
+.edit-scene-container.beach .classroom-building .building-close-btn
+{
+    top: 6px;
+    right: 0;
+}
+
+.edit-scene-container.beach .directory-building .building-close-btn
+{
+    top: 2px;
+    right: 89px;
+}
+
+.edit-scene-container.beach .faculty-building
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/buildings/beach/faculty.png') no-repeat 0 0;
+    display: none;
+    width: 278px;
+    height: 178px;
+    position: absolute;
+    top: 190px;
+    left: 35px;
+}
+
+.edit-scene-container.beach .faculty-building.active
+{
+    display: block;
+}
+
+.edit-scene-container.beach .bookstore-building
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/buildings/beach/bookstore.png') no-repeat 0 0;
+    display: none;
+    width: 196px;
+    height: 122px;
+    position: absolute;
+    top: 138px;
+    left: 312px;
+}
+
+.edit-scene-container.beach .bookstore-building.active
+{
+    display: block;
+}
+
+.edit-scene-container.beach .classroom-building
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/buildings/beach/classroom.png') no-repeat 0 0;
+    display: none;
+    width: 290px;
+    height: 163px;
+    position: absolute;
+    top: 96px;
+    left: 510px;
+}
+
+.edit-scene-container.beach .classroom-building.active
+{
+    display: block;
+}
+
+.edit-scene-container.beach .directory-building
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/buildings/beach/directory.png') no-repeat 0 0;
+    display: none;
+    width: 309px;
+    height: 166px;
+    position: absolute;
+    top: 185px;
+    left: 672px;
+}
+
+.edit-scene-container.beach .directory-building.active
+{
+    display: block;
+}
+
+/* carousel styles */
+
+.carousel-container
+{
+    width: 445px;
+    float: left;
+    margin: 5px 0 0 75px;
+}
+
+.carousel
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/carousel-sprite.png') no-repeat 0 0;
+    float: left;
+    height: 79px;
+    position: relative;
+    width: 406px;
+}
+
+.carousel-container .carousel-content
+{
+}
+
+.carousel-container .gi-carousel
+{
+    display: none;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.carousel-container .gi-carousel li
+{
+    float: left;
+    width: 114px;
+    height: 60px;
+    margin: 5px 5px 0 5px;
+    padding: 5px;
+}
+
+.carousel-container .next
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/carousel-right-btn.png') no-repeat 0 0;
+    float: left;
+    width: 18px;
+    height: 77px;
+}
+
+.carousel-container .previous
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/carousel-left-btn.png') no-repeat 0 0;
+    float: left;
+    width: 18px;
+    height: 77px;
+}
+/* HOME SCENE */
+/* edit page building styles */
+/* DESERT */
+.home-scene-container.desert .faculty-building
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/buildings/desert/faculty.png') no-repeat 0 0;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 174px;
+    left: 27px;
+}
+
+.home-scene-container.desert .faculty-building.active
+{
+    display: block;
+}
+
+.home-scene-container.desert .bookstore-building
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/buildings/desert/bookstore.png') no-repeat 0 0;
+    display: none;
+    width: 190px;
+    height: 111px;
+    position: absolute;
+    top: 157px;
+    left: 312px;
+}
+
+.home-scene-container.desert .bookstore-building.active
+{
+    display: block;
+}
+
+.home-scene-container.desert .classroom-building
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/buildings/desert/classroom.png') no-repeat 0 0;
+    display: none;
+    width: 275px;
+    height: 203px;
+    position: absolute;
+    top: 45px;
+    left: 517px;
+}
+
+.home-scene-container.desert .classroom-building.active
+{
+    display: block;
+}
+
+.home-scene-container.desert .directory-building
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/buildings/desert/directory.png') no-repeat 0 0;
+    display: none;
+    width: 303px;
+    height: 161px;
+    position: absolute;
+    top: 180px;
+    left: 665px;
+}
+
+.home-scene-container.desert .directory-building.active
+{
+    display: block;
+}
+
+/* MOUNTAIN */
+
+.home-scene-container.mountain .faculty-building
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/buildings/mountain/faculty.png') no-repeat 0 0;
+    display: none;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 211px;
+    left: 35px;
+}
+
+.home-scene-container.mountain .faculty-building.active
+{
+    display: block;
+}
+
+.home-scene-container.mountain .bookstore-building
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/buildings/mountain/bookstore.png') no-repeat 0 0;
+    display: none;
+    width: 190px;
+    height: 170px;
+    position: absolute;
+    top: 137px;
+    left: 314px;
+}
+
+.home-scene-container.mountain .bookstore-building.active
+{
+    display: block;
+}
+
+.home-scene-container.mountain .classroom-building
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/buildings/mountain/classroom.png') no-repeat 0 0;
+    display: none;
+    width: 275px;
+    height: 224px;
+    position: absolute;
+    top: 58px;
+    left: 520px;
+}
+
+.home-scene-container.mountain .classroom-building.active
+{
+    display: block;
+}
+
+.home-scene-container.mountain .directory-building
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/buildings/mountain/directory.png') no-repeat 0 0;
+    display: none;
+    width: 303px;
+    height: 161px;
+    position: absolute;
+    top: 200px;
+    left: 667px;
+}
+
+.home-scene-container.mountain .directory-building.active
+{
+    display: block;
+}
+
+/* widget drop downs */
+
+.carousel .jqTransformSelectWrapper
+{
+    background: url("/App_Presentation/UniversitySite/images/structure/feature-drop-left.png") no-repeat scroll left top transparent;
+    color: #6F6F6F;
+    float: left;
+    font-family: 'Open Sans' ,sans-serif;
+    font-size: 65%;
+    font-weight: 400;
+    height: 20px;
+    position: relative;
+    width: 92px !important;
+}
+
+.carousel .jqTransformSelectWrapper div span
+{
+    cursor: pointer;
+    float: none;
+    height: 17px;
+    font-size: 65%;
+    line-height: 15px;
+    overflow: hidden;
+    padding: 0 0 0 10px;
+    position: absolute;
+    width: 82px !important;
+}
+
+.carousel .jqTransformSelectWrapper a.jqTransformSelectOpen
+{
+    background: url("/App_Presentation/UniversitySite/images/structure/feature-drop-right.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 20px;
+    position: absolute;
+    right: -14px;
+    top: 0;
+    width: 14px;
+}
+
+.carousel .jqTransformSelectWrapper a
+{
+    color: #678400;
+    font-family: 'OpenSans' ,sans-serif;
+    font-weight: 400;
+}
+
+.carousel .jqTransformSelectWrapper li
+{
+    height: 20px;
+}
+
+.edit-profile-btn
+{
+    background: url("/App_Presentation/UniversitySite/images/structure/open-edit-btn.png") no-repeat scroll 0 0 transparent;
+    position: absolute;
+    top: 200px;
+    left: 0;
+    height: 173px;
+    width: 21px;
+    z-index: 999;
+}
+
+/* rotate tablet modal */
+
+#rotateModal {
+background: #eee;
+padding: 5px 0;
+width: 450px;
+height: 35px;
+border-radius: 5px;
+text-align: center;
+}
+
+#rotateModal h2 {
+font-family: 'Open Sans' ,sans-serif;
+color: #555;
+font-size: 100%;
+font-weight: 600;
+text-shadow: 1px 1px 0 #fff;
+margin: 10px 0 0 0;
+
+}
+
+#rotateModalOverlay{
+background: #000;
+}
+
+/* homepage.css */
+/* home scenes */
+.home-scene-container {
+width: 1008px;
+height: 568px;
+position: relative;
+top: 141px;
+left: -24px;
+z-index:2;
+}
+
+.home-scene-container.desert {
+background: url('/app_presentation/universitysite/images/structure/home-scenes/edit-scenes/desert.jpg') no-repeat;
+top:141px;
+}
+
+.home-scene-container.mountain {
+background: url('/app_presentation/universitysite/images/structure/home-scenes/edit-scenes/mountains.jpg') no-repeat;
+}
+
+.home-scene-container.beach {
+background: url('/app_presentation/universitysite/images/structure/home-scenes/edit-scenes/beach.jpg') no-repeat;
+top:183px;
+}
+
+/* HOME SCENE */
+/* edit page building styles */
+/* DESERT */
+.home-scene-container.desert .faculty-building {
+background: url('/app_presentation/universitysite/images/structure/buildings/desert/faculty.png') no-repeat 0 0;
+width:270px;
+height: 170px;
+position: absolute;
+display: block!important;
+top: 174px;
+left: 27px;
+}
+
+.home-scene-container.desert .faculty-building.active {
+display:block;
+}
+
+.home-scene-container.desert .bookstore-building {
+background: url('/app_presentation/universitysite/images/structure/buildings/desert/bookstore.png') no-repeat 0 0;
+width:190px;
+height: 111px;
+position: absolute;
+display: block!important;
+top: 157px;
+left: 312px;
+}
+
+.home-scene-container.desert .bookstore-building.active {
+display: block;
+}
+
+.home-scene-container.desert .classroom-building {
+background: url('/app_presentation/universitysite/images/structure/buildings/desert/classroom.png') no-repeat 0 0;
+width:275px;
+height: 203px;
+position: absolute;
+display: block!important;
+top: 45px;
+left: 517px;
+}
+
+.home-scene-container.desert .classroom-building.active {
+display: block;
+}
+
+.home-scene-container.desert .directory-building {
+background: url('/app_presentation/universitysite/images/structure/buildings/desert/directory.png') no-repeat 0 0;
+width:303px;
+height: 161px;
+position: absolute;
+display: block!important;
+top: 180px;
+left: 665px;
+}
+
+.home-scene-container.desert .directory-building.active {
+display: block;
+}
+
+/* MOUNTAIN */
+
+.home-scene-container.mountain .faculty-building {
+background: url('/app_presentation/universitysite/images/structure/buildings/mountain/faculty.png') no-repeat 0 0;
+display: block;
+width:270px;
+height: 170px;
+position: absolute;
+top: 211px;
+left: 35px;
+}
+
+.home-scene-container.mountain .faculty-building.active {
+display:block;
+}
+
+.home-scene-container.mountain .bookstore-building {
+background: url('/app_presentation/universitysite/images/structure/buildings/mountain/bookstore.png') no-repeat 0 0;
+display: block;
+width:190px;
+height: 170px;
+position: absolute;
+top: 137px;
+left: 314px;
+}
+
+.home-scene-container.mountain .bookstore-building.active {
+display: block;
+}
+
+.home-scene-container.mountain .classroom-building {
+background: url('/app_presentation/universitysite/images/structure/buildings/mountain/classroom.png') no-repeat 0 0;
+display: block;
+width:275px;
+height: 224px;
+position: absolute;
+top: 58px;
+width: 275px;
+}
+
+.home-scene-container.mountain .classroom-building.active {
+display: block;
+}
+
+.home-scene-container.mountain .directory-building {
+background: url('/app_presentation/universitysite/images/structure/buildings/mountain/directory.png') no-repeat 0 0;
+display: block;
+width:303px;
+height: 161px;
+position: absolute;
+top: 200px;
+left: 667px;
+}
+.home-scene-container.mountain .directory-building.active {
+display: block;
+}
+/*RAIN FOREST BUILDINGS*/
+.home-scene-container.rainforest .faculty-building {
+background: url('/app_presentation/universitysite/images/structure/buildings/rainforest/faculty.png') no-repeat 0 0;
+display: none;
+width:270px;
+height: 170px;
+position: absolute;
+top: 211px;
+left: 35px;
+}
+
+.home-scene-container.rainforest .bookstore-building {
+background: url('/app_presentation/universitysite/images/structure/buildings/rainforest/bookstore.png') no-repeat 0 0;
+display: none;
+width:190px;
+height: 111px;
+position: absolute;
+top: 195px;
+left: 319px;
+}
+
+.home-scene-container.rainforest .classroom-building {
+background: url('/app_presentation/universitysite/images/structure/buildings/rainforest/classroom.png') no-repeat 0 0;
+display: none;
+width:275px;
+height: 203px;
+position: absolute;
+top: 80px;
+left: 520px;
+}
+
+.home-scene-container.rainforest .directory-building {
+background: url('/app_presentation/universitysite/images/structure/buildings/rainforest/directory.png') no-repeat 0 0;
+display: none;
+width:303px;
+height: 161px;
+position: absolute;
+top: 212px;
+left: 661px;
+}
+/*DESERT TWO BUILDING */
+.home-scene-container.desert.building-2 { 
+    background: url('/app_presentation/universitysite/images/structure/home-scenes/edit-scenes/desert/two/desert-building-2.jpg') no-repeat 0 0;
+    width: 1080px;
+    height: 553px;
+}
+/*DESERT TWO BUILDING CLASSROOM AND DIRECTORY */
+.home-scene-container.desert.building-2.cd .classroom-building { 
+    display: block;
+    left: 181px;
+    position: absolute;
+    top: 73px;
+}
+.home-scene-container.desert.building-2.cd .directory-building { 
+    display: block;
+    left: 519px;
+    position: absolute;
+    top: 107px;
+}
+/* TWO BUILDING DESERT BOOKSTORE AND CLASSROOM*/
+.home-scene-container.desert.building-2.bc .bookstore-building { 
+    display: block;
+    left: 225px;
+    position: absolute;
+    top: 164px;
+}
+.home-scene-container.desert.building-2.bc .classroom-building { 
+    display: block;
+    left: 551px;
+    position: absolute;
+    top: 40px;
+}
+/*DESERT TWO BUILDING BOOKSTORE AND DIRECTORY*/
+.home-scene-container.desert.building-2.bd .bookstore-building { 
+    display: block;
+    left: 225px;
+    position: absolute;
+    top: 164px;
+}
+.home-scene-container.desert.building-2.bd .directory-building { 
+    display: block;
+    left: 519px;
+    position: absolute;
+    top: 107px;
+}
+/*DESERT TWO BUILDING FACULTY AND BOOKSTORE*/
+.home-scene-container.desert.building-2.fb .faculty-building { 
+    display: block;
+    left: 260px;
+    position: absolute;
+    top: 115px;
+}
+.home-scene-container.desert.building-2.fb .bookstore-building { 
+    display: block;
+    left: 598px;
+    position: absolute;
+    top: 133px;
+}
+/*DESERT TWO BUILDING FACULTY AND CLASSROOM*/
+.home-scene-container.desert.building-2.fc .faculty-building { 
+    display: block;
+    left: 260px;
+    position: absolute;
+    top: 115px;
+}
+.home-scene-container.desert.building-2.fc .classroom-building { 
+    display: block;
+    left: 551px;
+    position: absolute;
+    top: 40px;
+}
+/*DESERT TWO BUILDING FACULTY AND DIRECTORY*/
+.home-scene-container.desert.building-2.fd .faculty-building { 
+    display: block;
+    left: 247px;
+    position: absolute;
+    top: 169px;
+}
+.home-scene-container.desert.building-2.fd .directory-building { 
+    display: block;
+    left: 519px;
+    position: absolute;
+    top: 107px;
+}
+/*DESERT THREE BUILDING */
+.home-scene-container.desert.building-3 { 
+    background: url('/app_presentation/universitysite/images/structure/home-scenes/edit-scenes/desert/three/desert-building-3.jpg') no-repeat 0 0;
+    width: 1080px;
+    height: 553px;
+}
+/*DESERT three BOOKSTORE CLASSROOM AND DIRECTORY */
+.home-scene-container.desert.building-3.bcd .bookstore-building { 
+    display: block;
+    left: 123px;
+    position: absolute;
+    top: 187px;
+}
+.home-scene-container.desert.building-3.bcd .classroom-building { 
+    display: block;
+    left: 377px;
+    position: absolute;
+    top: 54px;
+}
+.home-scene-container.desert.building-3.bcd .directory-building { 
+    display: block;
+    left: 608px;
+    position: absolute;
+    top: 155px;
+}
+/*DESERT THREE BUILDING, FACULTY BOOKSTORE AND CLASSROOM */
+.home-scene-container.desert.building-3.fbc .faculty-building { 
+    display: block;
+    left: 133px;
+    position: absolute;
+    top: 143px;
+}
+.home-scene-container.desert.building-3.fbc .bookstore-building { 
+    display: block;
+    left: 423px;
+    position: absolute;
+    top: 146px;
+}
+.home-scene-container.desert.building-3.fbc .classroom-building { 
+    display: block;
+    left: 637px;
+    position: absolute;
+    top: 90px;
+}
+/*DESERT THREE BUILDING, FACULTY BOOKSTORE AND DIRECTORY */
+.home-scene-container.desert.building-3.fbd .faculty-building { 
+    display: block;
+    left: 133px;
+    position: absolute;
+    top: 143px;
+}
+.home-scene-container.desert.building-3.fbd .bookstore-building { 
+    display: block;
+    left: 423px;
+    position: absolute;
+    top: 146px;
+}
+.home-scene-container.desert.building-3.fbd .directory-building { 
+    display: block;
+    left: 608px;
+    position: absolute;
+    top: 155px;
+}
+/*DESERT THREE BUILDING, FACULTY CLASSROOM AND DIRECTORY */
+.home-scene-container.desert.building-3.fcd .faculty-building { 
+    display: block;
+    left: 133px;
+    position: absolute;
+    top: 143px;
+}
+.home-scene-container.desert.building-3.fcd .classroom-building { 
+    display: block;
+    left: 377px;
+    position: absolute;
+    top: 54px;
+}
+.home-scene-container.desert.building-3.fcd .directory-building { 
+    display: block;
+    left: 608px;
+    position: absolute;
+    top: 155px;
+}
+/*DESERT FOUR BUILDING SCENE, Faculty Bookstore, Classroom, Directory*/
+.home-scene-container.building-4 { 
+    background: url("/app_presentation/universitysite/images/structure/home-scenes/edit-scenes/desert.jpg") no-repeat scroll 0 0 transparent;
+    top: 141px;    
+}
+/*DESERT FOUR BUILDINGS, faculty */
+.home-scene-container.building-4.fbcd .faculty-building {
+    background: url("/app_presentation/universitysite/images/structure/buildings/desert/faculty.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 170px;
+    left: 27px;
+    position: absolute;
+    top: 174px;
+    width: 270px;    
+}
+/*DESERT FOUR BUILDINGS, bookstore*/
+.home-scene-container.building-4.fbcd .bookstore-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/desert/bookstore.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 111px;
+    left: 312px;
+    position: absolute;
+    top: 157px;
+    width: 190px;    
+}
+/*DESERT FOUR BUILDINGS, classroom*/
+.home-scene-container.building-4.fbcd .classroom-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/desert/classroom.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 203px;
+    left: 517px;
+    position: absolute;
+    top: 45px;
+    width: 275px;    
+}
+/*DESERT FOUR BUILDINGS, directory*/
+.home-scene-container.building-4.fbcd .directory-building {
+    background: url("/app_presentation/universitysite/images/structure/buildings/desert/directory.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 161px;
+    left: 665px;
+    position: absolute;
+    top: 180px;
+    width: 303px;
+}
+/*MOUNTAINS ONE BUILDING */
+.home-scene-container.mountain.building-1 { 
+    background: url('/app_presentation/universitysite/images/structure/home-scenes/edit-scenes/mountain/one/mountain-building-1.jpg') no-repeat 0 0;
+    width: 1080px;
+    height: 568px;
+}
+/*MOUNTAIN ONE BUILDING, bookstore*/
+.home-scene-container.mountain.building-1.b .bookstore-building { 
+    display: block;
+    left: 413px;
+    position: absolute;
+    top: 115px;
+}
+/* classroom */
+.home-scene-container.mountain.building-1.c .classroom-building { 
+    display: block;
+    left: 371px;
+    position: absolute;
+    top: 55px;
+}
+/*directory*/
+.home-scene-container.mountain.building-1.d .directory-building {
+    display: block;
+    left: 339px;
+    position: absolute;
+    top: 132px;
+}
+/*faculty*/
+.home-scene-container.mountain.building-1.f .faculty-building { 
+    display: block;
+    left: 442px;
+    position: absolute;
+    top: 127px;
+}
+/*MOUNTAINS TWO BUILDINGS*/
+.home-scene-container.mountain.building-2 { 
+    background: url('/app_presentation/universitysite/images/structure/home-scenes/edit-scenes/mountain/two/mountain-building-2.jpg') no-repeat 0 0;
+    width: 1080px;
+    height: 568px;
+}
+/*MOUNTAINS TWO BUILDING, BOOKSTORE AND CLASSROOM */
+.home-scene-container.mountain.building-2.bc .bookstore-building { 
+    display: block;
+    left: 222px;
+    position: absolute;
+    top: 148px;
+}
+.home-scene-container.mountain.building-2.bc .classroom-building { 
+    display: block;
+    left: 550px;
+    position: absolute;
+    top: 61px;
+}
+/*MOUNTAINS TWO BUILDING, BOOKSTORE AND DIRECTORY */
+.home-scene-container.mountain.building-2.bd .bookstore-building { 
+    display: block;
+    left: 222px;
+    position: absolute;
+    top: 148px;
+}
+.home-scene-container.mountain.building-2.bd .directory-building { 
+    display: block;
+    left: 522px;
+    position: absolute;
+    top: 137px;
+}
+/*MOUNTAINS TWO BUILDING, CLASSROOM AND DIRECTORY */
+.home-scene-container.mountain.building-2.cd .classroom-building { 
+    display: block;
+    left: 175px;
+    position: absolute;
+    top: 91px;
+}
+.home-scene-container.mountain.building-2.cd .directory-building { 
+    display: block;
+    left: 522px;
+    position: absolute;
+    top: 137px;
+}
+/*MOUNTAINS TWO BUILDING, FACULTY AND BOOKSTORE */
+.home-scene-container.mountain.building-2.fb .faculty-building { 
+    display: block;
+    left: 247px;
+    position: absolute;
+    top: 169px;
+}
+.home-scene-container.mountain.building-2.fb .bookstore-building { 
+    display: block;
+    left: 595px;
+    position: absolute;
+    top: 117px;
+}
+/*MOUNTAINS TWO BUILDING, FACULTY AND CLASSROOM */
+.home-scene-container.mountain.building-2.fc .faculty-building { 
+    display: block;
+    left: 175px;
+    position: absolute;
+    top: 334px;
+}
+.home-scene-container.mountain.building-2.fc .classroom-building { 
+    display: block;
+    height: 224px;
+    background: red;
+    position: absolute;
+    top: 58px;
+    width: 275px;
+}
+/*MOUNTAINS TWO BUILDING, FACULTY AND DIRECTORY */
+.home-scene-container.mountain.building-2.fd .faculty-building { 
+    display: block;
+    left: 251px;
+    position: absolute;
+    top: 166px;
+}
+.home-scene-container.mountain.building-2.fd .directory-building { 
+    display: block;
+    left: 522px;
+    position: absolute;
+    top: 137px;
+}
+/*MOUNTAIN THREE BUILDING */
+.home-scene-container.mountain.building-3 { 
+    background: url('/app_presentation/universitysite/images/structure/home-scenes/edit-scenes/mountain/three/mountain-building-3.jpg') no-repeat 0 0;
+    width: 1080px;
+    height: 750px;
+}
+/*MOUNTAIN THREE BUILDING, FACULTY, CLASSROOM, DIRECTORY*/
+.home-scene-container.mountain.building-3.fcd .faculty-building { 
+    left: 149px;
+    position: absolute;
+    top: 188px;
+}
+.home-scene-container.mountain.building-3.fcd .classroom-building { 
+    left: 376px;
+    position: absolute;
+    top: 71px;
+}
+.home-scene-container.mountain.building-3.fcd .directory-building { 
+    left: 607px;
+    position: absolute;
+    top: 186px;
+}
+/*MOUNTAIN THREE BUILDING, BOOKSTORE, CLASSROOM, DIRECTORY*/
+.home-scene-container.mountain.building-3.bcd .bookstore-building { 
+    left: 134px;
+    position: absolute;
+    top: 170px;
+}
+.home-scene-container.mountain.building-3.bcd .classroom-building { 
+    left: 376px;
+    position: absolute;
+    top: 71px;
+}
+.home-scene-container.mountain.building-3.bcd .directory-building { 
+    left: 607px;
+    position: absolute;
+    top: 186px;
+}
+/*MOUNTAIN THREE BUILDING, BOOKSTORE, CLASSROOM, DIRECTORY*/
+.home-scene-container.mountain.building-3.fbd .faculty-building { 
+    left: 149px;
+    position: absolute;
+    top: 188px;
+}
+.home-scene-container.mountain.building-3.fbd .bookstore-building { 
+    left: 420px;
+    position: absolute;
+    top: 131px;
+}
+.home-scene-container.mountain.building-3.fbd .directory-building { 
+    left: 607px;
+    position: absolute;
+    top: 186px;
+}
+/*MOUNTAIN THREE BUILDING, FACULTY, BOOKSTORE, CLASSROOM*/
+.home-scene-container.mountain.building-3.fbc .faculty-building { 
+    left: 149px;
+    position: absolute;
+    top: 188px;
+}
+.home-scene-container.mountain.building-3.fbc .bookstore-building { 
+    left: 420px;
+    position: absolute;
+    top: 131px;
+}
+.home-scene-container.mountain.building-3.fbc .classroom-building { 
+    left: 637px;
+    position: absolute;
+    top: 109px;
+}
+/*MOUNTAIN FOUR BUILDING, FACULTY BOOKSTORE, CLASSROOM, DIRECTORY*/
+.home-scene-container.mountain.building-4 { 
+    background: url("/app_presentation/universitysite/images/structure/home-scenes/edit-scenes/mountains.jpg") no-repeat scroll 0 0 transparent;    
+}
+.home-scene-container.mountain.building-4.fbcd .faculty-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/mountain/faculty.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 170px;
+    left: 35px;
+    position: absolute;
+    top: 211px;
+    width: 270px;    
+}
+.home-scene-container.mountain.building-4.fbcd .bookstore-building {
+    background: url("/app_presentation/universitysite/images/structure/buildings/mountain/bookstore.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 170px;
+    left: 314px;
+    position: absolute;
+    top: 137px;
+    width: 190px;    
+}
+.home-scene-container.mountain.building-4.fbcd .classroom-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/mountain/classroom.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 224px;
+    position: absolute;
+    top: 58px;
+    width: 275px;    
+}
+.home-scene-container.mountain.building-4.fbcd .directory-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/mountain/directory.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 161px;
+    left: 667px;
+    position: absolute;
+    top: 200px;
+    width: 303px;    
+}
+/*RAIN FOREST ONE BUILDING */
+.home-scene-container.rainforest.building-1 { 
+    background: url('/app_presentation/universitysite/images/structure/home-scenes/edit-scenes/rainforest/one/rainforest-building-1.jpg') no-repeat 0 0;
+    width: 1080px;
+    height: 570px;
+}
+/*RAIN FOREST ONE BUILDING, bookstore*/
+.home-scene-container.rainforest.building-1.b .bookstore-building {
+    background: url("/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-bookstore-building.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 171px;
+    left: 190px;
+    position: absolute;
+    top: 190px;
+    width: 255px;
+}
+/*RAIN FOREST ONE BUILDING, classroom */
+.home-scene-container.rainforest.building-1.c .classroom-building {
+    background: url("/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-classroom-building.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 175px;
+    left: 90px;
+    position: absolute;
+    top: 153px;
+    width: 400px;
+}
+/*RAIN FOREST ONE BUILDING, directory */
+.home-scene-container.rainforest.building-1.d .directory-building {
+    background: url("/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-directory-building.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 210px;
+    left: 130px;
+    position: absolute;
+    top: 168px;
+    width: 397px;
+}
+/*RAIN FOREST ONE BUILDING, faculty */
+.home-scene-container.rainforest.building-1.f .faculty-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-faculty-building.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 201px;
+    left: 125px;
+    top: 165px;
+    width: 383px;
+}
+/*RAIN FOREST TWO BUILDINGS*/
+.home-scene-container.rainforest.building-2 { 
+    background: url('/app_presentation/universitysite/images/structure/home-scenes/edit-scenes/rainforest/two/rainforest-building-2.jpg') no-repeat 0 0;
+    width: 1080px;
+    height: 750px;
+}
+/*RAIN FOREST TWO BUILDING, BOOKSTORE AND CLASSROOM*/
+.home-scene-container.rainforest.building-2.bc .bookstore-building { 
+    background: url('/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-bookstore-building.png') no-repeat 0 0;
+    width: 255px;
+    height: 171px;
+    display: block;
+    left: 222px;
+    top: 366px;
+    position: absolute;
+}
+.home-scene-container.rainforest.building-2.bc .classroom-building { 
+    background: url('/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-classroom-building.png') no-repeat 0 0;
+    width: 400px;
+    height: 175px;
+    position: absolute;
+    display: block;
+    left: 554px;
+    top: 236px;
+}
+/*RAIN FOREST TWO BUILDING, BOOKSTORE AND DIRECTORY*/
+.home-scene-container.rainforest.building-2.bd .bookstore-building { 
+    background: url('/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-bookstore-building.png') no-repeat 0 0;
+    width: 255px;
+    height: 171px;
+    display: block;
+    position: absolute;
+    left: 222px;
+    top: 366px;
+}
+.home-scene-container.rainforest.building-2.bd .directory-building { 
+    background: url('/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-directory-building.png') no-repeat 0 0; 
+    width: 397px;
+    height: 210px;
+    position: absolute;
+    display: block;
+    left: 519px;
+    top: 298px;
+}
+/*RAIN FOREST TWO BUILDING, CLASSROOM AND DIRECTORY*/
+.home-scene-container.rainforest.building-2.cd .classroom-building { 
+    background: url('/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-classroom-building.png') no-repeat 0 0;
+    width: 400px;
+    height: 175px;
+    position: absolute;
+    display: block;
+    left: 178px;
+    top: 272px;
+}
+.home-scene-container.rainforest.building-2.cd .directory-building { 
+    background: url('/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-directory-building.png') no-repeat 0 0; 
+    width: 397px;
+    height: 210px;
+    position: absolute;
+    display: block;
+    left: 519px;
+    top: 298px;
+}
+/*RAIN FOREST TWO BUILDING, FACULTY AND BOOKSTORE*/
+.home-scene-container.rainforest.building-2.fb .faculty-building { 
+    background: url('/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-faculty-building.png') no-repeat 0 0;
+    width: 383px;
+    height: 201px;
+    display: block;
+    left: 242px;
+    top: 316px;
+}
+.home-scene-container.rainforest.building-2.fb .bookstore-building { 
+    background: url('/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-bookstore-building.png') no-repeat 0 0;
+    width: 255px;
+    height: 171px;
+    display: block;
+    position: absolute;
+    left: 592px;
+    top: 329px;
+}
+/*RAIN FOREST TWO BUILDING, FACULTY AND CLASSROOM*/
+.home-scene-container.rainforest.building-2.fc .faculty-building { 
+    background: url('/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-faculty-building.png') no-repeat 0 0;
+    width: 383px;
+    height: 201px;
+    display: block;
+    position: absolute;
+    left: 242px;
+    top: 316px;
+}
+.home-scene-container.rainforest.building-2.fc .classroom-building { 
+    background: url('/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-classroom-building.png') no-repeat 0 0;
+    width: 400px;
+    height: 175px;
+    position: absolute;
+    display: block;
+    left: 552px;
+    top: 235px;
+}
+/*RAIN FOREST TWO BUILDING, FACULTY AND CLASSROOM*/
+.home-scene-container.rainforest.building-2.fd .faculty-building { 
+    background: url('/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-faculty-building.png') no-repeat 0 0;
+    width: 383px;
+    height: 201px;
+    display: block;
+    position: absolute;
+    left: 242px;
+    top: 316px;
+}
+.home-scene-container.rainforest.building-2.fd .directory-building { 
+    background: url('/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-directory-building.png') no-repeat 0 0; 
+    width: 397px;
+    height: 210px;
+    position: absolute;
+    display: block;
+    left: 519px;
+    top: 298px;
+}
+/*RAINFOREST THREE BUILDINGS*/
+.home-scene-container.rainforest.building-3 { 
+    background: url('/app_presentation/universitysite/images/structure/home-scenes/edit-scenes/rainforest/three/rainforest-building-3.jpg') no-repeat 0 0;
+    width: 1080px;
+    height: 570px;
+}
+/*RAINFOREST THREE BUILDING, BOOKSTORE, CLASSROOM, DIRECTORY*/
+.home-scene-container.rainforest.building-3.bcd .bookstore-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-bookstore-building.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 171px;
+    left: 94px;
+    position: absolute;
+    top: 220px;
+    width: 255px;
+}
+.home-scene-container.rainforest.building-3.bcd .classroom-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-classroom-building.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 175px;
+    left: 469px;
+    position: absolute;
+    top: 130px;
+    width: 400px;
+}
+.home-scene-container.rainforest.building-3.bcd .directory-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-directory-building.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 210px;
+    left: 669px;
+    position: absolute;
+    top: 204px;
+    width: 397px;
+}
+/*RAINFOREST THREE FACULTY, BOOKSTORE, CLASSROOM */
+.home-scene-container.rainforest.building-3.fbc .faculty-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-faculty-building.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 201px;
+    left: 33px;
+    position: absolute;
+    top: 200px;
+    width: 383px;
+}
+.home-scene-container.rainforest.building-3.fbc .bookstore-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-bookstore-building.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 171px;
+    left: 567px;
+    position: absolute;
+    top: 154px;
+    width: 255px;
+}
+.home-scene-container.rainforest.building-3.fbc .classroom-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-classroom-building.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 175px;
+    left: 629px;
+    position: absolute;
+    top: 188px;
+    width: 400px;
+}
+/*RAINFOREST THREE FACULTY, BOOKSTORE, DIRECTORY*/
+.home-scene-container.rainforest.building-3.fbd .faculty-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-faculty-building.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 201px;
+    left: 33px;
+    position: absolute;
+    top: 200px;
+    width: 383px;
+}
+.home-scene-container.rainforest.building-3.fbd .bookstore-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-bookstore-building.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 171px;
+    left: 567px;
+    position: absolute;
+    top: 154px;
+    width: 255px;
+}
+.home-scene-container.rainforest.building-3.fbd .directory-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-directory-building.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 210px;
+    left: 669px;
+    position: absolute;
+    top: 204px;
+    width: 397px;
+}
+/*RAINFOREST THREE FACULTY, CLASSROOM, DIRECTORY*/
+.home-scene-container.rainforest.building-3.fcd .faculty-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-faculty-building.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 201px;
+    left: 33px;
+    position: absolute;
+    top: 200px;
+    width: 383px;
+}
+.home-scene-container.rainforest.building-3.fcd .classroom-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-classroom-building.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 175px;
+    left: 469px;
+    position: absolute;
+    top: 130px;
+    width: 400px;
+}
+.home-scene-container.rainforest.building-3.fcd .directory-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-directory-building.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 210px;
+    left: 669px;
+    position: absolute;
+    top: 204px;
+    width: 397px;
+}
+/*RAIN FOREST TWO BUILDINGS*/
+.home-scene-container.rainforest.building-2 { 
+    background: url('/app_presentation/universitysite/images/structure/home-scenes/edit-scenes/rainforest/two/rainforest-building-2.jpg') no-repeat 0 0;
+    width: 1080px;
+    height: 568px;
+}
+/*RAIN FOREST TWO BUILDING, BOOKSTORE AND CLASSROOM*/
+.home-scene-container.rainforest.building-2.bc .bookstore-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-bookstore-building.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 171px;
+    left: 92px;
+    position: absolute;
+    top: 218px;
+    width: 255px;
+}
+.home-scene-container.rainforest.building-2.bc .classroom-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-classroom-building.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 175px;
+    left: 468px;
+    position: absolute;
+    top: 131px;
+    width: 400px;
+    width: 400px;
+}
+/*RAIN FOREST TWO BUILDING, BOOKSTORE AND CLASSROOM*/
+.home-scene-container.rainforest.building-2.bd .bookstore-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-bookstore-building.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 171px;
+    left: 201px;
+    position: absolute;
+    top: 207px;
+    width: 255px;
+}
+.home-scene-container.rainforest.building-2.bd .directory-building { 
+    background: url('/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-directory-building.png') no-repeat 0 0; 
+    width: 397px;
+    height: 210px;
+    position: absolute;
+    display: block;
+    left: 520px;
+    top: 135px;
+}
+/*RAIN FOREST TWO BUILDING, CLASSROOM AND DIRECTORY*/
+.home-scene-container.rainforest.building-2.cd .classroom-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-classroom-building.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 175px;
+    left: 94px;
+    position: absolute;
+    top: 167px;
+    width: 400px;
+}
+.home-scene-container.rainforest.building-2.cd .directory-building { 
+    background: url('/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-directory-building.png') no-repeat 0 0; 
+    width: 397px;
+    height: 210px;
+    position: absolute;
+    display: block;
+    left: 520px;
+    top: 135px;
+}
+/*RAIN FOREST TWO BUILDING, FACULTY AND BOOKSTORE*/
+.home-scene-container.rainforest.building-2.fb .faculty-building { 
+    background: url('/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-faculty-building.png') no-repeat 0 0;
+    width: 383px;
+    height: 201px;
+    display: block;
+    position: absolute;
+    left: 242px;
+    top: 157px;
+}
+.home-scene-container.rainforest.building-2.fb .bookstore-building { 
+    background: url('/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-bookstore-building.png') no-repeat 0 0;
+    width: 255px;
+    height: 171px;
+    position: absolute;
+    display: block;
+    left: 595px;
+    top: 170px;
+}
+/*RAIN FOREST TWO BUILDING, FACULTY AND CLASSROOM*/
+.home-scene-container.rainforest.building-2.fc .faculty-building { 
+    background: url('/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-faculty-building.png') no-repeat 0 0;
+    width: 383px;
+    height: 201px;
+    display: block;
+    position: absolute;
+    left: 242px;
+    top: 157px;
+}
+.home-scene-container.rainforest.building-2.fc .classroom-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-classroom-building.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 175px;
+    left: 469px;
+    position: absolute;
+    top: 129px;
+    width: 400px;
+}
+/*RAIN FOREST TWO BUILDING, FACULTY AND CLASSROOM*/
+.home-scene-container.rainforest.building-2.fd .faculty-building { 
+    background: url('/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-faculty-building.png') no-repeat 0 0;
+    width: 383px;
+    height: 201px;
+    display: block;
+    position: absolute;
+    left: 242px;
+    top: 157px;
+}
+.home-scene-container.rainforest.building-2.fd .directory-building { 
+    background: url('/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-directory-building.png') no-repeat 0 0; 
+    width: 397px;
+    height: 210px;
+    position: absolute;
+    display: block;
+    left: 520px;
+    top: 135px;
+}
+/*RAINFOREST SCENE, FOUR BUILDING*/
+.home-scene-container.rainforest.building-4 { 
+    background: url('/App_Presentation/UniversitySite/images/structure/home-scenes/edit-scenes/rainforest.jpg') no-repeat;
+    top: 146px;    
+}
+/*RAINFOREST SCENE, faculty bookstore classroom directory */
+.home-scene-container.rainforest.building-4.fbcd .faculty-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-faculty-building.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 201px;
+    left: 6px;
+    position: absolute;
+    top: 216px;
+    width: 383px;   
+}
+.home-scene-container.rainforest.building-4.fbcd .bookstore-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-bookstore-building.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 171px;
+    left: 297px;
+    position: absolute;
+    top: 187px;
+    width: 255px;
+}
+.home-scene-container.rainforest.building-4.fbcd .classroom-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-classroom-building.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 175px;
+    left: 437px;
+    position: absolute;
+    top: 127px;
+    width: 400px;    
+}
+.home-scene-container.rainforest.building-4.fbcd .directory-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/rainforest/edit-buildings/rainforest-directory-building.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 210px;
+    left: 634px;
+    position: absolute;
+    top: 211px;
+    width: 368px; 
+}
+/*BEACH SCENE, ONE BUILDING*/
+.home-scene-container.beach.building-1 { 
+    background: url('/app_presentation/universitysite/images/structure/home-scenes/edit-scenes/beach/one/beach-building-1.jpg') no-repeat 0 0;
+    width: 1080px;
+    height: 750px;
+}
+/*BEACH SCENE, ONE BUILDING, Bookstore  */
+.home-scene-container.beach.building-1.b .bookstore-building {
+    background: url('/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/beach-bookstore-building.png') no-repeat 0 0;
+    width: 237px;
+    height: 179px;
+    display: block;
+    left: 291px;
+    position: absolute;
+    top: 149px;
+    
+}
+/*BEACH SCENE, ONE BUILDING, classroom */
+.home-scene-container.beach.building-1.c .classroom-building {
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/beach-classroom-building-position-2.png") no-repeat scroll 0 0 transparent;
+    height: 222px;
+    left: 214px;
+    position: absolute;
+    top: 95px;
+    width: 329px;
+}
+/*BEACH SCENE, ONE BUILDING, directory */
+.home-scene-container.beach.building-1.d .directory-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/beach-directory-building.png") no-repeat scroll 0 0 transparent;
+    height: 248px;
+    left: 623px;
+    position: absolute;
+    top: 77px;
+    width: 311px;
+}
+/*BEACH SCENE, ONE BUILDING, faculty */
+.home-scene-container.beach.building-1.f .faculty-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/beach-faculty-building.png") no-repeat scroll 0 0 transparent;
+    height: 253px;
+    left: 244px;
+    position: absolute;
+    top: 89px;
+    width: 335px;
+}
+/*BEACH SCENE, TWO BUILDINGS */
+.home-scene-container.beach.building-2 { 
+    background: url('/app_presentation/universitysite/images/structure/home-scenes/edit-scenes/beach/two/beach-building-2.jpg') no-repeat 0 0;
+    width: 1080px;
+    height: 750px;
+}
+/*BEACH SCENE TWO BUILDINGS, BOOKSTORE, CLASSROOM*/
+.home-scene-container.beach.building-2.bc .bookstore-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/beach-bookstore-building.png") no-repeat scroll 0 0 transparent;
+    height: 179px;
+    left: 231px;
+    position: absolute;
+    top: 149px;
+    width: 237px;
+}
+.home-scene-container.beach.building-2.bc .classroom-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/beach-classroom-building.png") no-repeat scroll 0 0 transparent;
+    height: 223px;
+    left: 537px;
+    position: absolute;
+    top: 89px;
+    width: 329px;
+}
+/*BEACH SCENE TWO BUILDINGS, FACULTY, CLASSROOM*/
+.home-scene-container.beach.building-2.fc .faculty-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/beach-faculty-building.png") no-repeat scroll 0 0 transparent;
+    height: 335px;
+    left: 187px;
+    position: absolute;
+    top: 292px;
+    width: 360px;
+}
+.home-scene-container.beach.building-2.fc .classroom-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/beach-classroom-building.png") no-repeat scroll 0 0 transparent;
+    height: 223px;
+    left: 537px;
+    position: absolute;
+    top: 89px;
+    width: 329px;
+}
+/*BEACH SCENE TWO BUILDINGS, FACULTY, CLASSROOM*/
+.home-scene-container.beach.building-2.fc .faculty-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/beach-faculty-building.png") no-repeat scroll 0 0 transparent;
+    height: 335px;
+    left: 187px;
+    position: absolute;
+    top: 95px;
+    width: 360px;
+}
+.home-scene-container.beach.building-2.fc .classroom-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/beach-classroom-building.png") no-repeat scroll 0 0 transparent;
+    height: 223px;
+    left: 537px;
+    position: absolute;
+    top: 89px;
+    width: 329px;
+}
+/*BEACH SCENE TWO BUILDINGS, CLASSROOM, DIRECTORY*/
+.home-scene-container.beach.building-2.cd .classroom-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/beach-classroom-building-position-2.png") no-repeat scroll 0 0 transparent;
+    height: 335px;
+    left: 170px;
+    position: absolute;
+    top: 93px;
+    width: 360px;
+}
+.home-scene-container.beach.building-2.cd .directory-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/beach-directory-building.png") no-repeat scroll 0 0 transparent;
+    height: 248px;
+    left: 553px;
+    position: absolute;
+    top: 84px;
+    width: 329px;
+}
+/*BEACH SCENE TWO BUILDINGS, BOOKSTORE, DIRECTORY*/
+.home-scene-container.beach.building-2.bd .bookstore-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/beach-bookstore-building.png") no-repeat scroll 0 0 transparent;
+    height: 179px;
+    left: 231px;
+    position: absolute;
+    top: 149px;
+    width: 237px;
+}
+.home-scene-container.beach.building-2.bd .directory-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/beach-directory-building.png") no-repeat scroll 0 0 transparent;
+    height: 248px;
+    left: 553px;
+    position: absolute;
+    top: 83px;
+    width: 329px;
+}
+/*BEACH SCENE TWO BUILDINGS, FACULTY, BOOKSTORE*/
+.home-scene-container.beach.building-2.fb .faculty-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/beach-faculty-building.png") no-repeat scroll 0 0 transparent;
+    height: 253px;
+    left: 187px;
+    position: absolute;
+    top: 96px;
+    width: 335px;
+}
+.home-scene-container.beach.building-2.fb .bookstore-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/beach-bookstore-building-position-2.png") no-repeat scroll 0 0 transparent;
+    height: 248px;
+    left: 595px;
+    position: absolute;
+    top: 130px;
+    width: 329px;
+}
+/*BEACH SCENE TWO BUILDINGS, FACULTY, DIRECTORY*/
+.home-scene-container.beach.building-2.fd .faculty-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/beach-faculty-building.png") no-repeat scroll 0 0 transparent;
+    height: 253px;
+    left: 187px;
+    position: absolute;
+    top: 96px;
+    width: 335px;
+}
+.home-scene-container.beach.building-2.fd .directory-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/beach-directory-building.png") no-repeat scroll 0 0 transparent;
+    height: 248px;
+    left: 553px;
+    position: absolute;
+    top: 83px;
+    width: 329px;
+}
+/*BEACH SCENE, THREE BUILDINGS */
+.home-scene-container.beach.building-3 { 
+    background: url('/app_presentation/universitysite/images/structure/home-scenes/edit-scenes/beach/three/beach-building-3.jpg') no-repeat 0 0;
+    width: 1080px;
+    height: 750px;
+}
+/*BEACH SCENE THREE BUILDINGS, BOOKSTORE, CLASSROOM, DIRECTORY*/
+.home-scene-container.beach.building-3.bcd .bookstore-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/three-buildings/bookstore-building.png") no-repeat scroll 0 0 transparent;
+    height: 179px;
+    left: 175px;
+    position: absolute;
+    top: 200px;
+    width: 265px;  
+}
+.home-scene-container.beach.building-3.bcd .classroom-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/three-buildings/classroom-building.png") no-repeat scroll 0 0 transparent;
+    height: 223px;
+    left: 377px;
+    position: absolute;
+    top: 89px;
+    width: 329px;
+}
+.home-scene-container.beach.building-3.bcd .directory-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/three-buildings/directory-building.png") no-repeat scroll 0 0 transparent;
+    height: 252px;
+    position: absolute;
+    right: 62px;
+    top: 163px;
+    width: 339px;
+}
+/*BEACH SCENE THREE BUILDINGS, FACULTY, BOOKSTORE, DIRECTORY*/
+.home-scene-container.beach.building-3.fbd .faculty-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/three-buildings/faculty-building-position-2.png") no-repeat scroll 0 0 transparent;
+    height: 253px;
+    left: 49px;
+    position: absolute;
+    top: 177px;
+    width: 392px;
+}
+.home-scene-container.beach.building-3.fbd .bookstore-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/three-buildings/bookstore-building-position-2.png") no-repeat scroll 0 0 transparent;
+    height: 179px;
+    left: 414px;
+    position: absolute;
+    top: 126px;
+    width: 265px;
+}
+.home-scene-container.beach.building-3.fbd .directory-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/three-buildings/directory-building.png") no-repeat scroll 0 0 transparent;
+    height: 252px;
+    position: absolute;
+    right: 65px;
+    top: 158px;
+    width: 339px;
+}
+/*BEACH SCENE THREE BUILDINGS, FACULTY, BOOKSTORE, CLASSROOM*/
+.home-scene-container.beach.building-3.fbc .faculty-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/three-buildings/faculty-building-position-2.png") no-repeat scroll 0 0 transparent;
+    height: 253px;
+    left: 49px;
+    position: absolute;
+    top: 177px;
+    width: 392px;
+}
+.home-scene-container.beach.building-3.fbc .bookstore-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/three-buildings/bookstore-building-position-2.png") no-repeat scroll 0 0 transparent;
+    height: 179px;
+    left: 414px;
+    position: absolute;
+    top: 126px;
+    width: 265px;
+}
+.home-scene-container.beach.building-3.fbc .classroom-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/three-buildings/classroom-building-position-2.png") no-repeat scroll 0 0 transparent;
+    height: 252px;
+    position: absolute;
+    right: 120px;
+    top: 107px;
+    width: 347px;
+}
+/*BEACH SCENE THREE BUILDINGS, FACULTY, CLASSROOM, DIRECTORy*/
+.home-scene-container.beach.building-3.fcd .faculty-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/three-buildings/faculty-building-position-2.png") no-repeat scroll 0 0 transparent;
+    height: 253px;
+    left: 49px;
+    position: absolute;
+    top: 177px;
+    width: 392px;
+}
+.home-scene-container.beach.building-3.fcd .classroom-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/three-buildings/classroom-building.png") no-repeat scroll 0 0 transparent;
+    height: 223px;
+    left: 377px;
+    position: absolute;
+    top: 89px;
+    width: 329px;
+}
+.home-scene-container.beach.building-3.fcd .directory-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/beach/edit-buildings/three-buildings/directory-building.png") no-repeat scroll 0 0 transparent;
+    height: 252px;
+    position: absolute;
+    right: 65px;
+    top: 158px;
+    width: 339px;
+}
+/*BEACH SCENE FOUR BUILDINGS*/
+.home-scene-container.beach.building-4 { 
+    background: url('/App_Presentation/UniversitySite/images/structure/home-scenes/edit-scenes/beach.jpg') no-repeat;
+    top: 141px;
+}
+/*BEACH SCENE ONE BUILDING, faculty bookstore classroom directory*/
+.home-scene-container.beach.building-4.fbcd .faculty-building { 
+    background: url("/App_Presentation/UniversitySite/images/structure/buildings/beach/faculty.png") no-repeat scroll 0 0 transparent;
+    height: 170px;
+    left: 35px;
+    position: absolute;
+    top: 190px;
+    width: 270px;    
+}
+.home-scene-container.beach.building-4.fbcd .bookstore-building { 
+    background: url("/App_Presentation/UniversitySite/images/structure/buildings/beach/bookstore.png") no-repeat scroll 0 0 transparent;
+    height: 122px;
+    left: 312px;
+    position: absolute;
+    top: 138px;
+    width: 190px;
+}
+.home-scene-container.beach.building-4.fbcd .classroom-building { 
+    background: url("/App_Presentation/UniversitySite/images/structure/buildings/beach/classroom.png") no-repeat scroll 0 0 transparent;
+    height: 203px;
+    left: 510px;
+    position: absolute;
+    top: 96px;
+    width: 275px;    
+}
+.home-scene-container.beach.building-4.fbcd .directory-building { 
+    background: url("/App_Presentation/UniversitySite/images/structure/buildings/beach/directory.png") no-repeat scroll 0 0 transparent;
+    height: 161px;
+    left: 672px;
+    position: absolute;
+    top: 185px;
+    width: 303px;    
+}
+/*DESERT SCENE ONE BUILDING*/
+.home-scene-container.desert.building-1 { 
+    background: url('/app_presentation/universitysite/images/structure/home-scenes/edit-scenes/desert/one/desert-building-1.jpg') no-repeat 0 0;  
+    width: 1080px;
+    height: 553px;
+    }
+
+
+/*DESERT SCENE ONE BUILDING, Bookstore */
+.home-scene-container.desert.building-1.b .bookstore-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/desert/bookstore.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 111px;
+    left: 420px;
+    position: absolute;
+    top: 156px;
+    width: 190px;
+}
+/*DESERT SCENE ONE BUILDING, Directory*/
+.home-scene-container.desert.building-1.d .directory-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/desert/directory.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 161px;
+    left: 346px;
+    position: absolute;
+    top: 128px;
+    width: 303px;
+}
+/*DESERT SCENE ONE BUILDING, classroom */
+.home-scene-container.desert.building-1.c .classroom-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/desert/classroom.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 203px;
+    left: 375px;
+    position: absolute;
+    top: 260px;
+    width: 275px;
+}
+/*DESERT SCENE ONE BUILDING, faculty building */
+.home-scene-container.desert.building-1.c .classroom-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/desert/classroom.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 203px;
+    left: 375px;
+    position: absolute;
+    top: 63px;
+    width: 275px;
+}
+.home-scene-container.desert.building-1.f .faculty-building { 
+    background: url("/app_presentation/universitysite/images/structure/buildings/desert/faculty.png") no-repeat scroll 0 0 transparent;
+    height: 170px;
+    left: 441px;
+    position: absolute;
+    top: 114px;
+    width: 270px;
+}

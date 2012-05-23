@@ -1,0 +1,3094 @@
+/** UTC Date: 5/23/2012 4:21:05 PM
+ *  Summary:
+ *      reset.css => [Action: Compressed ],[Modified: 5/23/2012 4:06:41 PM ],
+ *      elements.css => [Action: Compressed ],[Modified: 5/23/2012 4:06:41 PM ],
+ *      layout.css => [Action: Compressed ],[Modified: 5/23/2012 4:06:41 PM ],
+ */
+
+/* reset.css */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* elements.css */
+/** elements.css - Styles pertaining to the look of the site, such as fonts and colors **/
+/* OPEN SANS GOOGLE FONT */
+@font-face {
+    font-family: 'OpenSans';
+    src: url('/App_Presentation/UniversitySite/styles/fonts/open-sans-400-webfont.eot');
+    src: url('/App_Presentation/UniversitySite/styles/fonts/open-sans-400-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/App_Presentation/UniversitySite/styles/fonts/open-sans-400-webfont.woff') format('woff'),
+         url('/App_Presentation/UniversitySite/styles/fonts/open-sans-400-webfont.ttf') format('truetype'),
+         url('/App_Presentation/UniversitySite/styles/fonts/open-sans-400-webfont.svg#OpenSansRegular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'OpenSans Bold';
+    src: url('/App_Presentation/UniversitySite/styles/fonts/open-sans-700-webfont.eot');
+    src: url('/App_Presentation/UniversitySite/styles/fonts/open-sans-700-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/App_Presentation/UniversitySite/styles/fonts/open-sans-700-webfont.woff') format('woff'),
+         url('/App_Presentation/UniversitySite/styles/fonts/open-sans-700-webfont.ttf') format('truetype'),
+         url('/App_Presentation/UniversitySite/styles/fonts/open-sans-700-webfont.svg#OpenSansBold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'OpenSansSemibold';
+    src: url('/App_Presentation/UniversitySite/styles/fonts/open-sans-600-webfont.eot');
+    src: url('/App_Presentation/UniversitySite/styles/fonts/open-sans-600-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/App_Presentation/UniversitySite/styles/fonts/open-sans-600-webfont.woff') format('woff'),
+         url('/App_Presentation/UniversitySite/styles/fonts/open-sans-600-webfont.ttf') format('truetype'),
+         url('/App_Presentation/UniversitySite/styles/fonts/open-sans-600-webfont.svg#OpenSansSemibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'OpenSansExtrabold';
+    src: url('/App_Presentation/UniversitySite/styles/fonts/open-sans-800-webfont.eot');
+    src: url('/App_Presentation/UniversitySite/styles/fonts/open-sans-800-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/App_Presentation/UniversitySite/styles/fonts/open-sans-800-webfont.woff') format('woff'),
+         url('/App_Presentation/UniversitySite/styles/fonts/open-sans-800-webfont.ttf') format('truetype'),
+         url('/App_Presentation/UniversitySite/styles/fonts/open-sans-800-webfont.svg#OpenSansExtrabold') format('svg');
+    font-weight: 800;
+    font-style: normal;
+
+}
+/* Generic Typography */
+h1, h2, h3, h4 { font-family: OpenSans; font-weight: 300;}
+
+.content-container h1 { 
+    font-size: 150%; 
+    padding-bottom: 20px;
+}
+.content-container h2 {
+    margin: 5px 0;
+    font-family: 'OpenSans', sans-serif;
+    font-weight: 200;
+    color: #555555;
+    font-size: 150%;
+    margin: 0 0 10px 0; 
+}
+
+.content-container h3{
+    font-family: 'OpenSans', sans-serif;
+    font-weight: 600;
+    color: #555555;
+    font-size: 75%; 
+}
+
+.content-container a { 
+    color: #678400;
+    font-family: 'OpenSans',sans-serif;
+    font-weight: 400;
+}
+
+.content-container p{
+    font-family: 'OpenSans', sans-serif;
+    font-weight: 400;
+    color: #555555;
+    font-size: 70%;
+    margin: 15px 0;
+    line-height: 1.7; 
+}
+.container h3 { 
+    padding-bottom: 10px; 
+}
+.container p { 
+    margin: 0;
+    font-size: 70%;
+    line-height: 1.5em;
+}
+a { 
+    color: #678400;
+    font-family: 'OpenSans',sans-serif;
+    font-weight: 400;
+    font-size: 80%;
+}
+
+input {
+font-family: 'OpenSans', sans-serif;
+font-weight: 400;
+color: #555555;
+font-size: 80%;
+}
+/* WYSIWYG Intro Container */
+.content-container .container h1 { 
+    padding-bottom: 20px;
+    font-family: OpenSans, sans-serif;
+    font-size: 160%;
+    font-weight: 100;
+    color: #323131;
+}
+/* Welcome */
+.intro-container h1.banner-lg { 
+    background: url("/app_presentation/universitysite/images/structure/buttons.png") no-repeat 0 -533px;
+    color: #FFFFFF;
+    font-family: 'OpenSans Bold',sans-serif;
+    font-size: 140%;
+    height: 32px;
+    margin-bottom: 10px;
+    position: absolute;
+    left: 83px;
+    top: 20px;
+    padding: 6px 0 0 18px;
+    width: 350px;
+}
+.intro-container .inner .inner-mid .welcome-container h1 { 
+    font-size: 150%;
+    padding-bottom: 15px;
+}
+.intro-container .inner .inner-mid .welcome-container h2 { 
+    color: #555555;
+    font-size: 100%;
+    padding-bottom: 6px
+}
+.intro-container .inner .inner-mid .welcome-container .right p { 
+    margin: 15px 0; 
+}
+/* 
+.intro-container .inner .inner-mid .welcome-container label { 
+    font-size: 70%;
+    font-family: OpenSans Bold, Sans-serif;
+}
+*/
+/* Password Reset */
+.inner .inner-mid .password-reset  h1 { 
+    font-size: 150%;
+    padding-bottom: 15px;
+}
+.inner .inner-mid .password-reset .password-recover.left h1 { 
+    padding-bottom: 5px;
+}
+.inner .inner-mid .password-reset h2 { 
+    color: #555555;
+    font-size: 100%;
+    padding-bottom: 15px
+}
+.inner .inner-mid .password-reset .right p { 
+    margin: 15px 0; 
+}
+.inner .inner-mid .password-reset label { 
+    font-size: 70%;
+    font-family: OpenSans Bold, Sans-serif;
+}
+.inner .inner-mid .password-reset .forgot-username { 
+    font-size: 70%;
+    margin: 0 0 10px 5px;
+    display: block;
+}
+.inner .inner-mid .password-reset .password-recover.left p.blurb { 
+    margin-bottom: 15px;
+}
+/* Create Campus */
+.create-campus p { 
+    font-size: 75%;
+    margin-bottom: 15px;
+    line-height: 1.5em;
+    }
+.create-campus input.submit-btn { 
+    margin-bottom: 15px; 
+    float: left;
+}
+.create-campus #default-campus { 
+    vertical-align: bottom;
+    float: left;
+    width: auto;
+    height: auto;
+}
+.create-campus label { 
+    font-size: 70%; 
+}
+.create-campus .inner .inner-mid p { 
+    margin-bottom: 20px; 
+}
+.create-campus .inner .inner-mid h1 { 
+    padding-bottom: 10px; 
+    font-size: 150%; 
+    font-family: 'OpenSans', sans-serif; 
+}
+.create-campus .inner .inner-mid h2 { 
+    padding-bottom: 15px; 
+    font-size: 90%;
+    color: black;
+}
+/* Content Header */
+.content .content-header h1 { 
+    font-size: 180%;
+    color: #323131;
+    padding: 20px 0;
+    font-family: 'OpenSans', sans-serif;
+}
+.content .content-header p { 
+    color: #4D4D4D;
+    font-family: 'OpenSans',sans-serif;
+    font-size: 85%;
+    font-weight: normal;
+    line-height: 1.5em;
+    padding-bottom: 25px;
+}
+/* Generic Section Items / Lecture Items */
+.content-container .section .right h1.date-header { 
+    background: url("/app_presentation/universitysite/images/structure/buttons.png") no-repeat scroll 0 -189px transparent;
+    color: #6B8319;
+    display: block;
+    font-size: 80%;
+    height: 11px;
+    margin-bottom: 10px;
+    padding: 10px 0 8px 25px;
+    width: 380px;
+}
+.content-container .section .right h1 { 
+    padding-bottom: 10px; 
+}
+.content-container .section .right h2 {
+    color: #678400;
+    font-size: 100%;
+    padding-bottom: 0;
+    font-family: OpenSansSemiBold, sans-serif;
+}
+.content-container .section .right h3 { 
+    color: #323131;
+    font-size: 85%;
+}
+/* Training Section */
+.content h1 img.header-image { 
+    padding-left: 10px;
+    vertical-align: -2px;
+}
+.content .training-zone .training-item h2 { 
+    color: #678400;
+    font-size: 90%;
+    font-family: 'OpenSansSemiBold', sans-serif;
+}
+/* My Account */
+.account-container .account-form-section h2 {
+font-family: 'Open Sans', sans-serif;
+font-weight: 400;
+font-size: 110%;
+margin: 0 0 10px 0;
+}
+
+.account-container  label {
+font-family: 'Open Sans', sans-serif;
+font-weight: 600;
+font-size: 75%;
+float: left;
+margin: 0 0 3px 0;
+}
+
+label.error {
+font-family: arial, sans-serif;
+font-style: italic;
+font-size: 65%;
+float: left;
+color: #ee6f43;
+}
+
+.account-container .account-banner h1 {
+font-family: 'Open Sans', sans-serif;
+text-transform: capitalize;
+font-weight: 800;
+color: #fff;
+font-size: 130%; 
+}
+
+.account-container  h1 {
+font-family: 'Open Sans', sans-serif;
+text-transform: capitalize;
+font-weight: 800;
+color: #fff;
+font-size: 130%; 
+}
+.account-container .my-account-content h2{
+font-family: 'Open Sans', sans-serif;
+font-weight: 200;
+color: #555555;
+font-size: 150%;
+margin: 0 0 10px 0; 
+}
+.account-container .my-account-content h3{
+font-family: 'Open Sans', sans-serif;
+font-weight: 600;
+color: #555555;
+font-size: 75%; 
+}
+.account-container .my-account-content .user-info-container ul a{
+font-family: 'Open Sans', sans-serif;
+font-weight: 400;
+color: #678400;
+}
+.account-container .my-account-content .user-info-container p, .account-container .my-account-content .account-section-narrow p  {
+font-family: 'Open Sans', sans-serif;
+font-weight: 400;
+color: #555555;
+font-size: 70%;
+margin: 20px 0;
+line-height: 1.7; 
+}
+/* Logged In Container */
+.logged-in-container .logged-in-content h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #0088d4;
+    font-size: 95%; 
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #fff;
+    margin: 0 0 5px 0;
+}
+
+.logged-in-container .logged-in-content p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #9b9b9b;
+    font-size: 65%; 
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #fff;
+}
+/* Directory */
+.content .directory-mid h1 { 
+    font-size: 110%;
+    color: #323131;
+    padding-bottom: 25px;
+}
+/*Shire Apps*/
+.shire-apps { 
+    font-family: OpenSans, sans-serif;
+}
+.shire-apps .app .left a { font-weight: bold; }
+.shire-apps .app .app-header { font-size: 80%; }
+.shire-apps .app .app-header h1 { 
+    color: #678400;
+    font-size: 100%;
+    font-family: OpenSans Bold, Sans-serif;
+    padding-bottom: 5px;
+}
+/* Shire Brand Guidelines */
+.pdf-item h1.pdf-title { 
+    background: url("/app_presentation/universitysite/images/structure/buttons.png") no-repeat 0 -155px;
+    display: block;
+    font-size: 80%;
+    height: 16px;
+    padding: 8px 0 8px 55px;
+    width: 250px;
+    color: #6b8319;
+    margin-bottom: 10px;
+}
+.pdf-item h2 { 
+    color: #6b8319;
+    font-family: OpenSans Bold, Sans-serif;
+    font-size: 85%;
+}
+/* Lecture Program */
+.lecture-program p.speaker { 
+    margin-bottom: 15px;
+    color: #323131;
+    font-size: 100%;
+    font-weight: bold;
+}
+/* Shire Patient Programs */
+.patient-programs .program h1.program-title { 
+    background: url("/app_presentation/universitysite/images/structure/buttons.png") no-repeat 0 -189px;
+    color: #6B8319;
+    display: block;
+    font-size: 80%;
+    height: 13px;
+    margin-bottom: 10px;
+    padding: 8px 0 8px 25px;
+    width: 380px;
+}
+.patient-programs .program h2 { 
+    color: #6b8319;
+    font-family: OpenSans Bold, Sans-serif;
+    font-size: 85%;
+}
+
+/* layout.css */
+/** layout.css - Styles pertaining to the layout of the site, such as containing divs **/
+
+body
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/inner-background.jpg') no-repeat center top #46f6ff;
+}
+
+.clear
+{
+    clear: both;
+}
+.left
+{
+    float: left;
+}
+.right
+{
+    float: right;
+}
+strong
+{
+    font-weight: bold;
+}
+em
+{
+    font-style: italic;
+}
+.container
+{
+    margin-bottom: 25px;
+}
+.divider
+{
+    height: 1px;
+    background: #c4c4c4;
+    border-bottom: 1px solid #FFF;
+}
+/* general layout */
+input[type=text], input[type=button]
+{
+    border: 0;
+}
+input[type=checkbox]
+{
+    vertical-align: middle;
+}
+.container
+{
+    width: 960px;
+    margin: 0 auto;
+}
+/* buttons */
+a.grey-btn
+{
+    background: url("/App_Presentation/UniversitySite/images/structure/buttons.png") no-repeat 0 -119px;
+    color: #555555;
+    display: block;
+    font-family: 'Open Sans' ,sans-serif;
+    height: 25px;
+    padding: 9px 0 0 45px;
+    position: relative;
+    text-decoration: none;
+    width: 170px;
+    margin-bottom: 10px;
+    font-size: 83%;
+}
+a.grey-btn img
+{
+    left: 6px;
+    top: 4px;
+    position: absolute;
+    height: 25px;
+    width: 25px;
+}
+a.grey-btn-sm
+{
+    background: url("/App_Presentation/UniversitySite/images/structure/buttons.png") no-repeat 0 -665px;
+    color: #555555;
+    display: block;
+    font-family: 'Open Sans' ,sans-serif;
+    height: 25px;
+    padding: 9px 0 0 45px;
+    position: relative;
+    text-decoration: none;
+    width: 170px;
+    font-size: 80%;
+    margin-bottom: 10px;
+}
+a.grey-btn-sm img
+{
+    left: 6px;
+    top: 4px;
+    position: absolute;
+}
+a.arrow
+{
+    background: url("/App_Presentation/UniversitySite/images/structure/green-arrow.gif") no-repeat scroll 0 2px transparent;
+    display: block;
+    font-size: 75%;
+    height: 15px;
+    margin-top: 15px;
+    padding-left: 15px;
+    text-decoration: none;
+    width: auto;
+}
+a.arrow:hover
+{
+    text-decoration: underline;
+}
+a.top-link
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/top-link-arrow.gif') no-repeat 0 2px;
+    display: block;
+    padding-left: 10px;
+    font-size: 70%;
+    color: #555555;
+    text-decoration: underline;
+}
+.submit-btn
+{
+    background: url("/App_Presentation/UniversitySite/images/structure/buttons.png") no-repeat scroll 0 0 transparent;
+    border: 0 none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: OpenSans Bold,arial,sans-serif;
+    font-size: 100%;
+    height: 44px;
+    margin: 15px 0 0;
+    text-align: center;
+    text-shadow: -1px -1px 1px #005091;
+    text-transform: uppercase;
+    width: 260px;
+}
+.submit-btn:hover {
+    background-position: -1px -221px;
+}
+.register-link-btn
+{
+    background: url("/App_Presentation/UniversitySite/images/structure/buttons.png") no-repeat scroll 0 0 transparent;
+    border: 0 none;
+    color: #FFFFFF;
+    cursor: pointer;
+    float: left;
+    font-family: OpenSans Bold, arial, sans-serif;
+    font-size: 100%;
+    height: 29px;
+    padding: 15px 0 0;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: -1px -1px 1px #005091;
+    text-transform: uppercase;
+    width: 260px;
+}
+.register-link-btn:hover { background-position: -1px -221px; }
+a.print-btn
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/icons/print-icon.png') no-repeat 0 0;
+    display: block;
+    padding-left: 20px;
+    font-size: 70%;
+    text-decoration: none;
+    color: #555555;
+}
+/* input and forms */
+input[type=text].text-input
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/account-input-bg.png') no-repeat 0 0;
+    border: 0 none;
+    height: 33px;
+    padding: 0 10px;
+    width: 245px;
+}
+input[type=text].text-input.error
+{
+    background-position: 0 -33px;
+}
+input[type=password].password-input
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/account-input-bg.png') no-repeat 0 0;
+    border: 0 none;
+    height: 33px;
+    padding: 0 10px;
+    width: 245px;
+}
+input[type=password].password-input.error
+{
+    background-position: 0 -33px;
+}
+fieldset label
+{
+    margin-left: 3px;
+}
+/* unordered lists */
+.content ul.inline-list
+{
+    margin: 10px 0;
+}
+.content ul.inline-list li
+{
+    display: inline;
+    margin: 0 10px;
+}
+/* Tool tip */
+.building .tooltip-container
+{
+    height: 100%;
+    left: 20%;
+    position: relative;
+    top: -10%;
+    width: 80%;
+}
+.tool-tip
+{
+    width: 243px;
+    display: none;
+    font-family: OpenSans, sans-serif;
+    position: absolute;
+}
+.building
+{
+    cursor: pointer;
+}
+.building .tool-tip
+{
+    top: -250px;
+    z-index: 3000;
+}
+.tool-tip .intro-top .top-piece
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/tooltip-top.png') no-repeat 0 0;
+    width: 243px;
+    height: 6px;
+}
+.tool-tip .intro-top .middle-piece
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/tooltip-seal-middle.png') no-repeat 0 0;
+    width: 213px;
+    position: relative;
+    padding: 35px 15px 0;
+}
+.tool-tip .intro-top .middle-piece h1.banner
+{
+    background: url("/App_Presentation/UniversitySite/images/structure/buttons.png") no-repeat 0 -375px;
+    color: #FFFFFF;
+    font-family: 'OpenSans Bold' ,sans-serif;
+    font-size: 140%;
+    height: 32px;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 5px;
+    left: -3px;
+    padding: 6px 0 0 18px;
+    width: 210px;
+}
+.tool-tip .intro-top .middle-piece h2
+{
+    padding-top: 15px;
+    font-size: 100%;
+    padding-bottom: 10px;
+    font-family: OpenSans Bold, Sans-serif;
+}
+.tool-tip .intro-top .middle-piece p
+{
+    padding-bottom: 10px;
+    font-size: 75%;
+    line-height: 1.5em;
+}
+.tool-tip .intro-top .intro-bottom
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/tool-tip-top-bottom-piece.png') no-repeat 0 0;
+    width: 243px;
+    height: 5px;
+}
+.tool-tip .tooltip-bottom
+{
+    background: url("/App_Presentation/UniversitySite/images/structure/tooltip-bottom-mid.png") repeat-y 0 0;
+    width: 243px;
+    padding: 10px 10px 0 10px;
+}
+.tool-tip .tooltip-bottom h2
+{
+    font-size: 100%;
+    padding-bottom: 10px;
+    font-family: OpenSans Bold, sans-serif;
+}
+.tool-tip .bottom-piece
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/tooltip-bottom.png') no-repeat 0 0;
+    width: 243px;
+    height: 45px;
+    margin-top: -10px;
+}
+/* initial screens */
+
+.initial-container
+{
+    position: relative;
+    top: 120px;
+    left: 0;
+    z-index: 1;
+    width: 661px;
+    margin: 0 auto;
+}
+
+.initial-bg
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/initial-bg.png') no-repeat;
+    position: absolute;
+    width: 661px;
+    height: 423px;
+    z-index: 1;
+    top: 0;
+}
+
+.initial-container .initial-content
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/initial-content-bg.png') no-repeat 0 0;
+    width: 609px;
+    height: 341px;
+    float: left;
+    margin: 69px 0 0 10px;
+    padding: 0 0 0 30px;
+}
+
+.initial-container .initial-section-wide
+{
+    width: 400px;
+    float: left;
+    margin: 45px 0 0 15px;
+}
+
+.initial-container .initial-section-narrow
+{
+    width: 200px;
+    float: left;
+    margin: 45px 0 0 30px;
+}
+
+.initial-container .initial-section-half
+{
+    width: 280px;
+    float: left;
+    margin: 25px 0 0 0;
+}
+
+.initial-container label
+{
+    font-family: 'Open Sans' , sans-serif;
+    font-weight: 600;
+    font-size: 75%;
+    float: left;
+    margin: 0 0 3px 0;
+}
+/* Create Your Scene */
+.create-campus
+{
+    width: 841px;
+    height: 538px;
+    margin: 25px auto;
+    background: url('/App_Presentation/UniversitySite/images/structure/welcome-screen-bg.png') no-repeat 0 0;
+    position: relative;
+    font-family: 'OpenSans' , sans-serif;
+}
+.create-campus h1.banner
+{
+    background: url("/App_Presentation/UniversitySite/images/structure/buttons.png") no-repeat 0 -324px;
+    color: #FFFFFF;
+    font-family: 'OpenSans Bold' ,sans-serif;
+    font-size: 140%;
+    height: 32px;
+    margin-bottom: 10px;
+    position: absolute;
+    left: 83px;
+    top: 20px;
+    padding: 6px 0 0 18px;
+    width: 282px;
+}
+.create-campus .inner
+{
+    width: 631px;
+    position: absolute;
+    top: 80px;
+    left: 105px;
+}
+.create-campus .inner .inner-top
+{
+    width: 631px;
+    height: 6px;
+    background: url('/App_Presentation/UniversitySite/images/structure/welcome-screen-inner-top.png') no-repeat 0 0;
+}
+.create-campus .inner .inner-mid
+{
+    width: 631px;
+    background: url('/App_Presentation/UniversitySite/images/structure/welcome-screen-inner-mid.png') repeat-y 0 0;
+}
+.create-campus .inner .right
+{
+    margin: auto 0;
+}
+.create-campus .inner .inner-mid .left
+{
+    padding-left: 15px;
+    width: 270px;
+}
+.create-campus .inner .inner-mid .right
+{
+    float: left;
+    border-left: 1px solid #c4c4c4;
+    padding-left: 15px;
+    width: 310px;
+    padding-top: 35px;
+    height: 265px;
+}
+.create-campus .inner .inner-bottom
+{
+    width: 631px;
+    height: 15px;
+    background: url('/App_Presentation/UniversitySite/images/structure/welcome-screen-inner-bottom.png') no-repeat 1px 0;
+}
+.create-campus .inner .right fieldset.left
+{
+    height: auto;
+}
+/*Welcome Page*/
+.intro-container
+{
+    width: 841px;
+    height: 538px;
+    margin: 25px auto;
+    background: url('/App_Presentation/UniversitySite/images/structure/welcome-screen-bg.png') no-repeat 0 0;
+    position: relative;
+    font-family: 'OpenSans' , sans-serif;
+}
+.intro-container h1.banner
+{
+    background: url("/App_Presentation/UniversitySite/images/structure/buttons.png") no-repeat scroll 0 -533px transparent;
+    color: #FFFFFF;
+    font-family: 'OpenSans Bold' ,sans-serif;
+    font-size: 140%;
+    height: 35px;
+    left: 83px;
+    margin-bottom: 10px;
+    padding: 6px 0 0 18px;
+    position: absolute;
+    top: 20px;
+    width: 332px;
+}
+.intro-container .inner
+{
+    width: 631px;
+    position: absolute;
+    top: 80px;
+    left: 105px;
+}
+.intro-container .inner .inner-top
+{
+    width: 631px;
+    height: 6px;
+    background: url('/App_Presentation/UniversitySite/images/structure/welcome-screen-inner-top.png') no-repeat 0 0;
+}
+.intro-container .inner .inner-mid
+{
+    width: 631px;
+    background: url('/App_Presentation/UniversitySite/images/structure/welcome-screen-inner-mid.png') repeat-y 0 0;
+}
+.intro-container .inner .right
+{
+    margin: auto 0;
+}
+.intro-container .inner .inner-mid .welcome-container .left
+{
+    height: 100%;
+    padding: 0 15px;
+    width: 270px;
+    margin-bottom: 25px;
+}
+.intro-container .inner .inner-mid .welcome-container .right
+{
+    float: left;
+    border-left: 1px solid #c4c4c4;
+    padding-left: 15px;
+    width: 310px;
+    margin-bottom: 25px;
+    height: 100%;
+}
+.intro-container .inner .inner-mid .welcome-container .right p
+{
+    margin: 15px 0;
+}
+.intro-container .inner .inner-bottom
+{
+    width: 631px;
+    height: 15px;
+    background: url('/App_Presentation/UniversitySite/images/structure/welcome-screen-inner-bottom.png') no-repeat 1px 0;
+}
+.welcome-container .inner-mid fieldset
+{
+    width: 100%;
+    display: block;
+    padding-bottom: 10px;
+}
+.welcome-container .login.left
+{
+    margin-top: 35px;
+    padding-bottom: 15px;
+}
+.welcome-container .login.left a.forgot-password
+{
+    display: block;
+    padding: 10px 5px 0;
+}
+.intro-container .left.login a.forgot-pass
+{
+    font-size: 75%;
+    display: block;
+    margin: 10px 0;
+}
+.intro-container .left.login fieldset:last-child
+{
+    padding-bottom: 0;
+}
+.intro-container .left.login fieldset label
+{
+    width: 100%;
+    display: block;
+    color: #555555;
+}
+.intro-container .register.right
+{
+    margin-top: 35px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    width: 235px;
+}
+/*Password Reset*/
+.intro-container .inner .password-reset .right
+{
+    margin: auto 0;
+}
+.intro-container .inner .inner-mid .password-reset .left
+{
+    height: 100%;
+    padding: 0 15px;
+    width: 270px;
+    margin-bottom: 25px;
+}
+.intro-container .inner .inner-mid .password-reset .right
+{
+    border-left: 1px solid #C4C4C4;
+    float: left;
+    height: 100%;
+    margin-bottom: 25px;
+    min-height: 240px;
+    padding-left: 15px;
+    width: 310px;
+}
+.intro-container .inner .inner-mid .password-reset .right p
+{
+    margin: 15px 0;
+}
+.inner-mid .password-reset fieldset
+{
+    width: 100%;
+    display: block;
+    padding-bottom: 10px;
+}
+.password-reset .password-recover.left
+{
+    margin-top: 35px;
+    padding-bottom: 15px;
+}
+.password-reset .left.password-recover a.forgot-pass
+{
+    font-size: 75%;
+}
+.password-reset .left.password-recover fieldset:last-child
+{
+    padding-bottom: 0;
+}
+.password-reset .left.password-recover fieldset label
+{
+    width: 100%;
+    display: block;
+    color: #555555;
+    font-weight: bold;
+}
+.inner-mid .password-reset .blurb.right
+{
+    margin-top: 35px;
+    height: 100%;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    width: 235px;
+}
+/*Puzzle password reset*/
+.password-reset .container.puzzle-reset, .container.puzzle
+{
+    width: 610px;
+    padding: 15px;
+}
+.puzzle-info
+{
+    width: 610px;
+    height: 150px;
+    padding: 10px;
+    position: relative;
+}
+.info-left
+{
+    float: left;
+    width: 380px;
+    padding: 15px;
+}
+.info-right
+{
+    float: left;
+    width: 180px;
+    padding: 10px;
+    margin-top: 10px;
+}
+.puzzle-container
+{
+    width: 610px;
+    height: 140px;
+    padding: 0 10px;
+    position: relative;
+}
+.puzzle
+{
+    position: relative;
+    height: 120px;
+    width: 240px;
+    float: left;
+    margin: 0 20px;
+}
+.pieces
+{
+    border-left: 1px solid #C4C4C4;
+    width: 314px;
+    height: 120px;
+    float: left;
+    position: relative;
+}
+/* top nav */
+.inner-top-nav
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/top-nav-bg.png') no-repeat bottom;
+    width: 966px;
+    height: 64px;
+    position: relative;
+}
+.inner-top-nav ul
+{
+    margin: 0 auto;
+    height: 53px;
+    position: relative;
+}
+.inner-top-nav ul li
+{
+    display: inline-block;
+    padding-top: 18px;
+    float: left;
+    position: relative;
+    margin: 0 6px;
+}
+.inner-top-nav ul li a
+{
+    background: url("/App_Presentation/UniversitySite/images/structure/top-nav-divider.png") repeat-y scroll right center transparent;
+    color: #73C5D2;
+    display: block;
+    font-family: Open Sans,Arial,Sans-serif;
+    font-size: 100%;
+    height: 25px;
+    min-width: 175px;
+    padding-top: 12px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+}
+.inner-top-nav ul li.active span.left-tab
+{
+    background: url("/App_Presentation/UniversitySite/images/structure/nav-active-item-left.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 47px;
+    margin-top: 12px;
+    width: 35px;
+    margin-left: -33px;
+}
+
+.inner-top-nav ul li.active
+{
+    height: 60px;
+    padding-top: 0 !important;
+    top: 8px;
+    z-index: 3000;
+}
+.inner-top-nav ul li.active a.active
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/top-nav-active-item-left.png') no-repeat left top;
+    overflow: hidden;
+    margin-right: 2px;
+    padding-top: 0;
+    height: 49px;
+}
+
+.inner-top-nav ul li.active a.active span
+{
+    background: url("/App_Presentation/UniversitySite/images/structure/top-nav-active-item-right.png") no-repeat scroll right top transparent;
+    display: block;
+    height: 29px;
+    margin-left: 3px;
+    font-family: OpenSans Bold, Arial, Sans-serif;
+    color: #323131;
+    overflow: hidden;
+    padding: 20px 15px 0 50px;
+}
+.inner-top-nav ul li:last-child a
+{
+    background: none;
+}
+.inner-top-nav ul li img
+{
+    left: 10px;
+    position: absolute;
+    top: 2px;
+}
+.inner-top-nav ul li.active a.active img
+{
+    top: 10px;
+    left: 15px;
+}
+.inner-top-nav .root
+{
+    position: absolute;
+    right: 4px;
+    top: 14px;
+}
+/** Breadcrumbs **/
+.middle-utility
+{
+    border-bottom: 1px solid #c4c4c4;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+.content .breadcrumbs
+{
+    border-bottom: 1px solid #c4c4c4;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+}
+.middle-utility .breadcrumbs
+{
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    width: 640px;
+}
+.middle-utility .widget-holder.right
+{
+    width: 200px;
+    padding-right: 15px;
+}
+.content .breadcrumbs ul li
+{
+    display: inline;
+    font-size: 75%;
+    font-family: OpenSansBold, Sans-serif;
+    margin-right: 5px;
+    text-transform: uppercase;
+}
+.content .breadcrumbs ul li a
+{
+    text-decoration: none;
+}
+.content .breadcrumbs ul li span
+{
+    color: #678400;
+}
+.content .breadcrumbs ul li a.active
+{
+    color: #626262;
+}
+/** Acount sign up **/
+.account-container
+{
+    position: relative;
+    top: 120px;
+    left: 0;
+    z-index: 1;
+}
+
+.inner-container
+{
+    margin-bottom: 245px;
+}
+
+.account-bg
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/account-bg.png') no-repeat;
+    position: absolute;
+    width: 960px;
+    height: 500px;
+    z-index: 1;
+    top: 0;
+}
+.account-bg .sidebar, .account-bg .container
+{
+    width: 185px;
+    float: left;
+    margin-top: 25px;
+}
+.account-bg .sidebar .divider
+{
+    width: 223px;
+}
+.account-bg .sidebar a
+{
+    font-weight: bold;
+    color: #323131;
+    display: block;
+    font-family: 'OpenSansSemibold' ,Sans-serif;
+    font-size: 85%;
+    font-weight: bold;
+    margin: 10px 0;
+    text-decoration: none;
+}
+.account-bg .sidebar ul.sidebar-nav li a.active
+{
+    background-position: 0 -578px !important;
+}
+.account-bg .sidebar a span
+{
+    font-size: 70%;
+    display: block;
+    font-weight: normal;
+}
+.account-bg .sidebar h1.banner
+{
+    margin-left: -17px;
+}
+.account-container .account-shadow
+{
+    position: absolute;
+    background: url('/App_Presentation/UniversitySite/images/structure/inner-background-shadow.png') no-repeat;
+    height: 362px;
+    width: 1055px;
+    z-index: 0;
+    top: 255px;
+    left: -35px;
+    margin: 0 auto;
+}
+
+.account-container .account-banner
+{
+    background: url("/App_Presentation/UniversitySite/images/structure/buttons.png") no-repeat 0 -323px;
+    position: absolute;
+    width: 286px;
+    height: 35px;
+    left: -6px;
+    top: 20px;
+    padding: 8px 0 0 18px;
+}
+
+.account-container .inner-banner
+{
+    position: absolute;
+    width: 232px;
+    height: 40px;
+    left: -10px;
+    top: 20px;
+    padding: 12px 0 0 18px;
+}
+
+.form-row
+{
+    width: 260px;
+    float: left;
+    margin: 8px 0 0 0;
+}
+
+.form-row.verify-row
+{
+    margin: 8px 0 40px 0;
+}
+
+.form-row.verify-row a
+{
+    color: #678400;
+    font-family: 'Open Sans' ,sans-serif;
+    font-weight: 400;
+    font-size: 80%;
+}
+
+.form-column
+{
+    float: left;
+    height: 53px;
+}
+
+.account-container .form-column.picture-upload
+{
+    float: left;
+    height: 53px;
+    height: auto;
+}
+
+.form-column.small-select
+{
+    margin: 0 30px 0 0;
+}
+
+.account-container .form-column.picture-upload img
+{
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+.account-container .form-column.picture-upload .file-caption
+{
+    float: left;
+    font-family: 'Open Sans' , sans-serif;
+    font-weight: 400;
+    font-size: 65%;
+    width: 115px;
+}
+
+.account-container .form-column.picture-upload .label-small
+{
+    font-weight: 600;
+    font-size: 70%;
+    margin: 9px 0 0 0;
+}
+
+.form-column .account-checkbox
+{
+    float: left;
+    margin: 10px 0 0 0;
+}
+
+.form-column .submit-large
+{
+    background: url("/App_Presentation/UniversitySite/images/structure/buttons.png") no-repeat 0 -265px;
+    float: left;
+    width: 259px;
+    height: 43px;
+    border: 0;
+    cursor: pointer;
+    font-family: 'Open Sans' , sans-serif;
+    font-weight: 600;
+    font-size: 110%;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: -1px -1px 0 #2276ba;
+}
+
+.form-column .submit-large:hover
+{
+    background-position: 0 -222px;
+}
+
+.form-column .account-checkbox li
+{
+    float: left;
+    display: inline;
+    margin: 0 3px 0 0;
+}
+
+.form-column .account-checkbox label
+{
+    margin: 5px 0 0 0;
+}
+
+.form-column.large-select select
+{
+    width: 233px;
+}
+
+.form-column.small-select label
+{
+    margin-left: 2px;
+}
+
+.form-column .input-large
+{
+    background: url("/App_Presentation/UniversitySite/images/structure/account-input-bg.png") no-repeat scroll 0 0 transparent;
+    border: 0 none;
+    height: 27px;
+    margin: 0 0 0 -5px;
+    padding: 3px 8px;
+    width: 251px;
+}
+
+.form-column .input-large.error
+{
+    background-position: 0 -33px;
+}
+
+.form-column .input-password
+{
+    float: left;
+    width: 209px;
+    height: 26px;
+    background: url('/App_Presentation/UniversitySite/images/structure/password-sprite.png') no-repeat;
+    border: 0;
+    padding: 3px 8px;
+    margin: 0 0 0 -5px;
+}
+
+.form-column .input-password.error
+{
+    background-position: 0 -30px;
+}
+
+.account-container .form-column .picture-upload-btn
+{
+    float: left;
+    width: 78px;
+    height: 27px;
+    background: url("/App_Presentation/UniversitySite/images/structure/buttons.png") no-repeat 0 -497px;
+    border: 0;
+    padding: 2px;
+    border: 0;
+    margin: 2px 0 0 0;
+    cursor: pointer;
+}
+
+
+.account-container .account-form-section
+{
+    width: 260px;
+    float: left;
+}
+
+.account-container .account-form-section h2 .heading-number
+{
+    font-weight: 700;
+    font-size: 110%;
+}
+
+.account-container .account-content
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/account-reg-bg.png') no-repeat 0 17px;
+    width: 940px;
+    height: 430px;
+    float: left;
+    margin: 70px 0 0 12px;
+    padding: 0 0 0 30px;
+}
+
+.account-container .account-divider
+{
+    border-right: 2px solid #c4c4c4;
+    height: 342px;
+    width: 1px;
+    float: left;
+    margin: 45px 20px 0;
+}
+/* inner-template */
+.inner-template-bg
+{
+    background: none;
+    width: 960px;
+    z-index: 300; /*top:165px;*/
+    margin-top: -10px;
+    position: relative;
+}
+.inner-template-bg .scene
+{
+    bottom: -50px;
+    left: -26px;
+    position: absolute;
+    z-index: 1000;
+}
+.inner-template-bg .scene-shadow
+{
+    background: url("/App_Presentation/UniversitySite/images/structure/scene-background-shadow.png") no-repeat scroll 0 0 transparent;
+    bottom: -240px;
+    height: 408px;
+    left: -45px;
+    position: absolute;
+    width: 1080px;
+}
+/* sidebar, left navigation */
+.sidebar
+{
+    float: left;
+    padding-left: 10px;
+    position: relative;
+    width: 240px;
+    z-index: 4000;
+}
+
+.sidebar h1.banner
+{
+    background: url("/App_Presentation/UniversitySite/images/structure/buttons.png") no-repeat 0 -373px;
+    color: #FFFFFF;
+    font-family: 'OpenSans Bold' ,sans-serif;
+    font-size: 140%;
+    height: 35px;
+    margin-bottom: 10px;
+    margin-left: -18px;
+    padding: 6px 0 0 18px;
+    width: 232px;
+}
+.sidebar a.grey-btn
+{
+    background: url("/App_Presentation/UniversitySite/images/structure/buttons.png") no-repeat scroll 0 -119px transparent;
+    color: #555555;
+    display: block;
+    font-family: 'Open Sans' ,sans-serif;
+    height: 25px;
+    margin: 10px 0;
+    padding: 9px 0 0 45px;
+    position: relative;
+    text-decoration: none;
+    width: 170px;
+}
+.sidebar a.grey-btn:first-child
+{
+    margin-top: 0;
+}
+.sidebar a.grey-btn img
+{
+    left: 8px;
+    top: 5px;
+    position: absolute;
+}
+.sidebar ul.sidebar-nav li a.nav-item
+{
+    color: #323131;
+    display: block;
+    font-family: 'OpenSansSemibold',Sans-serif;
+    font-size: 85%;
+    font-weight: bold;
+    margin: 14px 0 10px;
+    text-decoration: none;
+    width: 220px;
+}
+.sidebar ul.sidebar-nav li a.nav-item.active
+{
+    background: url("/App_Presentation/UniversitySite/images/structure/buttons.png") no-repeat scroll 0 -449px transparent;
+    height: 29px;
+    margin: 5px 5px 5px -5px;
+    padding-left: 10px;
+    padding-top: 15px;
+    width: 260px;
+}
+.sidebar ul.sidebar-nav li a.nav-item img
+{
+    display: block;
+    float: left;
+    margin-top: -9px;
+    padding-right: 15px;
+}
+.sidebar ul.sidebar-nav li a.nav-item span.nav-description
+{
+    color: #000000;
+    font-family: 'Open Sans' ,sans-serif;
+    font-size: 85%;
+    font-weight: 400;
+    padding-top: 5px;
+    display: block;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #FFFFFF;
+}
+.sidebar .divider
+{
+    width: 240px;
+    height: 1px;
+    background: #c4c4c4;
+    border-bottom: 1px solid #FFF;
+}
+/*End sidebar styles*/
+
+
+
+/*File share uploader*/
+.file-share-bg
+{
+    background: url("/App_Presentation/UniversitySite/images/structure/fileshare-bg.jpg") no-repeat scroll 0 0 transparent;
+    font-family: OpenSans,sans-serif;
+    height: 356px;
+    margin-top: 25px;
+    padding: 115px 35px 35px;
+    position: relative;
+    width: 893px;
+}
+.file-share-bg .text-input
+{
+    margin-left: -5px;
+}
+.file-share-bg h1.banner
+{
+    background: url("/App_Presentation/UniversitySite/images/structure/buttons.png") no-repeat scroll 0 -375px transparent;
+    color: #FFFFFF;
+    font-family: 'OpenSans Bold' ,sans-serif;
+    font-size: 140%;
+    height: 32px;
+    left: -7px;
+    margin-bottom: 10px;
+    padding: 6px 0 0 18px;
+    position: absolute;
+    top: 13px;
+    width: 210px;
+}
+.file-share-bg ul.file-list
+{
+    height: 280px;
+    overflow-y: auto;
+}
+.file-share-bg .right h3
+{
+    font-size: 150%;
+    font-weight: bold;
+}
+/*left side*/
+.file-share-bg fieldset label
+{
+    display: block;
+    color: #555555;
+    font-family: OpenSans Bold, sans-serif;
+    padding-bottom: 5px;
+    margin-left: 0;
+}
+.file-share-bg fieldset
+{
+    margin-bottom: 10px;
+}
+/*right side*/
+ul.file-list
+{
+    width: 432px;
+    margin-top: 15px;
+}
+ul.file-list li
+{
+    margin-bottom: 35px;
+}
+ul.file-list li a:first-child
+{
+    float: left;
+    padding-top: 8px;
+}
+ul.file-list a.remove-btn
+{
+    background: url("/App_Presentation/UniversitySite/images/structure/buttons.png") no-repeat scroll 0 -766px transparent;
+    color: #FFFFFF;
+    display: block;
+    font-weight: bold;
+    height: 12px;
+    padding: 9px 0;
+    text-align: center;
+    text-decoration: none;
+    width: 81px;
+    margin-right: 10px;
+}
+#filedescription
+{
+    background: url("/App_Presentation/UniversitySite/images/structure/file-share-text-bg.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    font-family: OpenSans;
+    font-size: 80%;
+    height: 120px;
+    padding: 15px 5px;
+    resize: none;
+    width: 405px;
+}
+.file-share-bg #Submit
+{
+    background: url("/App_Presentation/UniversitySite/images/structure/buttons.png") no-repeat scroll -2px -733px transparent;
+    color: #FFFFFF;
+    font-family: OpenSans Bold,Sans-serif;
+    height: 29px;
+    width: 77px;
+}
+.file-share-bg #confirmation-message
+{
+    font-size: 75%;
+    display: block;
+    margin-top: -11px;
+}
+.file-share-bg .error
+{
+    color: red;
+    font-weight: bold;
+    padding-top: 10px;
+}
+.file-share-bg .confirmation
+{
+    color: #0088D4;
+    font-weight: bold;
+    padding-top: 10px;
+}
+.file-share-bg .no-files
+{
+    width: 435px;
+    float: right;
+}
+.no-files h3
+{
+    font-family: OpenSans Bold, sans-serif;
+    color: #555555;
+}
+/*Content*/
+.inner-template-bg .content
+{
+    z-index: 2000;
+}
+.inner-template-bg .middle .content
+{
+    width: 710px;
+    float: left;
+    position: relative;
+}
+.middle .content .content-header
+{
+    background: url("/App_Presentation/UniversitySite/images/structure/seal-header-top.png") no-repeat scroll -3px 0 transparent;
+    max-height: 172px;
+    padding: 0 15px 0 30px;
+    position: relative;
+    width: 662px;
+}
+.middle .content .content-header .bottom-piece
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/seal-header-bottom-piece.png') no-repeat 0 0;
+    bottom: -9px;
+    height: 15px;
+    left: 1px;
+    position: absolute;
+    width: 703px;
+}
+.middle .content .content-container
+{
+    background: url("/App_Presentation/UniversitySite/images/structure/landing-background-mid.png") repeat-y 1px 0;
+    width: 638px;
+    padding: 20px 35px 45px;
+    margin-bottom: 75px;
+    position: relative;
+}
+/* Lecture Items */
+.content-container .section
+{
+    width: 640px;
+    margin-bottom: 20px;
+}
+.content-container .section h1
+{
+    font-size: 160%;
+    padding-bottom: 20px;
+    color: #323131;
+}
+.content-container .section .left
+{
+    width: 148px;
+    height: 166px;
+    margin-left: 2px;
+    padding-right: 20px;
+}
+.content-container .section .right
+{
+    width: 445px;
+}
+.section .right a
+{
+    margin: 10px 0;
+    display: block;
+}
+.section .right a.grey-btn
+{
+    margin: 10px 0;
+}
+/* Intro */
+.content .content-container .container
+{
+    width: 640px;
+    margin: 20px 0;
+}
+.middle .content .bottom
+{
+    background: url("/App_Presentation/UniversitySite/images/structure/landing-background-bottom.png") no-repeat 0 0;
+    bottom: 0 !important;
+    height: 75px;
+    left: -38px;
+    position: absolute;
+    width: 787px;
+}
+.inner-template-bg .inner-left-nav-container
+{
+    width: 195px;
+    float: left;
+    margin: 85px 0 0 10px;
+}
+.inner-template-bg .inner-left-nav
+{
+    position: relative;
+    list-style: none;
+    width: 256px;
+}
+
+.inner-template-bg .inner-left-nav .left-nav-item
+{
+    list-style: none;
+    height: 50px;
+    width: 195px;
+    position: relative;
+}
+
+.inner-template-bg .inner-left-nav-container .left-nav-divider
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/left-nav-divider.png') no-repeat 0 0;
+    width: 230px;
+    height: 3px;
+}
+
+.inner-template-bg .inner-left-nav li a
+{
+    width: 246px;
+    height: 50px;
+    padding: 10px 0 0 12px;
+    position: absolute;
+    font-family: 'Open Sans' , sans-serif;
+    font-weight: 600;
+    color: #323131;
+    font-size: 85%;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #fff;
+    line-height: 1.2;
+}
+
+.inner-template-bg .inner-left-nav li .nav-description
+{
+    width: 195px;
+    font-family: 'Open Sans' , sans-serif;
+    font-weight: 400;
+    color: #000;
+    font-size: 85%;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #fff;
+    float: left;
+}
+
+.inner-template-bg .inner-left-nav .left-nav-icon
+{
+    width: 195px;
+    float: left;
+}
+/* inner template page */
+.inner-template-bg .top
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/main-background-top.png') no-repeat 0 0;
+    width: 962px;
+    height: 13px;
+}
+.inner-template-bg .middle
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/main-background-middle.png') repeat-y 0 0;
+    width: 960px;
+    min-height: 800px;
+}
+.inner-template-bg .bottom
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/main-background-bottom.png') no-repeat 0 0;
+    width: 960px;
+    height: 10px;
+}
+/* inner template left menu */
+/* Training Section */
+.content .training-zone .training-item
+{
+    width: 266px;
+    float: left;
+    margin: 0 20px 10px;
+}
+.content .training-zone a.arrow
+{
+    background: url("/App_Presentation/UniversitySite/images/structure/green-arrow.gif") no-repeat scroll 0 2px transparent;
+    display: block;
+    font-size: 75%;
+    height: 15px;
+    margin-top: 15px;
+    padding-left: 15px;
+    text-decoration: none;
+    width: auto;
+}
+.content .training-zone .training-item .icon
+{
+    width: 35px;
+    margin-right: 15px;
+}
+
+.content .training-zone .training-item .description
+{
+    width: 210px;
+}
+.content .training-item .description a
+{
+    display: block;
+    font-size: 85%;
+    font-family: OpenSans, sans-serif;
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+/* Directory */
+.content .directory-chooser
+{
+    margin: 0 auto;
+    width: 637px;
+    position: relative;
+    font-family: OpenSans, sans-serif;
+}
+.content .directory-chooser ul.labels li
+{
+    float: left;
+    font-size: 75%;
+    color: #c4c4c4;
+    width: 128px;
+    margin-left: 6px;
+    text-align: center;
+}
+.content .directory-chooser ul.labels li.active h1
+{
+    color: #323131;
+}
+.content .directory-chooser ul.directory-list-container li
+{
+    float: left;
+    display: block;
+
+}
+.directory-chooser ul.directory-list-container li
+{
+    width: 131px;
+    position: relative;
+}
+ul.directory-list-container li .divider
+{
+    width: 132px;
+    height: 1px;
+    background: #d7d7d7;
+    border-bottom: 1px solid #FFF;
+}
+ul.directory-list-container ul.inactive li a
+{
+    color: #d4d4d4;
+}
+ul.directory-list-container ul.inactive li a.active
+{
+    color: #555555;
+}
+ul.directory-list-container li a.directory-item
+{
+    color: #555555;
+    font-size: 70%;
+    display: block;
+    font-weight: bold;
+    padding: 15px 5px 10px;
+    text-decoration: none;
+    margin-left: 2px;
+}
+ul.directory-list-container li a.active.directory-item
+{
+    background: url("/App_Presentation/UniversitySite/images/structure/buttons.png") no-repeat scroll 0 -78px transparent;
+    height: 31px;
+    margin-left: 2px;
+    overflow: visible;
+    padding: 6px 10px 0;
+    width: 120px;
+    z-index: 3000;
+}
+ul.directory-list-container li.inactive ul li a
+{
+    color: #D4D4D4;
+}
+ul.directory-list-container li.inactive ul li a.active
+{
+    color: #555555;
+}
+.directory-chooser .directory-top
+{
+    width: 637px;
+    height: 7px;
+    background: url('/App_Presentation/UniversitySite/images/structure/directory-chooser-top.png') no-repeat 0 0;
+}
+.directory-chooser .directory-top.step-2
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/directory-chooser-top-step-2.png');
+}
+.directory-chooser .directory-top.step-3
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/directory-chooser-top-step-3.png') 2px 0;
+}
+.directory-chooser .directory-mid
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/directory-chooser-mid.png') repeat-y 0 0;
+    width: 637px;
+    min-height: 40px;
+}
+.directory-chooser .directory-mid.step-2
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/directory-chooser-mid-step-2.png') repeat-y 0 0;
+}
+.directory-chooser .directory-mid.step-3
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/directory-chooser-mid-step-3.png') repeat-y 0 0;
+}
+.directory-chooser .directory-bottom
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/directory-chooser-bottom.png') no-repeat 0 0;
+    width: 637px;
+    height: 18px;
+}
+.directory-chooser .directory-bottom.step-2
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/directory-chooser-bottom-step-2.png');
+    height: 16px;
+}
+.directory-chooser .directory-bottom.step-3
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/directory-chooser-bottom-step-3.png');
+    height: 16px;
+}
+.directory-chooser ul.directory-list-container li
+{
+    margin-left: 3px;
+}
+
+.directory-mid.directory-ui.step-2 ul.directory-list-container li.results
+{
+    width: 335px;
+}
+.directory-mid.directory-ui.step-1 ul.directory-list-container li.results
+{
+    width: 550px;
+}
+.directory-chooser ul.directory-list-container li.results
+{
+    padding: 15px;
+    max-width: 450px;
+    min-width: 202px;
+}
+ul.directory-list-container li.results .avatar.left img
+{
+    height: 60px;
+    margin-top: 20px;
+    width: 60px;
+}
+.directory-chooser ul.directory-list-container li div.results-header h1
+{
+    font-size: 80%;
+    font-family: OpenSans Bold, sans-serif;
+    color: #555555;
+    padding-bottom: 5px;
+}
+.directory-chooser ul.directory-list-container li div.results-header ul.current-filters li
+{
+    font-size: 70%;
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+.directory-chooser ul.directory-list-container li div.results-header ul li a
+{
+    color: #678400;
+    text-decoration: underline;
+}
+.directory-chooser ul.directory-list-container li div.results-header ul li
+{
+    float: none;
+    width: auto;
+    display: list-item;
+}
+.directory-chooser ul.directory-list-container li div.results-header div.filters
+{
+    margin: 15px 0;
+}
+.directory-mid.step-2 li div.results-header .filter-list
+{
+    width: 300px;
+}
+.directory-mid.step-3 li div.results-header .filter-list
+{
+    width: 169px;
+}
+ul.directory-list-container li div.results-header div.filters .x.left
+{
+    margin: auto;
+    cursor: pointer;
+}
+ul.directory-list-container li .filters .filter-list ul li
+{
+    margin-bottom: 5px;
+}
+.directory-chooser .results-container
+{
+    overflow-y: scroll;
+    height: 225px;
+}
+.directory-chooser .results-container ul li
+{
+    width: 175px;
+}
+.directory-mid.step-2 .results-container ul li
+{
+    width: 315px;
+}
+.directory-mid.step-2 .results-container ul li .user-left
+{
+    float: left;
+    padding-top: 15px;
+    width: 245px;
+}
+.directory-mid.step-2 .results-container .user-left h1
+{
+    font-size: 110%;
+    margin-top: 15px;
+    padding-bottom: 5px;
+}
+.directory-mid.step-3 .results-container .user-left h1
+{
+    font-size: 80%;
+    font-weight: bold;
+    margin-top: 12px;
+    padding-bottom: 5px;
+}
+.directory-chooser .results-container ul li h1
+{
+    font-size: 80%;
+    padding-bottom: 0;
+}
+.directory-chooser .results-container ul li .avatar
+{
+    width: 70px;
+}
+.directory-chooser .results-container ul li .user-left h1
+{
+    font-size: 120%;
+}
+.directory-chooser .results-container ul li .user-left
+{
+    float: left;
+    padding-top: 15px;
+    width: 105px;
+}
+.directory-chooser .results-container ul li .user-left a
+{
+    font-size: 70%;
+}
+.directory-chooser .profile-header ul li
+{
+    font-size: 70%;
+}
+
+.full-profile h2 {
+ margin: 0 0 0 5px;
+
+
+}
+
+.full-profile h3{
+    margin: 0;
+    padding: 10px 0 0 0;
+    line-height: 1.3;
+
+
+}
+
+.full-profile ul
+{
+  margin: 6px 0 0 0;
+  float: left;
+}
+
+.full-profile .profile-header ul li h1
+{
+    padding-bottom: 0;
+    font-size: 170%;
+}
+.full-profile .user-avatar
+{
+    margin: 15px 0;
+}
+.full-profile .profile-header
+{
+    margin-bottom: 15px;
+}
+.full-profile ul li
+{
+    margin: 10px 0;
+    color: #555555;
+    float: none;
+    float: none !important;
+    width: 200px !important;
+    font-size:80%;
+    line-height: 1.3;
+}
+.profile-contact ul li strong
+{
+    font-size: 85%;
+}
+.full-profile .profile-contact
+{
+    margin-top: 25px;
+    color: #555555;
+}
+.full-profile .profile-contact img {
+    padding: 0 15px 15px 0;
+}
+.full-profile .profile-connect
+{
+    margin: 25px 0;
+}
+/* password rank styles */
+
+.rank-result
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/rank-sprite.png') no-repeat 0 0;
+    width: 214px;
+    height: 8px;
+    display: block;
+    float: left;
+}
+
+.rank-result.shortPass
+{
+    background-position: 0 -8px;
+}
+
+.rank-result.badPass
+{
+    background-position: 0 -16px;
+}
+
+.rank-result.goodPass
+{
+    background-position: 0 -24px;
+}
+
+.rank-result.strongPass
+{
+    background-position: 0 -32px;
+}
+
+/** form image replacement styles **/
+
+.jqTransformHidden
+{
+    display: none;
+}
+
+.jqTransformSelectWrapper
+{
+    background: url("/App_Presentation/UniversitySite/images/structure/account-drop-left-lrg.png") no-repeat scroll left top transparent;
+    float: left;
+    height: 25px;
+    position: relative;
+    font-family: 'Open Sans' , sans-serif;
+    font-weight: 400;
+    color: #6f6f6f;
+    font-size: 85%;
+}
+
+.jqTransformSelectWrapper a.jqTransformSelectOpen
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/account-drop-right.png') no-repeat scroll transparent;
+    display: block;
+    height: 25px;
+    position: absolute;
+    right: -14px;
+    width: 14px;
+    top: 0;
+}
+
+.jqTransformSelectWrapper div span
+{
+    cursor: pointer;
+    float: none;
+    font-size: 12px;
+    height: 17px;
+    line-height: 15px;
+    overflow: hidden;
+    padding: 6px 0 0 10px;
+    position: absolute;
+}
+
+.jqTransformSelectWrapper ul
+{
+    background-color: #ececec;
+    border: 1px solid #CCCCCC;
+    display: none;
+    left: 0;
+    list-style: none outside none;
+    margin: 0;
+    overflow: auto;
+    padding: 0;
+    position: absolute;
+    top: 23px;
+    left: 1px;
+    width: 43px;
+    z-index: 10;
+}
+
+.jqTransformSelectWrapper ul li
+{
+}
+
+.jqTransformSelectWrapper ul a
+{
+    display: block;
+    font-family: 'Open Sans' , sans-serif;
+    font-weight: 400;
+    color: #6f6f6f;
+    font-size: 85%;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.jqTransformSelectWrapper ul a:hover, .jqTransformSelectWrapper ul a.selected:hover
+{
+    background: #4f4f4f;
+    color: #FFFFFF;
+}
+
+a.jqTransformCheckbox
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/checkbox-sprite.png') no-repeat 0 -23px;
+    display: block;
+    height: 23px;
+    vertical-align: middle;
+    width: 22px;
+}
+
+a.jqTransformCheckbox.jqTransformChecked
+{
+    background-position: 0 0;
+}
+
+.jqTransformRadioWrapper
+{
+    display: block;
+    float: left;
+    margin: 5px 2px 0;
+}
+
+.jqTransformRadio
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/radio-sprite.png') no-repeat 0 0;
+    display: block;
+    height: 19px;
+    width: 19px;
+}
+
+a.jqTransformChecked
+{
+    background-position: 0 -20px;
+}
+
+/** My Account Styles **/
+
+
+.account-container .my-account-content
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/account-profile-bg.png') no-repeat 0 0;
+    width: 689px;
+    height: 474px;
+    float: left;
+    margin: 15px 0 0 29px;
+    padding: 0 0 0 30px;
+}
+
+.account-container .inner-left-nav-container
+{
+    width: 195px;
+    float: left;
+    margin: 85px 0 0 10px;
+}
+
+.account-container .inner-left-nav
+{
+    position: relative;
+    list-style: none;
+    width: 256px;
+}
+
+.account-container .inner-left-nav .left-nav-item
+{
+    list-style: none;
+    height: 50px;
+    width: 195px;
+    position: relative;
+}
+
+.account-container .inner-left-nav-container .left-nav-divider
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/left-nav-divider.png') no-repeat 0 0;
+    width: 230px;
+    height: 3px;
+}
+
+.account-container .inner-left-nav li a
+{
+    width: 246px;
+    height: 50px;
+    padding: 10px 0 0 12px;
+    position: absolute;
+    font-family: 'Open Sans' , sans-serif;
+    font-weight: 600;
+    color: #323131;
+    font-size: 85%;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #fff;
+    line-height: 1.2;
+}
+
+.account-container .inner-left-nav li .nav-description
+{
+    width: 195px;
+    font-family: 'Open Sans' , sans-serif;
+    font-weight: 400;
+    color: #000;
+    font-size: 85%;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #fff;
+    float: left;
+}
+
+.account-container .inner-left-nav .left-nav-icon
+{
+    width: 195px;
+    float: left;
+}
+
+.file-share-bg .account-close-btn
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/account-close-btn.png') no-repeat;
+    width: 34px;
+    height: 33px;
+    position: absolute;
+    right: -9px;
+    top: -10px;
+    z-index: 2;
+}
+
+.account-container .account-close-btn
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/account-close-btn.png') no-repeat;
+    width: 34px;
+    height: 33px;
+    position: absolute;
+    right: -11px;
+    top: -10px;
+    z-index: 2;
+}
+
+.account-container .account-section-wide
+{
+    width: 400px;
+    float: left;
+    margin: 45px 0 0 15px;
+}
+
+
+.account-container .account-section-wide .my-account-headshot
+{
+    float: left;
+}
+
+.account-container .user-info-container
+{
+    width: 270px;
+    float: left;
+    margin: 0 0 0 15px;
+}
+
+.account-container .my-account-content .user-info-container ul
+{
+    margin: 20px 0;
+}
+
+.account-container .my-account-content .user-info-container ul li
+{
+    font-family: 'Open Sans' , sans-serif;
+    font-weight: 400;
+    color: #555555;
+    font-size: 80%;
+    margin: 5px 0;
+}
+
+.account-container .my-account-content .user-info-container ul strong
+{
+    font-family: 'Open Sans' , sans-serif;
+    font-weight: 600;
+    color: #555555;
+}
+
+.my-account-divider
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/my-account-divider.png')no-repeat 0 0;
+    float: left;
+    height: 384px;
+    width: 3px;
+    margin: 45px 5px 0;
+}
+
+.account-container .account-section-narrow
+{
+    width: 200px;
+    float: left;
+    margin: 45px 0 0 30px;
+}
+
+.account-container .account-section-half
+{
+    width: 300px;
+    float: left;
+    margin: 25px 0 0 30px;
+}
+/* header */
+.header
+{
+    width: 960px;
+    margin: 30px 0 0 0;
+    z-index: 1;
+    position: relative; /*float: left;*/
+}
+/*headerf left links*/
+.right-links
+{
+    float: right;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+.right-links ul li
+{
+    display: inline-block;
+    float: left;
+    margin-left: 15px;
+}
+.right-links ul li:first-child
+{
+    margin-left: 0;
+}
+.header .header-logo
+{
+    width: 135px;
+    height: 76px;
+    float: left;
+}
+
+/* header widget control */
+.header .header-widget-container
+{
+    width: 435px;
+    float: left;
+    margin: 0 0 0 80px;
+}
+
+/* logged in user control */
+
+.logged-in-container
+{
+    height: 54px;
+    float: right;
+    margin: 20px 0 0;
+    z-index: 1;
+    position: relative;
+}
+
+.logged-in-container .user-logout-wrap
+{
+    position: relative;
+    height: 1px;
+    z-index: 0;
+}
+
+.logged-in-container .user-logged-in-wrap
+{
+    position: relative;
+    height: 1px;
+    z-index: 3;
+}
+
+.logged-in-container .user-logout-btn
+{
+    background: url("/App_Presentation/UniversitySite/images/structure/buttons.png") no-repeat 0 -419px;
+    color: #fff;
+    font-family: 'Open Sans' ,sans-serif;
+    font-size: 65%;
+    font-weight: 600;
+    height: 19px;
+    padding: 2px 0 0 17px;
+    position: absolute;
+    right: 10px;
+    text-decoration: none;
+    text-shadow: -1px -1px 0 #0C3C64;
+    top: -15px;
+    width: 50px;
+    z-index: -1;
+}
+
+.logged-in-container .logged-in-left
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/logged-in-left.png') no-repeat;
+    width: 53px;
+    height: 54px;
+    float: left;
+    padding: 8px 0 0 8px;
+}
+
+.logged-in-container .logged-in-left img
+{
+    width: 40px;
+    height: 40px;
+}
+
+.logged-in-container .logged-in-mid
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/logged-in-mid.png') repeat-x;
+    height: 54px;
+    float: left;
+}
+
+.logged-in-container .logged-in-content
+{
+    height: 49px;
+    padding: 5px;
+}
+
+.logged-in-container .logged-in-content p
+{
+    line-height: 1.1em;
+}
+
+.logged-in-container .logged-in-right
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/logged-in-right.png') repeat-x;
+    height: 54px;
+    width: 31px;
+    float: left;
+}
+
+.logged-in-container .logged-in-right .logged-in-search
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/user-mag.png') no-repeat center center;
+    height: 22px;
+    width: 21px;
+    float: left;
+    margin: 3px 0 0 4px;
+}
+
+.logged-in-container .logged-in-right .logged-in-edit
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/user-pen.png') no-repeat center center;
+    height: 22px;
+    width: 21px;
+    float: left;
+    margin: 3px 0 0 4px;
+}
+/* Shire Apps Inner Page */
+.content .shire-apps .app
+{
+    margin-bottom: 25px;
+}
+.content .shire-apps .app:last-child
+{
+    margin-bottom: 0;
+}
+.content .shire-apps .app .left
+{
+    width: 115px;
+    float: left;
+}
+.shire-apps .app .left img
+{
+    display: block;
+    margin: 0 auto 15px;
+}
+.shire-apps .app .right
+{
+    width: 500px;
+    float: right;
+}
+.app .right .app-header
+{
+    margin-bottom: 15px;
+}
+.app .right .app-header .left
+{
+    width: 185px;
+    padding-right: 15px;
+}
+.app .right .app-header .right
+{
+    width: 185px;
+    float: left;
+    border-left: 1px solid #c4c4c4;
+    padding-left: 15px;
+}
+.app .right .app-header .right ul li
+{
+    margin-bottom: 5px;
+}
+.app .right .app-info
+{
+    margin-bottom: 15px;
+}
+/*GMA Brand Guidelines*/
+.content .brand-guidelines .pdf-item
+{
+    margin-bottom: 25px;
+}
+.content .brand-guidelines .pdf-item img
+{
+    margin-bottom: 15px;
+}
+.content .brand-guidelines .pdf-item .left
+{
+    width: 115px;
+    float: left;
+    margin-right: 15px;
+}
+.content .brand-guidelines .pdf-item .right
+{
+    width: 500px;
+    float: left;
+}
+/*Lecture Program*/
+.lecture-programs
+{
+    position: relative;
+}
+.lecture-programs a.grey-btn.livestream-btn
+{
+    position: absolute;
+    top: -70px;
+    right: 0;
+}
+.content .lecture-programs .program
+{
+    margin-bottom: 25px;
+}
+.content .lecture-programs .program .left
+{
+    width: 115px;
+    float: left;
+    margin-right: 15px;
+}
+.program .left img
+{
+    margin-bottom: 15px;
+}
+.content .lecture-programs .program .right
+{
+    width: 500px;
+    float: left;
+}
+/*Lecture Programs Single*/
+.lecture-program .livestream-container
+{
+    margin: 25px 0;
+}
+.lecture-program .speaker .left
+{
+    float: left;
+    width: 115px;
+    margin-top: 15px;
+    margin-right: 15px;
+}
+.lecture-program .speaker .right
+{
+    width: 500px;
+    float: left;
+    margin-top: 12px;
+}
+/*Patient Program*/
+.content .patient-programs .program
+{
+    margin-bottom: 25px;
+}
+.content .patient-programs .program .left
+{
+    width: 115px;
+    float: left;
+    margin-right: 15px;
+}
+.content .patient-programs .program .right
+{
+    width: 500px;
+    float: left;
+}
+/* Feedback */
+.content-container .feedback-form
+{
+    width: 616px;
+    margin: 20px 0;
+}
+.content-container .feedback-form textarea.feedback
+{
+    background: url("/App_Presentation/UniversitySite/images/structure/feedback-form-bg.jpg") no-repeat 0 0;
+    border: medium none;
+    height: 203px;
+    padding: 10px;
+    resize: none;
+    width: 595px;
+    font-family: OpenSans, Sans-serif;
+    font-size: 75%;
+}
+/* FAQ */
+.content-container .faq-questions h3
+{
+    color: #678400;
+    font-size: 85%;
+    font-family: OpenSans Bold, sans-serif;
+}
+.content-container ul.question-list li
+{
+    margin-bottom: 25px;
+}
+.content-container ul.question-list li div.q
+{
+    background: url("/App_Presentation/UniversitySite/images/structure/icons/qa.jpg") no-repeat scroll 0 0 transparent;
+    float: left;
+    width: 10px;
+    height: 25px;
+    padding-left: 13px;
+}
+.content-container ul.question-list li div.a
+{
+    background: url("/App_Presentation/UniversitySite/images/structure/icons/qa.jpg") no-repeat scroll -23px 0 transparent;
+    float: left;
+    width: 10px;
+    height: 25px;
+    padding-left: 13px;
+}
+/* FAQ Search */
+form#faq-search label
+{
+    font-family: OpenSans Bold, sans-serif;
+    color: #555555;
+    display: block;
+}
+form#faq-search select
+{
+    margin-left: 3px;
+}
+form#faq-search input[type="textbox"]
+{
+    margin-left: 3px;
+}
+form#faq-search #search
+{
+    background: url("/App_Presentation/UniversitySite/images/structure/buttons.png") no-repeat 0 -50px;
+    border: 0 none;
+    color: #FFFFFF;
+    font-family: OpenSans Bold,sans-serif;
+    font-size: 100%;
+    height: 25px;
+    width: 68px;
+}
+.content-container .faq-search
+{
+    margin: 25px 0;
+    font-family: OpenSans, Sans-serif;
+    font-size: 70%;
+}
+.content-container #faq-search fieldset.left:first-child
+{
+    margin-right: 35px;
+}
+
+
+/* jcrop modal styles */
+
+.jcrop-body
+{
+    background: none;
+    padding: 25px 15px 0 25px;
+    width: 473px;
+    height: 468px;
+    overflow: hidden;
+}
+
+.jcrop-container iframe {
+height: 515px;
+width: 535px;
+}
+
+.jcrop-body p
+{
+    color: #555555;
+    font-family: 'Open Sans' ,sans-serif;
+    text-shadow: 1px 1px 0px #fff;
+    line-height: 1.4em;
+}
+.simplemodal-container.jcrop-container
+{
+    background: url("/App_Presentation/UniversitySite/images/structure/upload-modal-bg.png") no-repeat 0 0;
+    width: 650px;
+    height: 500px;
+}
+
+.jcrop-input-container
+{
+    position: absolute;
+    right: 35px;
+    width: 215px;
+    bottom: 51px;
+}
+
+
+.jcrop-wrapper
+{
+}
+
+.jcrop-wrapper .jcrop-submit-btn
+{
+    background: url("/App_Presentation/UniversitySite/images/structure/buttons.png") no-repeat 0 -50px;
+    width: 75px;
+    height: 25px;
+    color: #FFFFFF;
+    font-family: 'OpenSans' , helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 70%;
+    height: 25px;
+    width: 69px;
+    text-transform: uppercase;
+    text-shadow: -1px -1px 1px #005091;
+    position: absolute;
+    right: 15px;
+    bottom: 50px;
+    cursor: pointer;
+}
+
+.jcrop-wrapper .upload-img-btn
+{
+    background: url("/App_Presentation/UniversitySite/images/structure/files-upload-btn.png") no-repeat 0 0;
+    width: 164px;
+    height: 29px;
+    color: #FFFFFF;
+    font-family: 'OpenSans' , helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 85%;
+    text-transform: uppercase;
+    text-shadow: -1px -1px 1px #005091;
+    margin: 10px 0 0;
+    cursor: pointer;
+}
+
+.jcrop-wrapper .browse-img-btn
+{
+    background: url("/App_Presentation/UniversitySite/images/structure/files-upload-btn.png") no-repeat 0 0;
+    width: 164px;
+    height: 29px;
+    color: #FFFFFF;
+    font-family: 'OpenSans' , helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 85%;
+    text-transform: uppercase;
+    text-shadow: -1px -1px 1px #005091;
+    margin: 0 0 0 5px;
+    cursor: pointer;
+    float: left;
+}
+
+.jcrop-tracker
+{
+}
+
+
+.jcrop-holder
+{
+    margin: 0 0 10px 0;
+}
+
+#preview
+{
+    float: left;
+}
+
+#errorContainer
+{
+    background: #ffffff;
+    border: 1px solid #EE6F43;
+    width: 400px;
+    padding: 15px;
+}
+
+#errorOverlay
+{
+    background: url('/App_Presentation/UniversitySite/images/structure/overlay-bg.png');
+}
+
+#errorContainer .simplemodal-close
+{
+    background: none repeat scroll 0 0 transparent;
+    cursor: pointer;
+    height: 5px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 10px;
+    z-index: 999;
+    padding: 5px;
+    font-weight: 600;
+}
+
+.error-modal-container li
+{
+    color: #EE6F43;
+    font-family: 'OpenSans' ,sans-serif;
+    font-size: 80%;
+    font-weight: 600;
+}
+
+/* registration success styles */
+
+#vform-container .success h2
+{
+    font-size: 150%;
+    padding: 15px;
+}
+
+#vform-container .success h3
+{
+    font-size: 80%;
+    padding: 0 15px 15px;
+}
+
+
+.account-container .success h2
+{
+    font-size: 150%;
+    margin: 45px 0 0 15px;
+}
+
+.account-container .success h3
+{
+    font-size: 100%;
+    margin: 10px 0 0 15px;
+    line-height: 1.3;
+}
+

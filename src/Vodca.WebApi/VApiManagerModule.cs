@@ -37,6 +37,11 @@ namespace Vodca.WebApi
         public static readonly string UrlPrefixSecuredAccessTrigger = string.Concat(UrlPrefixTrigger, VApiAccessPermission.Secured, '/');
 
         /// <summary>
+        /// The IIS flag
+        /// </summary>
+        private static readonly bool IsIntegratedPipeline = HttpRuntime.UsingIntegratedPipeline;
+
+        /// <summary>
         /// The  controller collection
         /// </summary>
         private static readonly ConcurrentDictionary<string, VApiController> ControllerCollection = new ConcurrentDictionary<string, VApiController>(StringComparer.InvariantCultureIgnoreCase);
@@ -46,31 +51,32 @@ namespace Vodca.WebApi
         /// </summary>
         static VApiManagerModule()
         {
-
             SetBeginRequestGetMethodtHttpResponseHeaders += (context, response) =>
                 {
-#if !DEBUG
-                    if (string.Equals(context.Request.HttpMethod, "GET", StringComparison.InvariantCultureIgnoreCase))
+                    if (IsIntegratedPipeline)
                     {
-                        response.SetHeaderCacheControl();
-                        response.SetHeaderLastModified(DateTime.UtcNow.Date);
-                    }
+                        if (string.Equals(
+                            context.Request.HttpMethod, "GET", StringComparison.InvariantCultureIgnoreCase))
+                        {
+                            response.SetHeaderCacheControl();
+                            response.SetHeaderLastModified(DateTime.UtcNow.Date);
+                        }
 
-                    response.Headers["Vary"] = "Content-Encoding";
-#endif
+                        response.Headers["Vary"] = "Content-Encoding";
+                    }
                 };
 
             SetPreSendHttpResponseHeaders += (context, response) =>
                 {
-#if !DEBUG
-                    response.Headers.Remove("X-AspNet-Version");
+                    if (IsIntegratedPipeline)
+                    {
+                        response.Headers.Remove("X-AspNet-Version");
 
-                    response.Headers.Remove("Server");
+                        response.Headers.Remove("Server");
 
-                    response.Headers.Remove("X-Powered-By");
-#endif
+                        response.Headers.Remove("X-Powered-By");
+                    }
                 };
-
         }
 
         /// <summary>
@@ -155,7 +161,7 @@ namespace Vodca.WebApi
 #if DEBUG
             string message = VApiResponse.ErrorMessage(exception.ToString());
 #else
-            string message = VApiResponse.ErrorMessage(exception.Message);  
+            string message = VApiResponse.ErrorMessage(exception.Message);
 #endif
             httpContext.Response.Write(message);
             httpContext.Response.StatusCode = (int)HttpStatusCode.InternalServerError;

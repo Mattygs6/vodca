@@ -16,7 +16,7 @@ using System.Web.UI;
 [assembly: AssemblyTitle("Vodca Core")]
 [assembly: AssemblyDescription("Vodca Core")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Genuine")]
+[assembly: AssemblyCompany("Genuine Interactive")]
 [assembly: AssemblyProduct("Vodca Core")]
 [assembly: AssemblyCopyright("Copyright © J.Baltikauskas 2008")]
 [assembly: AssemblyTrademark("J.Baltikauskas")]
